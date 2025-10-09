@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    /* border: 2px solid #000;*/
+    background-color: rgb(143, 7, 102);
+    height: 100vh; 
+   /* min-height: 100vh; 
+    max-height: 100vh; */
+    width: 100vw;
+}
+h1
+{
+    color: white;
+    width: 20vw;
+  /*  display: inline; */
+    text-align: center;
+    background-color: rgb(143, 7, 102);
+}
+header
+{ 
+    height: 10vh; 
+    background-color: rgb(143, 7, 102);
+   border: 1px solid black; 
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+header figure
+{
+    border: 1px solid black;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header figure img
+{
+    height: 90px;
+
+}
+/* selector descendiente */
+header h1
+{
+    color :rgb(0, 0, 0);
+    text-align: center;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+header nav
+{
+    border: 2px solid black;
+    text-align: center;
+}
+
+header nav a
+{
+  /* border: 2px solid black; */
+    color: white;
+    text-align: center;
+   display: inline-block; 
+   margin-right: 10px;
+   text-decoration: none;
+   font-size: 20px;
+
+}
+header nav a:hover
+{
+    text-decoration: underline;
+}
+main
+{
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+}
+footer
+{
+    height: 10vh;
+    background-color: rgb(82, 82, 82);
+}
