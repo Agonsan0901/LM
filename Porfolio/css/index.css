@@ -5,21 +5,10 @@
 }
 body {
     min-height: 100vh;
-    /* border: 2px solid #000;*/
     background-color: rgb(143, 7, 102);
-    height: 100vh; 
-   /* min-height: 100vh; 
-    max-height: 100vh; */
     width: 100vw;
 }
-h1
-{
-    color: white;
-    width: 20vw;
-  /*  display: inline; */
-    text-align: center;
-    background-color: rgb(143, 7, 102);
-}
+
 header
 { 
     height: 10vh; 
@@ -42,8 +31,9 @@ header figure
 
 header figure img
 {
-    height: 90px;
-
+    height: 100%;
+    max-height: 80px;
+    object-fit: contain;
 }
 /* selector descendiente */
 header h1
@@ -62,14 +52,12 @@ header nav
 
 header nav a
 {
-  /* border: 2px solid black; */
     color: white;
     text-align: center;
-   display: inline-block; 
-   margin-right: 10px;
-   text-decoration: none;
-   font-size: 20px;
-
+    display: inline-block; 
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
 }
 header nav a:hover
 {
@@ -79,9 +67,85 @@ main
 {
     height: 80vh;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    /* elementos flexbox */
 }
+
+main nav
+{
+    border: 2px solid black;
+    flex-basis: 20%;
+}
+main section
+{
+    border: 2px solid black;
+    flex-basis: 70%;
+}
+
+main aside
+{
+    border: 2px solid black;
+    flex-basis: 20%;
+}
+
 footer
 {
     height: 10vh;
     background-color: rgb(82, 82, 82);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+footer div
+{
+    border: 2px solid black;
+    flex-basis: 20%;
+}
+
+footer p
+{
+    color: white;
+    text-align: center;
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main nav ul,
+main aside ul
+{
+    list-style: none;
+    padding: 10px;
+}
+
+main nav a,
+main aside a
+{
+    color: rgb(143, 7, 102);
+    text-decoration: none;
+}
+
+main nav a:hover,
+main aside a:hover
+{
+    text-decoration: underline;
+}
+
+main section
+{
+    padding: 20px;
+}
+
+main nav h3,
+main aside h3
+{
+    padding: 10px;
+    background-color: rgb(143, 7, 102);
+    color: white;
+    margin-bottom: 10px;
 }
