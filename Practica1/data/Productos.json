@@ -1,302 +1,268 @@
 [
-  { 
+  {
     "id": 1,
-    "nombre": "Xiamoi 15t",
-    "precio": 34.99,
-    "precioOriginal": 499.99,
-    "descuento": 50,
-    "imagen": "https://images.unsplash.com/photo-1606813902915-d23e25f5d2c1?w=500&auto=format&fit=crop",
-    "valoracion": 5.4,
-    "opiniones": 0,
+    "nombre": "Xiaomi 14T Pro 5G",
+    "marca": "Xiaomi",
+    "categoria": "Smartphones",
+    "precio": 649.99,
+    "precioOriginal": 799.99,
+    "descuento": 19,
+    "imagen": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_162257099?x=400&y=400&format=jpg&quality=80",
+    "valoracion": 4.7,
+    "opiniones": 156,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": true,
+    "descripcion": "Smartphone premium con cámara Leica de 50MP, pantalla AMOLED de 6.67'' y carga rápida de 120W",
     "caracteristicas": {
-      "cpu": "Chipset Realtek RTL8762C",
-      "ram": "1024 MB",
-      "disco": "512 MB"
-    }
+      "pantalla": "6.67'' AMOLED 144Hz",
+      "procesador": "MediaTek Dimensity 9300+",
+      "ram": "12 GB",
+      "almacenamiento": "512 GB",
+      "camara": "50MP Leica Triple",
+      "bateria": "5000 mAh",
+      "so": "Android 14 MIUI 15",
+      "conectividad": "5G, WiFi 7, Bluetooth 5.4"
+    },
+    "colores": ["Negro Titanio", "Azul Océano", "Gris Espacial"]
   },
   {
     "id": 2,
-    "nombre": "iPhone 16 5G 128GB Azul",
-    "precio": 799.00,
-    "precioOriginal": 959.00,
-    "descuento": 17,
-    "imagen": "https://images.unsplash.com/photo-1603898037225-1be31a016f8e?w=500&auto=format&fit=crop",
-    "valoracion": 5,
-    "opiniones": 34,
+    "nombre": "iPhone 16 Pro 5G 256GB",
+    "marca": "Apple",
+    "categoria": "Smartphones",
+    "precio": 1199.00,
+    "precioOriginal": 1329.00,
+    "descuento": 10,
+    "imagen": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&auto=format&fit=crop&bg=white",
+    "valoracion": 4.9,
+    "opiniones": 234,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": true,
+    "descripcion": "El iPhone más avanzado con chip A18 Pro, cámara de 48MP con zoom 5x y pantalla Super Retina XDR",
     "caracteristicas": {
-      "cpu": "Apple A18 Bionic",
+      "pantalla": "6.3'' Super Retina XDR",
+      "procesador": "Apple A18 Pro",
       "ram": "8 GB",
-      "disco": "128 GB"
-    }
+      "almacenamiento": "256 GB",
+      "camara": "48MP Pro Triple",
+      "bateria": "Hasta 27h video",
+      "so": "iOS 18",
+      "conectividad": "5G, WiFi 7, Bluetooth 5.3"
+    },
+    "colores": ["Titanio Natural", "Titanio Azul", "Titanio Blanco", "Titanio Negro"]
   },
   {
     "id": 3,
-    "nombre": "Samsung Galaxy S24 Ultra",
-    "precio": 999.00,
-    "precioOriginal": 1180.00,
+    "nombre": "Samsung Galaxy S24 Ultra 5G",
+    "marca": "Samsung",
+    "categoria": "Smartphones",
+    "precio": 1099.00,
+    "precioOriginal": 1299.00,
     "descuento": 15,
-    "imagen": "https://images.unsplash.com/photo-1610901357838-2e7b504fddf4?w=500&auto=format&fit=crop",
-    "valoracion": 4.9,
-    "opiniones": 87,
+    "imagen": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&auto=format&fit=crop&bg=white",
+    "valoracion": 4.8,
+    "opiniones": 187,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": true,
+    "descripcion": "Smartphone con S Pen integrado, cámara de 200MP con zoom 100x y pantalla Dynamic AMOLED 2X",
     "caracteristicas": {
-      "cpu": "Snapdragon 8 Gen 3",
+      "pantalla": "6.8'' Dynamic AMOLED 2X",
+      "procesador": "Snapdragon 8 Gen 3",
       "ram": "12 GB",
-      "disco": "256 GB"
-    }
+      "almacenamiento": "512 GB",
+      "camara": "200MP Quad",
+      "bateria": "5000 mAh",
+      "so": "Android 14 One UI 6.1",
+      "conectividad": "5G, WiFi 7, Bluetooth 5.3"
+    },
+    "colores": ["Titanio Gris", "Titanio Violeta", "Titanio Amarillo", "Titanio Negro"]
   },
   {
     "id": 4,
-    "nombre": "Huawei Watch Fit 2",
-    "precio": 89.99,
-    "precioOriginal": 119.99,
-    "descuento": 25,
-    "imagen": "https://images.unsplash.com/photo-1606811841036-d8c7a9c5d3f3?w=500&auto=format&fit=crop",
-    "valoracion": 4.6,
-    "opiniones": 54,
+    "nombre": "Apple Watch Series 10 GPS",
+    "marca": "Apple",
+    "categoria": "Smartwatches",
+    "precio": 429.00,
+    "precioOriginal": 499.00,
+    "descuento": 14,
+    "imagen": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&auto=format&fit=crop&bg=white",
+    "valoracion": 4.8,
+    "opiniones": 98,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": false,
+    "descripcion": "Smartwatch con pantalla más grande, detección de apnea del sueño y carga rápida",
     "caracteristicas": {
-      "cpu": "HiSilicon Kirin A1",
-      "ram": "128 MB",
-      "disco": "4 GB"
-    }
+      "pantalla": "45mm Retina LTPO OLED",
+      "procesador": "Apple S10 SiP",
+      "almacenamiento": "64 GB",
+      "sensores": "ECG, SpO2, Temperatura",
+      "bateria": "Hasta 18h",
+      "resistencia": "50m agua",
+      "conectividad": "WiFi, Bluetooth 5.3"
+    },
+    "colores": ["Aluminio Rosa", "Aluminio Plata", "Aluminio Medianoche"]
   },
   {
     "id": 5,
-    "nombre": "Xiaomi Redmi Note 13 Pro",
-    "precio": 299.99,
-    "precioOriginal": 333.00,
-    "descuento": 10,
-    "imagen": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop",
-    "valoracion": 4.5,
-    "opiniones": 120,
+    "nombre": "Samsung Galaxy Watch7 44mm",
+    "marca": "Samsung",
+    "categoria": "Smartwatches",
+    "precio": 319.00,
+    "precioOriginal": 369.00,
+    "descuento": 14,
+    "imagen": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400&auto=format&fit=crop&bg=white",
+    "valoracion": 4.6,
+    "opiniones": 142,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": false,
+    "descripcion": "Smartwatch con Wear OS, seguimiento avanzado de salud y batería de larga duración",
     "caracteristicas": {
-      "cpu": "MediaTek Helio G99 Ultra",
-      "ram": "8 GB",
-      "disco": "256 GB"
-    }
+      "pantalla": "44mm Super AMOLED",
+      "procesador": "Exynos W1000",
+      "ram": "2 GB",
+      "almacenamiento": "32 GB",
+      "sensores": "BioActive, GPS",
+      "bateria": "425 mAh",
+      "resistencia": "5ATM + IP68",
+      "conectividad": "Bluetooth 5.3, WiFi"
+    },
+    "colores": ["Verde Bosque", "Plata", "Crema"]
   },
   {
     "id": 6,
-    "nombre": "Apple Watch SE 2",
-    "precio": 269.00,
-    "precioOriginal": 329.00,
-    "descuento": 20,
-    "imagen": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=500&auto=format&fit=crop",
-    "valoracion": 4.8,
-    "opiniones": 102,
+    "nombre": "MacBook Air M3 13'' 256GB",
+    "marca": "Apple",
+    "categoria": "Portátiles",
+    "precio": 1199.00,
+    "precioOriginal": 1349.00,
+    "descuento": 11,
+    "imagen": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&bg=white",
+    "valoracion": 4.9,
+    "opiniones": 167,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": true,
+    "descripcion": "Portátil ultraligero con chip M3, pantalla Liquid Retina y hasta 18 horas de batería",
     "caracteristicas": {
-      "cpu": "Apple S8 SiP",
-      "ram": "1 GB",
-      "disco": "32 GB"
-    }
+      "pantalla": "13.6'' Liquid Retina",
+      "procesador": "Apple M3 8-core",
+      "ram": "8 GB",
+      "almacenamiento": "256 GB SSD",
+      "grafica": "GPU 8-core",
+      "bateria": "Hasta 18h",
+      "peso": "1.24 kg",
+      "conectividad": "2x Thunderbolt, WiFi 6E"
+    },
+    "colores": ["Gris Espacial", "Plata", "Oro Rosa", "Azul Medianoche"]
   },
   {
     "id": 7,
-    "nombre": "Amazfit GTR 3",
-    "precio": 119.00,
-    "precioOriginal": 169.00,
-    "descuento": 30,
-    "imagen": "https://images.unsplash.com/photo-1585386959984-a41552231693?w=500&auto=format&fit=crop",
-    "valoracion": 4.5,
-    "opiniones": 76,
-    "caracteristicas": {
-      "cpu": "Zepp OS Dual-Core",
-      "ram": "512 MB",
-      "disco": "4 GB"
-    }
-  },
-  {
-    "id": 8,
-    "nombre": "MacBook Air M2",
-    "precio": 1199.00,
-    "precioOriginal": 1299.00,
-    "descuento": 8,
-    "imagen": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop",
-    "valoracion": 4.9,
-    "opiniones": 210,
-    "caracteristicas": {
-      "cpu": "Apple M2",
-      "ram": "8 GB",
-      "disco": "512 GB SSD"
-    }
-  },
-  {
-    "id": 9,
-    "nombre": "Razer BlackWidow V4",
-    "precio": 179.00,
-    "precioOriginal": 239.00,
-    "descuento": 25,
-    "imagen": "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?w=500&auto=format&fit=crop",
-    "valoracion": 4.7,
-    "opiniones": 42,
-    "caracteristicas": {
-      "cpu": "Microcontrolador Razer v3",
-      "ram": "1 MB",
-      "disco": "Interno no aplicable"
-    }
-  },
-  {
-    "id": 10,
-    "nombre": "JBL Charge 5",
-    "precio": 129.99,
-    "precioOriginal": 159.99,
-    "descuento": 18,
-    "imagen": "https://images.unsplash.com/photo-1585386959984-a41552231693?w=500&auto=format&fit=crop",
-    "valoracion": 4.6,
-    "opiniones": 89,
-    "caracteristicas": {
-      "cpu": "DSP Qualcomm QCC5124",
-      "ram": "256 MB",
-      "disco": "No aplica"
-    }
-  },
-   { 
-    "id": 1,
-    "nombre": "Xiamoi 15t",
-    "precio": 34.99,
-    "precioOriginal": 499.99,
-    "descuento": 50,
-    "imagen": "https://images.unsplash.com/photo-1606813902915-d23e25f5d2c1?w=500&auto=format&fit=crop",
-    "valoracion": 5.4,
-    "opiniones": 0,
-    "caracteristicas": {
-      "cpu": "Chipset Realtek RTL8762C",
-      "ram": "1024 MB",
-      "disco": "512 MB"
-    }
-  },
-  {
-    "id": 2,
-    "nombre": "iPhone 16 5G 128GB Azul",
-    "precio": 799.00,
-    "precioOriginal": 959.00,
-    "descuento": 17,
-    "imagen": "https://images.unsplash.com/photo-1603898037225-1be31a016f8e?w=500&auto=format&fit=crop",
-    "valoracion": 5,
-    "opiniones": 34,
-    "caracteristicas": {
-      "cpu": "Apple A18 Bionic",
-      "ram": "8 GB",
-      "disco": "128 GB"
-    }
-  },
-  {
-    "id": 3,
-    "nombre": "Samsung Galaxy S24 Ultra",
-    "precio": 999.00,
-    "precioOriginal": 1180.00,
-    "descuento": 15,
-    "imagen": "https://images.unsplash.com/photo-1610901357838-2e7b504fddf4?w=500&auto=format&fit=crop",
-    "valoracion": 4.9,
-    "opiniones": 87,
-    "caracteristicas": {
-      "cpu": "Snapdragon 8 Gen 3",
-      "ram": "12 GB",
-      "disco": "256 GB"
-    }
-  },
-  {
-    "id": 4,
-    "nombre": "Huawei Watch Fit 2",
-    "precio": 89.99,
-    "precioOriginal": 119.99,
-    "descuento": 25,
-    "imagen": "https://images.unsplash.com/photo-1606811841036-d8c7a9c5d3f3?w=500&auto=format&fit=crop",
-    "valoracion": 4.6,
-    "opiniones": 54,
-    "caracteristicas": {
-      "cpu": "HiSilicon Kirin A1",
-      "ram": "128 MB",
-      "disco": "4 GB"
-    }
-  },
-  {
-    "id": 5,
-    "nombre": "Xiaomi Redmi Note 13 Pro",
-    "precio": 299.99,
-    "precioOriginal": 333.00,
-    "descuento": 10,
-    "imagen": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop",
-    "valoracion": 4.5,
-    "opiniones": 120,
-    "caracteristicas": {
-      "cpu": "MediaTek Helio G99 Ultra",
-      "ram": "8 GB",
-      "disco": "256 GB"
-    }
-  },
-  {
-    "id": 6,
-    "nombre": "Apple Watch SE 2",
-    "precio": 269.00,
-    "precioOriginal": 329.00,
-    "descuento": 20,
-    "imagen": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=500&auto=format&fit=crop",
+    "nombre": "iPad Pro M4 11'' 256GB WiFi",
+    "marca": "Apple",
+    "categoria": "Tablets",
+    "precio": 1049.00,
+    "precioOriginal": 1199.00,
+    "descuento": 13,
+    "imagen": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=400&auto=format&fit=crop&bg=white",
     "valoracion": 4.8,
-    "opiniones": 102,
+    "opiniones": 89,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": false,
+    "descripcion": "Tablet profesional con chip M4, pantalla Ultra Retina XDR y compatibilidad con Apple Pencil Pro",
     "caracteristicas": {
-      "cpu": "Apple S8 SiP",
-      "ram": "1 GB",
-      "disco": "32 GB"
-    }
-  },
-  {
-    "id": 7,
-    "nombre": "Amazfit GTR 3",
-    "precio": 119.00,
-    "precioOriginal": 169.00,
-    "descuento": 30,
-    "imagen": "https://images.unsplash.com/photo-1585386959984-a41552231693?w=500&auto=format&fit=crop",
-    "valoracion": 4.5,
-    "opiniones": 76,
-    "caracteristicas": {
-      "cpu": "Zepp OS Dual-Core",
-      "ram": "512 MB",
-      "disco": "4 GB"
-    }
+      "pantalla": "11'' Ultra Retina XDR",
+      "procesador": "Apple M4",
+      "ram": "8 GB",
+      "almacenamiento": "256 GB",
+      "camara": "12MP + LiDAR",
+      "bateria": "Hasta 10h",
+      "peso": "444g",
+      "conectividad": "WiFi 6E, Bluetooth 5.3"
+    },
+    "colores": ["Plata", "Gris Espacial"]
   },
   {
     "id": 8,
-    "nombre": "MacBook Air M2",
-    "precio": 1199.00,
-    "precioOriginal": 1299.00,
-    "descuento": 8,
-    "imagen": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop",
-    "valoracion": 4.9,
-    "opiniones": 210,
+    "nombre": "Sony WH-1000XM5 Auriculares",
+    "marca": "Sony",
+    "categoria": "Audio",
+    "precio": 299.00,
+    "precioOriginal": 399.00,
+    "descuento": 25,
+    "imagen": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&auto=format&fit=crop&bg=white",
+    "valoracion": 4.7,
+    "opiniones": 203,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": false,
+    "descripcion": "Auriculares inalámbricos con cancelación de ruido líder en la industria y 30h de batería",
     "caracteristicas": {
-      "cpu": "Apple M2",
-      "ram": "8 GB",
-      "disco": "512 GB SSD"
-    }
+      "tipo": "Over-ear inalámbricos",
+      "cancelacion": "Activa de ruido",
+      "bateria": "30h con ANC",
+      "carga": "USB-C rápida",
+      "codec": "LDAC, aptX HD",
+      "peso": "250g",
+      "conectividad": "Bluetooth 5.2, NFC"
+    },
+    "colores": ["Negro", "Plata"]
   },
   {
     "id": 9,
-    "nombre": "Razer BlackWidow V4",
-    "precio": 179.00,
-    "precioOriginal": 239.00,
-    "descuento": 25,
-    "imagen": "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?w=500&auto=format&fit=crop",
-    "valoracion": 4.7,
-    "opiniones": 42,
+    "nombre": "Nintendo Switch OLED Modelo",
+    "marca": "Nintendo",
+    "categoria": "Gaming",
+    "precio": 329.00,
+    "precioOriginal": 369.00,
+    "descuento": 11,
+    "imagen": "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?w=400&auto=format&fit=crop&bg=white",
+    "valoracion": 4.8,
+    "opiniones": 156,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": false,
+    "descripcion": "Consola híbrida con pantalla OLED de 7'', dock con puerto LAN y 64GB de almacenamiento",
     "caracteristicas": {
-      "cpu": "Microcontrolador Razer v3",
-      "ram": "1 MB",
-      "disco": "Interno no aplicable"
-    }
+      "pantalla": "7'' OLED multitáctil",
+      "procesador": "NVIDIA Tegra X1",
+      "almacenamiento": "64 GB",
+      "bateria": "4.5-9 horas",
+      "modos": "TV, Sobremesa, Portátil",
+      "conectividad": "WiFi, Bluetooth 4.1",
+      "incluye": "Joy-Con, Dock, Cables"
+    },
+    "colores": ["Neón Azul/Rojo", "Blanco"]
   },
   {
     "id": 10,
-    "nombre": "JBL Charge 5",
-    "precio": 129.99,
-    "precioOriginal": 159.99,
-    "descuento": 18,
-    "imagen": "https://images.unsplash.com/photo-1585386959984-a41552231693?w=500&auto=format&fit=crop",
+    "nombre": "Dyson V15 Detect Absolute",
+    "marca": "Dyson",
+    "categoria": "Hogar",
+    "precio": 599.00,
+    "precioOriginal": 749.00,
+    "descuento": 20,
+    "imagen": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&auto=format&fit=crop&bg=white",
     "valoracion": 4.6,
-    "opiniones": 89,
+    "opiniones": 134,
+    "stock": true,
+    "envioGratis": true,
+    "destacado": false,
+    "descripcion": "Aspiradora sin cable con detección láser de polvo, pantalla LCD y hasta 60min de autonomía",
     "caracteristicas": {
-      "cpu": "DSP Qualcomm QCC5124",
-      "ram": "256 MB",
-      "disco": "No aplica"
-    }
+      "tipo": "Sin cable 2-en-1",
+      "motor": "Dyson Hyperdymium",
+      "bateria": "Hasta 60 min",
+      "deposito": "0.77L",
+      "filtro": "HEPA completo",
+      "tecnologia": "Detección láser",
+      "accesorios": "8 herramientas incluidas"
+    },
+    "colores": ["Dorado/Púrpura"]
   }
 ]

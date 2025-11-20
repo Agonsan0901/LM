@@ -94,136 +94,155 @@ header #carrito i{
     font-size: 25px;
     color: green;
 }
-/*
----elementos de linea: img, a, span, i input
----elemetnos de bloques: el resto de etiquetas de este codigo
-*/
+
 main{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     flex-basis: 65%;
     /* height: 75vh; */
     
     border: 2px solid black;
+    padding: 2rem;
 }
-main section{ /* contenedor  */
+
+/* Estilos específicos para la página de detalles */
+.producto-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 2rem 0;
+}
+
+.imagen-producto img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.info-producto h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.marca, .categoria {
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+.valoraciones {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.estrellas {
+    color: #f39c12;
+}
+
+.precios {
+    margin: 1.5rem 0;
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: #95a5a6;
+    margin-right: 1rem;
+}
+
+.precio-actual {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-right: 1rem;
+}
+
+.descuento {
+    background: #e74c3c;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.descripcion {
+    margin: 1.5rem 0;
+    line-height: 1.8;
+    color: #555;
+}
+
+.caracteristicas h3, .colores h3 {
+    margin: 1.5rem 0 0.5rem 0;
+    color: #2c3e50;
+}
+
+.caracteristicas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.caracteristicas li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.colores-lista {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-main section article{ /* item */
-    flex-basis: 20%; /* W/H segun el fleex-direction del padre */
-    border: 1px solid black;
-    display: flex; /* contenedor */
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center; 
-    align-items: center;  
-    position: relative;
-  
-    border-radius: 14px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.1);
-    padding: 20px;
-    transition: transform 0.2s ease-in;
-}
-main section article:hover{
-    transform: translateY(-10px);
+    gap: 0.5rem;
 }
 
-main section article p{
-    color: red
-}
-main section article .badge{
-    position: absolute; /* uso particular: efectos especiales */
-    top: 5px;
-    left: 5px;
-    background-color: rgb(183,67,139);
-    color: whitesmoke;
-    padding: 5px 10px;
-    border-radius: 7px;
-    font-size: 14px;
-    font-weight: 600;
-    width: 50%;
-    z-index: 10; /* profundidad atras/delante */
-    /* margin-top: 5px;
-    margin-left: 5px; */
-}
-main section article .nombre{
-    color: blue
+.color {
+    background: #ecf0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
 }
 
-main section article figure{
-    border: 0px solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 150px;
-    position: relative;
-}
-main section article figure img{
-    border: 0px solid blue;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-
-}
-main section article .nombre{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-main section article p {
-    border: 0px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-main section article p .star i {
-    font-size: 10px;
-    color: yellow;
-    margin-right: 3px;
-}
-main section article p .valoracion {
-    font-size: 10px;
-    color: red;
-    margin-right: 3px;
+.stock {
+    margin: 1.5rem 0;
 }
 
-main section article p .opiniones{
-    font-size: 10px;
-    color: green;
-}
-main section article div {
-    margin: 5px 0px 5px 0px;
-    border: 0px solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between  ;
-    align-items: center;
-    width: 100%;
-}
-main section article div .dto{
-    background-color: rgb(183,67,139);
-    color: black;
-    padding: 2px;
-    border-radius: 7px;
-    font-size: 12px;
-    height: 50%;
-}
-main section article div .precios{
-    display: flex;
-    flex-direction: column;
-    border: 0px solid black
-}
-main section article div .precion .pvr {
-    
-}
-main section article div .precios .pvp {
-    font-size: 20px;
+.en-stock {
+    color: #27ae60;
     font-weight: bold;
 }
+
+.sin-stock {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.envio-gratis {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.btn-comprar {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-comprar:hover:not(:disabled) {
+    background: #2980b9;
+}
+
+.btn-comprar:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
 footer{
     background-color: black;
     flex-basis: 30%;
@@ -318,3 +337,13 @@ footer article nav a span {
     font-size: 18px;
 }
 
+@media (max-width: 768px) {
+    .producto-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .info-producto h1 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "id": 10,
+    "nombre": "JBL Charge 5",
+    "precio": 129.99,
+    "precioOriginal": 159.99,
+    "descuento": 19,
+    "imagen": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&auto=format&fit=crop&bg=white",
+    "valoracion": 4.6,
+    "opiniones": 89,
+    "caracteristicas": {
+      "cpu": "DSP Qualcomm QCC5124",
+      "ram": "256 MB",
+      "disco": "No aplica"
+    }
+  }

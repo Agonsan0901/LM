@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPlanet - Detalle del Producto</title>
+    <link rel="stylesheet" href="css/Detalle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <figure>
+            <img src="img/logo.png" alt="Logo PowerPlanet">    
+        </figure>
+        <form>
+            <input type="search" placeholder="Buscar...">
+        </form>
+        <nav>
+            <a href="#">Ofertas Limitadas</a>
+            <a href="#">Contactanos</a>
+            <a href="#">ES</a>
+        </nav>
+        <div id="carrito"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+    
+    <main>
+        <div id="producto-detalle">
+            <!-- El contenido se cargará dinámicamente -->
+        </div>
+    </main>
+    
+    <footer>
+        <nav id="sociales">
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </nav>
+        <div id="subscribete">
+            <h2>¡SUSCRÍBETE A POWEROFERTAS!</h2>
+            <input type="email" placeholder="Introduce tu email">    
+        </div>
+        <article>
+            <h3>Condiciones de Compra</h3>
+            <nav>
+                <a href="#">
+                    <i class="fa-solid fa-car"></i>
+                    <span>¿Qué envíos hay disponibles en Powerplanetonline?</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>¿Cómo puedo Pagar a plazos en Powerplanet?</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Condiciones generales</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-wrench"></i>
+                    <span>Devolución, Garantías y Reparación</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Política de privacidad</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-cookie"></i>
+                    <span>Política de cookies</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <span>¡Compra desde la APP! Más ventajas</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Empleo</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>Centros educativos y administraciones públicas</span>
+                </a>    
+
+            </nav>    
+        </article>
+        <article>
+            <h3>Distribuidores</h3>
+            <nav>
+                <a href="#">¿Qué envíos hay disponibles en Powerplanetonline?</a>
+                <a href="#">Condiciones generales</a>
+            </nav>    
+        </article>
+        <article>
+            <h3>Informacion General</h3>
+            <nav>
+                <a href="#">¿Qué envíos hay disponibles en Powerplanetonline?</a>
+                <a href="#">Condiciones generales</a>
+            </nav>    
+        </article>
+        
+    </footer>
+
+    <script>
+        // Obtener el ID del producto de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productoId = urlParams.get('id');
+        
+        if (productoId) {
+            // Cargar los datos del producto
+            fetch('data/productos.json')
+                .then(response => response.json())
+                .then(productos => {
+                    const producto = productos.find(p => p.id == productoId);
+                    if (producto) {
+                        mostrarProducto(producto);
+                    } else {
+                        document.getElementById('producto-detalle').innerHTML = '<p>Producto no encontrado</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('producto-detalle').innerHTML = '<p>Error al cargar el producto</p>';
+                });
+        } else {
+            document.getElementById('producto-detalle').innerHTML = '<p>No se especificó un producto</p>';
+        }
+        
+        function mostrarProducto(producto) {
+            const estrellas = Math.round(producto.valoracion);
+            let estrellasHTML = '';
+            for(let i = 1; i <= 5; i++) {
+                estrellasHTML += `<i class="fa-solid fa-star${i <= estrellas ? '' : ' fa-star-empty'}"></i>`;
+            }
+            
+            const caracteristicasHTML = Object.entries(producto.caracteristicas)
+                .map(([key, value]) => `<li><strong>${key}:</strong> ${value}</li>`)
+                .join('');
+                
+            const coloresHTML = producto.colores
+                .map(color => `<span class="color">${color}</span>`)
+                .join('');
+            
+            document.getElementById('producto-detalle').innerHTML = `
+                <div class="producto-info">
+                    <div class="imagen-producto">
+                        <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.src='img/productos/default.jpg'">
+                    </div>
+                    <div class="info-producto">
+                        <h1>${producto.nombre}</h1>
+                        <p class="marca">Marca: ${producto.marca}</p>
+                        <p class="categoria">Categoría: ${producto.categoria}</p>
+                        
+                        <div class="valoraciones">
+                            <span class="estrellas">${estrellasHTML}</span>
+                            <span class="valoracion">${producto.valoracion}</span>
+                            <span class="opiniones">(${producto.opiniones} opiniones)</span>
+                        </div>
+                        
+                        <div class="precios">
+                            <span class="precio-original">Antes: ${producto.precioOriginal}€</span>
+                            <span class="precio-actual">${producto.precio}€</span>
+                            <span class="descuento">-${producto.descuento}%</span>
+                        </div>
+                        
+                        <p class="descripcion">${producto.descripcion}</p>
+                        
+                        <div class="caracteristicas">
+                            <h3>Características:</h3>
+                            <ul>${caracteristicasHTML}</ul>
+                        </div>
+                        
+                        <div class="colores">
+                            <h3>Colores disponibles:</h3>
+                            <div class="colores-lista">${coloresHTML}</div>
+                        </div>
+                        
+                        <div class="stock">
+                            <p class="${producto.stock ? 'en-stock' : 'sin-stock'}">
+                                ${producto.stock ? 'En Stock' : 'Sin Stock'}
+                            </p>
+                            ${producto.envioGratis ? '<p class="envio-gratis">Envío gratis</p>' : ''}
+                        </div>
+                        
+                        <button class="btn-comprar" ${!producto.stock ? 'disabled' : ''}>
+                            ${producto.stock ? 'Añadir al carrito' : 'No disponible'}
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

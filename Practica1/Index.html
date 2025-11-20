@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerPlanet</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
             <i class="fa-solid fa-bars"></i>
         </div>
         <figure>
-            <img src="imagen/logo.png" alt="Logo PowerPlanet">    
+            <img src="img/logo.png" alt="Logo PowerPlanet">    
         </figure>
         <form>
             <input type="search" placeholder="Buscar...">
@@ -25,8 +25,6 @@
         </nav>
         <div id="carrito"> 
             <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-        <div id="login">
             <i class="fa-solid fa-user"></i>
         </div>
     </header> 
@@ -67,23 +65,10 @@
                 </figure>
                 <p class="nombre">Sansung galaxy tab S10+</p>
                 <p class="features">12.4'' 12GB/512GB 5G Plata</p>
-                <p class="valoraciones">
-                    <span class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </span>
-                    <span class="valoracion">44</span>
-                    <span class="opiniones">(7 opiniones)</span>
-                </p>
+                <p class="valoraciones">Valoracions/opiniones</p>
                 <div>
-                    <span class="dto">-15%</span>
-                    <span class="precios">
-                        <span class="pvr">49.99€</span>
-                        <span class="pvp">34.99€</span>
-                    </span>
+                    <span>Descuento</span>
+                    <span>Precio</span>
                 </div>
                 <p class="stock">Stock</p>
             </article>
@@ -174,16 +159,51 @@
       .then(response => response.json())
       .then(productos => {
         const contenedor = document.getElementById('catalogo');
+        contenedor.innerHTML = ''; // Limpiar productos existentes
+        
         productos.forEach(p => {
           const card = document.createElement('article');
           card.className = 'producto';
+          
+          // Generar estrellas para la valoración
+          const estrellas = Math.round(p.valoracion);
+          let estrellasHTML = '';
+          for(let i = 1; i <= 5; i++) {
+            estrellasHTML += `<i class="fa-solid fa-star${i <= estrellas ? '' : ' fa-star-empty'}"></i>`;
+          }
+          
           card.innerHTML = `
-            <p class="badge">Envio gratis</p>
+            ${p.envioGratis ? '<p class="badge">Envío gratis</p>' : ''}
+            ${p.destacado ? '<p class="badge destacado">Destacado</p>' : ''}
             <figure>
-                <img src="${p.imagen}" alt="${p.nombre}">
+                <img src="${p.imagen}" alt="${p.nombre}" onerror="this.src='img/productos/default.jpg'">
             </figure>
             <p class="nombre">${p.nombre}</p>
+            <p class="features">${p.caracteristicas.pantalla || p.caracteristicas.tipo || p.descripcion.substring(0, 50) + '...'}</p>
+            <p class="valoraciones">
+                <span class="star">
+                    ${estrellasHTML}
+                </span>
+                <span class="valoracion">${p.valoracion}</span>
+                <span class="opiniones">(${p.opiniones} opiniones)</span>
+            </p>
+            <div>
+                <span class="dto">-${p.descuento}%</span>
+                <span class="precios">
+                    <span class="pvr">${p.precioOriginal}€</span>
+                    <span class="pvp">${p.precio}€</span>
+                </span>
+            </div>
+            <p class="stock">${p.stock ? 'En Stock' : 'Sin Stock'}</p>
+            <p class="marca">${p.marca}</p>
           `;
+          
+          // Hacer el producto clickeable
+          card.style.cursor = 'pointer';
+          card.addEventListener('click', () => {
+            window.location.href = `Detalle.html?id=${p.id}`;
+          });
+          
           contenedor.appendChild(card);
         });
       })
