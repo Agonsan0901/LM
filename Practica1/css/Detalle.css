@@ -8,15 +8,13 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    /* el alto seria la suma de los altos de los hijos */
-    height: 300vh; /* altura fija de la ventana del navegador */
+    height: 300vh;
 
 }
 
 header{
     background-color: black;
-    /* flex-basis: 5%; relativ*/
-    height: 8vh; /* absoluto */
+    height: 8vh;
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -38,7 +36,6 @@ header #menu i{
 header figure{
     background-color: rosybrown;
     color: white;
-    /* flex-basis: 20%; */
     height: 100%; 
 }
 header figure img{
@@ -46,7 +43,6 @@ header figure img{
 }
 header form{
     flex-basis: 25%;
-    /* background-color: gray; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -61,13 +57,12 @@ header form input{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header nav{
-    /* border: 1px solid white; */
     flex-basis: 30%;
     display: flex;
-    flex-direction: row; /* ejej principal */
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around; /* alineacion en eje principal */
-    align-items: center; /* alineacion en eje secundario */
+    justify-content: space-around;
+    align-items: center;
 }
 header nav a{
     display: none;
@@ -81,14 +76,13 @@ header nav a:hover{
 }
 
 header #carrito{
-    /* border: 1px solid white; */
     color: white;
     flex-basis: 10%; 
     display: flex;
-    flex-direction: row; /* ejej principal */
+    flex-direction: row;
     flex-wrap: nowrap;   
-    justify-content: space-around; /* alineacion en eje principal */
-    align-items: center; /* alineacion en eje secundario */
+    justify-content: space-around;
+    align-items: center;
 }
 header #carrito i{
     font-size: 25px;
@@ -98,13 +92,11 @@ header #carrito i{
 main{
     background-color: rgb(255, 255, 255);
     flex-basis: 65%;
-    /* height: 75vh; */
     
     border: 2px solid black;
     padding: 2rem;
 }
 
-/* Estilos específicos para la página de detalles */
 .producto-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -246,12 +238,8 @@ main{
 footer{
     background-color: black;
     flex-basis: 30%;
-    /* height: 20vh; */
     display: flex;
     flex-direction: row;
-    /* mete todos los hijos en una fila */
-    /* flex-wrap: nowrap;  */
-    /* mete todos los hijos en varias fila */
     flex-wrap: wrap; 
 }
 
@@ -264,11 +252,10 @@ footer nav#sociales{
     align-items: center;
     padding-left: 30px;
 }
-footer nav#sociales a { /* estado reposo fotograma */
+footer nav#sociales a { 
     text-decoration: none;
     border: 0px solid black; 
     background-color: lightgreen;
-    /* elemento en linea pero con propiedades de bloque */
     display: inline-block;
     
     width: 50px;
@@ -283,15 +270,10 @@ footer nav#sociales a { /* estado reposo fotograma */
     
     transition: transform 0.3s ease-in-out; 
 }
-/* estado sobre (fotograma) */
 footer nav#sociales a:hover {
-    /* fecto de transformacion */
     transform: translate(0px, -10px);
     transform: rotate(360deg);
 }
-/* footer nav#sociales a:nth-child(1) {
-    margin-left: 30px;
-} */
 
 footer nav#sociales a i {
     font-size: 30px;
