@@ -114,12 +114,10 @@
     </footer>
 
     <script>
-        // Obtener el ID del producto de la URL
         const urlParams = new URLSearchParams(window.location.search);
         const productoId = urlParams.get('id');
         
         if (productoId) {
-            // Cargar los datos del producto
             fetch('data/productos.json')
                 .then(response => response.json())
                 .then(productos => {
@@ -139,20 +137,6 @@
         }
         
         function mostrarProducto(producto) {
-            const estrellas = Math.round(producto.valoracion);
-            let estrellasHTML = '';
-            for(let i = 1; i <= 5; i++) {
-                estrellasHTML += `<i class="fa-solid fa-star${i <= estrellas ? '' : ' fa-star-empty'}"></i>`;
-            }
-            
-            const caracteristicasHTML = Object.entries(producto.caracteristicas)
-                .map(([key, value]) => `<li><strong>${key}:</strong> ${value}</li>`)
-                .join('');
-                
-            const coloresHTML = producto.colores
-                .map(color => `<span class="color">${color}</span>`)
-                .join('');
-            
             document.getElementById('producto-detalle').innerHTML = `
                 <div class="producto-info">
                     <div class="imagen-producto">
@@ -164,8 +148,7 @@
                         <p class="categoria">Categoría: ${producto.categoria}</p>
                         
                         <div class="valoraciones">
-                            <span class="estrellas">${estrellasHTML}</span>
-                            <span class="valoracion">${producto.valoracion}</span>
+                            <span class="valoracion">${producto.valoracion} estrellas</span>
                             <span class="opiniones">(${producto.opiniones} opiniones)</span>
                         </div>
                         
@@ -177,26 +160,12 @@
                         
                         <p class="descripcion">${producto.descripcion}</p>
                         
-                        <div class="caracteristicas">
-                            <h3>Características:</h3>
-                            <ul>${caracteristicasHTML}</ul>
-                        </div>
-                        
-                        <div class="colores">
-                            <h3>Colores disponibles:</h3>
-                            <div class="colores-lista">${coloresHTML}</div>
-                        </div>
-                        
                         <div class="stock">
                             <p class="${producto.stock ? 'en-stock' : 'sin-stock'}">
                                 ${producto.stock ? 'En Stock' : 'Sin Stock'}
                             </p>
                             ${producto.envioGratis ? '<p class="envio-gratis">Envío gratis</p>' : ''}
                         </div>
-                        
-                        <button class="btn-comprar" ${!producto.stock ? 'disabled' : ''}>
-                            ${producto.stock ? 'Añadir al carrito' : 'No disponible'}
-                        </button>
                     </div>
                 </div>
             `;

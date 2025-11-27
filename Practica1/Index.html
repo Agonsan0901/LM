@@ -159,13 +159,12 @@
       .then(response => response.json())
       .then(productos => {
         const contenedor = document.getElementById('catalogo');
-        contenedor.innerHTML = ''; // Limpiar productos existentes
+        contenedor.innerHTML = '';
         
         productos.forEach(p => {
           const card = document.createElement('article');
           card.className = 'producto';
           
-          // Generar estrellas para la valoración
           const estrellas = Math.round(p.valoracion);
           let estrellasHTML = '';
           for(let i = 1; i <= 5; i++) {
@@ -198,7 +197,6 @@
             <p class="marca">${p.marca}</p>
           `;
           
-          // Hacer el producto clickeable
           card.style.cursor = 'pointer';
           card.addEventListener('click', () => {
             window.location.href = `Detalle.html?id=${p.id}`;
