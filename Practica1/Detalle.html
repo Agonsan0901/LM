@@ -30,6 +30,9 @@
     </header>
     
     <main>
+        <nav id="breadcrumb">
+            <!-- La ruta se cargará dinámicamente -->
+        </nav>
         <div id="producto-detalle">
             <!-- El contenido se cargará dinámicamente -->
         </div>
@@ -137,6 +140,14 @@
         }
         
         function mostrarProducto(producto) {
+            document.getElementById('breadcrumb').innerHTML = `
+                <a href="index.html">Inicio</a>
+                <span class="separator"> > </span>
+                <a href="#">${producto.categoria}</a>
+                <span class="separator"> > </span>
+                <span class="current">${producto.nombre}</span>
+            `;
+            
             document.getElementById('producto-detalle').innerHTML = `
                 <div class="producto-info">
                     <div class="imagen-producto">

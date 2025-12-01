@@ -97,6 +97,34 @@ main{
     padding: 2rem;
 }
 
+#breadcrumb {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ecf0f1;
+    font-size: 0.9rem;
+}
+
+#breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#breadcrumb a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+#breadcrumb .separator {
+    color: #7f8c8d;
+    margin: 0 0.5rem;
+}
+
+#breadcrumb .current {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
 .producto-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
