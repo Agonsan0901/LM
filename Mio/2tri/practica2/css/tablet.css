@@ -1,0 +1,8 @@
+.container {
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 60px 80px 1fr;
+}
+
+.titulo {
+    font-size: 20px;
+}
