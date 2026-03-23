@@ -1,0 +1,13 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #e8eef5;
+  --border: #b8cce0;
+  --code-bg: #d0dff0;
+  --accent: #A50044;
+  --accent-bg: rgba(165, 0, 68, 0.1);
+  --accent-border: rgba(165, 0, 68, 0.5);
+  --social-bg: rgba(0, 77, 152, 0.08);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+}
