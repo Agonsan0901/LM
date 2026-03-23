@@ -68,3 +68,263 @@ h1, h2, h3 {
 p {
   margin: 0;
 }
+
+/* ── HOME ─────────────────────────────────── */
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 2rem;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--accent-bg) 0%, var(--card-bg) 100%);
+  border: 1px solid var(--accent-border);
+  border-radius: 16px;
+}
+
+.home-hero-icon {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.home-hero h1 {
+  font-size: 2rem;
+  margin: 0 0 0.75rem;
+}
+
+.home-hero p {
+  font-size: 1.05rem;
+  color: var(--text);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.home-categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.home-cat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.75rem 1.25rem;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.home-cat-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: rgba(0,0,0,0.12) 0 12px 28px -4px;
+}
+
+.home-cat-icon {
+  font-size: 2.2rem;
+}
+
+.home-cat-card h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.home-cat-card p {
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.home-cat-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 0.25rem;
+}
+
+.home-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.home-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.home-stats strong {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.home-stats span {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+@media (max-width: 480px) {
+  .home-stats {
+    gap: 1.5rem;
+  }
+  .home-hero h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Grid de tarjetas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjeta base */
+.tarjeta {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tarjeta-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.tarjeta-info h2 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+}
+
+.precio {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Botón ver detalle */
+.btn-detalle {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.btn-detalle:hover {
+  opacity: 0.85;
+}
+
+/* Botón volver */
+.btn-volver {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-volver:hover {
+  background: var(--accent-bg);
+}
+
+/* Tarjeta detalle */
+.tarjeta.detalle {
+  max-width: 100%;
+}
+
+.tarjeta.detalle > img {
+  height: 360px;
+}
+
+/* Carrusel de miniaturas */
+.carrusel {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  background: var(--code-bg);
+}
+
+.miniatura {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.miniatura:hover,
+.miniatura.activa {
+  opacity: 1;
+  border-color: var(--accent);
+}
+
+/* Descripción 3 columnas */
+.descripcion-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.descripcion-3col div {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+}
+
+.descripcion-3col p {
+  font-size: 0.8rem;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.descripcion-3col strong {
+  font-size: 1rem;
+  color: var(--text-h);
+}

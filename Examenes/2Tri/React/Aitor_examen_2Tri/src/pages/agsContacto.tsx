@@ -3,7 +3,7 @@ export const AgsContacto = () => {
   return (
     <section style={{ padding: '4rem 2rem', maxWidth: '600px', margin: '0 auto' }}>
       <h1>Contacto</h1>
-      <p style={{ color: 'var(--text)', marginBottom: '2rem' }}>¿Tienes un proyecto en mente? Escríbeme y hablamos.</p>
+      <p style={{ color: 'var(--text)', marginBottom: '2rem' }}>¿Tienes alguna duda sobre un producto? Escríbeme y hablamos.</p>
       <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <input
           type='text'
