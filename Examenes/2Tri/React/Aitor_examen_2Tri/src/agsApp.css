@@ -1,18 +1,189 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+/* ── Navbar ── */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 64px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
 
-  &:hover {
-    border-color: var(--accent-border);
+.navbar .logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-h);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--text-h);
+  background: var(--accent-bg);
+}
+
+.nav-links a.active {
+  color: var(--accent);
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 16px;
+    gap: 10px;
   }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
   }
+}
+
+/* ── Main ── */
+main {
+  padding: 40px 32px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 24px 16px;
+  }
+}
+
+/* ── Home ── */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: 16px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: var(--text);
+  max-width: 420px;
+}
+
+/* ── Lista ── */
+.lista h1 {
+  font-size: 2rem;
+  margin: 0 0 28px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.lista > p {
+  color: var(--text);
+  font-size: 1rem;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* ── Tarjeta ── */
+.tarjeta {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--code-bg);
+  box-shadow: var(--shadow);
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(0,0,0,0.15) 0 20px 30px -8px;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  background: var(--border);
+}
+
+.tarjeta-info {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.tarjeta-info h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: var(--text-h);
+}
+
+.tarjeta-info p {
+  margin: 0;
+  font-size: 0.83rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.precio {
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  color: var(--accent) !important;
+  margin-top: auto !important;
+  padding-top: 10px;
+}
+
+/* ── Contacto ── */
+.home.contacto {
+  gap: 12px;
+}
+
+.home.contacto p {
+  font-size: 1rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 24px;
+  width: 100%;
+  max-width: 320px;
 }

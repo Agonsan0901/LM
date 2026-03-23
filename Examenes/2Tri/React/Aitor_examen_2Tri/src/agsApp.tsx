@@ -1,7 +1,6 @@
-import { AppRouter } from "./router/AppRouter"
+import './agsApp.css'
+import { AppRouter } from './route/AppRouter'
 
 export const App = () => {
-  return (
-    <AppRouter />
-  )
+  return <AppRouter />
 }

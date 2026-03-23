@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import './agsindex.css'
 import { App } from './agsApp'
 
 createRoot(document.getElementById('root')!).render(
