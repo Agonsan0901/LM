@@ -15,13 +15,15 @@ export const AutocaravanaDetalle = () => {
       <button className="btn-volver" onClick={() => navigate(-1)}>← Volver</button>
 
       <div className="tarjeta detalle">
-        <img
-          src={item.imagenes[imgActiva]}
-          alt={item.modelo}
-          onError={(e) => (e.currentTarget.style.display = 'none')}
-        />
+        <div className="tarjeta-img-wrap">
+          <img
+            src={item.imagenes[imgActiva]}
+            alt={item.modelo}
+            onError={(e) => (e.currentTarget.style.display = 'none')}
+          />
+          <span className="tarjeta-badge">{item.marca}</span>
+        </div>
 
-        {/* Carrusel de miniaturas */}
         <div className="carrusel">
           {item.imagenes.map((src, i) => (
             <img
@@ -37,33 +39,13 @@ export const AutocaravanaDetalle = () => {
 
         <div className="tarjeta-info">
           <h2>{item.marca} {item.modelo}</h2>
-
-          {/* Descripción a 3 columnas */}
           <div className="descripcion-3col">
-            <div>
-              <p>👥 Personas</p>
-              <strong>{item.personas}</strong>
-            </div>
-            <div>
-              <p>⚡ Potencia</p>
-              <strong>{item.potencia_cv} CV</strong>
-            </div>
-            <div>
-              <p>💰 Precio</p>
-              <strong>{item.precio_eur.toLocaleString('es-ES')} €</strong>
-            </div>
-            <div>
-              <p>📏 Longitud</p>
-              <strong>{item.medidas.longitud} m</strong>
-            </div>
-            <div>
-              <p>↔ Anchura</p>
-              <strong>{item.medidas.anchura} m</strong>
-            </div>
-            <div>
-              <p>↕ Altura</p>
-              <strong>{item.medidas.altura} m</strong>
-            </div>
+            <div><p>👥 Personas</p><strong>{item.personas}</strong></div>
+            <div><p>⚡ Potencia</p><strong>{item.potencia_cv} CV</strong></div>
+            <div><p>💰 Precio</p><strong>{item.precio_eur.toLocaleString('es-ES')} €</strong></div>
+            <div><p>📏 Longitud</p><strong>{item.medidas.longitud} m</strong></div>
+            <div><p>↔ Anchura</p><strong>{item.medidas.anchura} m</strong></div>
+            <div><p>↕ Altura</p><strong>{item.medidas.altura} m</strong></div>
           </div>
         </div>
       </div>

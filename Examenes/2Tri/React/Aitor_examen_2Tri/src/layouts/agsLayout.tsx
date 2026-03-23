@@ -4,8 +4,8 @@ export const AgsLayout = () => {
   return (
     <>
       <nav className="navbar">
-        <NavLink to="/" className="logo">🚐 Autocaravanas</NavLink>
-        <div className="nav-links">
+        <NavLink to="/" className="navbar-logo">🚐 Autocaravanas</NavLink>
+        <div className="navbar-links">
           <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
           <NavLink to="/integrales" className={({ isActive }) => isActive ? 'active' : ''}>Integrales</NavLink>
           <NavLink to="/perfiladas" className={({ isActive }) => isActive ? 'active' : ''}>Perfiladas</NavLink>
@@ -14,9 +14,14 @@ export const AgsLayout = () => {
           <NavLink to="/contacto" className={({ isActive }) => isActive ? 'active' : ''}>Contacto</NavLink>
         </div>
       </nav>
-      <main>
+
+      <main className="main-content">
         <Outlet />
       </main>
+
+      <footer className="footer">
+        <p>© 2025 Autocaravanas · Todos los derechos reservados</p>
+      </footer>
     </>
   )
 }

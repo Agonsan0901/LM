@@ -1,4 +1,3 @@
-/* ── Navbar ── */
 .navbar {
   display: flex;
   align-items: center;
@@ -61,7 +60,7 @@
   }
 }
 
-/* ── Main ── */
+
 main {
   padding: 40px 32px;
   flex: 1;
@@ -73,7 +72,7 @@ main {
   }
 }
 
-/* ── Home ── */
+
 .home {
   display: flex;
   flex-direction: column;
@@ -96,7 +95,7 @@ main {
   max-width: 420px;
 }
 
-/* ── Lista ── */
+
 .lista h1 {
   font-size: 2rem;
   margin: 0 0 28px;
@@ -111,14 +110,12 @@ main {
   text-align: center;
 }
 
-/* ── Grid ── */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
 }
 
-/* ── Tarjeta ── */
 .tarjeta {
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -173,7 +170,6 @@ main {
   padding-top: 10px;
 }
 
-/* ── Contacto ── */
 .home.contacto {
   gap: 12px;
 }

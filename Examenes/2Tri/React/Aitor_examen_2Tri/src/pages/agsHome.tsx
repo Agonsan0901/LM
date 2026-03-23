@@ -21,14 +21,12 @@ export const AgsHome = () => {
   return (
     <div className="home">
 
-      {/* Hero */}
       <div className="home-hero">
         <span className="home-hero-icon">🚐</span>
         <h1>Encuentra tu autocaravana ideal</h1>
         <p>Explora nuestra selección de modelos por categoría y descubre el vehículo perfecto para tu próxima aventura.</p>
       </div>
 
-      {/* Tarjetas de categoría */}
       <section className="home-categorias">
         {tipos.map((t) => (
           <button key={t.id} className="home-cat-card" onClick={() => navigate(t.ruta)}>
@@ -40,7 +38,6 @@ export const AgsHome = () => {
         ))}
       </section>
 
-      {/* Stats */}
       <div className="home-stats">
         <div><strong>18</strong><span>modelos disponibles</span></div>
         <div><strong>4</strong><span>categorías</span></div>
