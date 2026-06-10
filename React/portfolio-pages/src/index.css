@@ -109,3 +109,40 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  #root {
+    width: 100%;
+    border-inline: none;
+  }
+
+  /* Navbar: ocultar links desktop, mostrar hamburger */
+  .nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+
+  /* Tienda: sidebar encima de productos */
+  .tienda-grid { grid-template-columns: 1fr !important; }
+  .tienda-sidebar { position: static !important; }
+
+  /* Contacto: una columna */
+  .contacto-grid { grid-template-columns: 1fr !important; }
+
+  /* Home hero: una columna */
+  .hero-grid { grid-template-columns: 1fr !important; }
+  .hero-avatar { display: none !important; }
+
+  /* Stats: 2 columnas en móvil */
+  .stats-grid { grid-template-columns: 1fr 1fr !important; }
+  .stats-grid > div { border-right: none !important; border-bottom: 1px solid var(--border); }
+
+  /* Admin tabla: scroll horizontal */
+  .admin-tabla { overflow-x: auto; }
+  .admin-tabla-row { min-width: 600px; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr !important; }
+  .hero-buttons { flex-direction: column !important; }
+  .ventas-planes { grid-template-columns: 1fr !important; }
+}
