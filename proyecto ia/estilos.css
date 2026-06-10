@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f1a;
+  color: #e0e0ff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ── CARA ── */
+#face {
+  flex: 1;
+  background: radial-gradient(ellipse at 45% 40%, #2a2060, #0f0f1a 70%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background 0.6s;
+}
+
+#face.happy    { background: radial-gradient(ellipse at 45% 40%, #1a4a2a, #0f1a0f 70%); }
+#face.sad      { background: radial-gradient(ellipse at 45% 40%, #1a2a4a, #0f0f1a 70%); }
+#face.cry      { background: radial-gradient(ellipse at 45% 40%, #0a1a3a, #050510 70%); }
+#face.angry    { background: radial-gradient(ellipse at 45% 40%, #4a1a1a, #1a0505 70%); }
+#face.scared   { background: radial-gradient(ellipse at 45% 40%, #3a2a00, #1a1000 70%); }
+#face.surprised{ background: radial-gradient(ellipse at 45% 40%, #2a1a4a, #0f0f1a 70%); }
+
+/* ── CEJAS ── */
+#brows {
+  position: absolute;
+  top: 18%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 18vw;
+  pointer-events: none;
+}
+
+.brow {
+  width: clamp(50px, 9vw, 110px);
+  height: 10px;
+  background: #a090ff;
+  border-radius: 6px;
+  transition: transform 0.4s, background 0.4s;
+}
+
+#brow-l { transform-origin: right center; }
+#brow-r { transform-origin: left center; }
+
+/* cejas enfadadas */
+#face.angry #brow-l { transform: rotate(15deg)  translateY(6px); background: #ff6060; }
+#face.angry #brow-r { transform: rotate(-15deg) translateY(6px); background: #ff6060; }
+
+/* cejas tristes */
+#face.sad   #brow-l,
+#face.cry   #brow-l { transform: rotate(-10deg); }
+#face.sad   #brow-r,
+#face.cry   #brow-r { transform: rotate(10deg); }
+
+/* cejas sorprendidas */
+#face.surprised #brow-l,
+#face.surprised #brow-r { transform: translateY(-10px); }
+
+/* cejas asustadas */
+#face.scared #brow-l { transform: rotate(-8deg) translateY(-6px); }
+#face.scared #brow-r { transform: rotate(8deg)  translateY(-6px); }
+
+/* ── OJOS ── */
+#eyes {
+  position: absolute;
+  top: 28%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 18vw;
+}
+
+.eye {
+  width: clamp(60px, 10vw, 120px);
+  height: clamp(60px, 10vw, 120px);
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px #ffffff44;
+  overflow: hidden;
+  transition: transform 0.3s, border-radius 0.3s;
+}
+
+.eye.blink { transform: scaleY(0.05); }
+
+/* ojos sorprendidos: más grandes */
+#face.surprised .eye { transform: scale(1.3); }
+
+/* ojos asustados: muy abiertos */
+#face.scared .eye { transform: scale(1.4); box-shadow: 0 0 40px #ffdd0088; }
+
+/* ojos enfadados: entrecerrados */
+#face.angry .eye { transform: scaleY(0.6); }
+
+/* ojos tristes: caídos */
+#face.sad .eye,
+#face.cry .eye { border-radius: 50% 50% 40% 40%; }
+
+.pupil {
+  width: 48%;
+  height: 48%;
+  background: #0f0f1a;
+  border-radius: 50%;
+  transition: transform 0.1s;
+  position: relative;
+}
+
+.pupil::after {
+  content: '';
+  width: 30%;
+  height: 30%;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 12%;
+  right: 12%;
+}
+
+/* ── LÁGRIMAS ── */
+.tear {
+  position: absolute;
+  bottom: -6px;
+  width: 8px;
+  height: 0;
+  background: #4af;
+  border-radius: 0 0 6px 6px;
+  opacity: 0;
+  transition: height 0.5s, opacity 0.3s;
+}
+.tear.left  { left:  30%; }
+.tear.right { right: 30%; }
+
+#face.cry .tear {
+  height: clamp(30px, 5vw, 70px);
+  opacity: 1;
+  animation: tearDrop 1.2s infinite;
+}
+
+@keyframes tearDrop {
+  0%   { height: 0;                    opacity: 1; }
+  60%  { height: clamp(30px,5vw,70px); opacity: 1; }
+  100% { height: 0;                    opacity: 0; }
+}
+
+/* ── BOCA ── */
+#mouth-wrap {
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(120px, 22vw, 280px);
+  height: clamp(50px, 8vw, 100px);
+}
+
+#mouth-svg {
+  width: 100%;
+  height: 100%;
+}
+
+#mouth-path {
+  transition: d 0.4s ease;
+  stroke: #a090ff;
+  stroke-width: 5;
+  stroke-linecap: round;
+  fill: none;
+}
+
+/* ── BURBUJA ── */
+#bubble {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 60%;
+  background: #1e1e3a;
+  border: 1px solid #7c6fff55;
+  border-radius: 20px;
+  padding: 14px 22px;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  line-height: 1.5;
+  text-align: center;
+  color: #c8c8ff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#bubble.visible {
+  opacity: 1;
+}
+
+/* ── ANIMACIONES CARA ── */
+#face.talking #eyes .eye  { animation: eyeTalk    0.25s infinite alternate; }
+#face.happy   #eyes       { animation: eyeBounce  0.5s ease; }
+#face.thinking #eyes .eye { animation: eyePulse   1s infinite; }
+#face.angry   #face       { animation: faceShake  0.4s ease; }
+#face.scared  #eyes       { animation: eyeShake   0.3s infinite alternate; }
+
+@keyframes eyeTalk    { to { transform: scaleY(0.85); } }
+@keyframes eyeBounce  { 0%{transform:translateY(0)} 50%{transform:translateY(-10px)} 100%{transform:translateY(0)} }
+@keyframes eyePulse   { 0%,100%{box-shadow:0 0 20px #fff4} 50%{box-shadow:0 0 40px #ffffffaa} }
+@keyframes eyeShake   { to { transform: translateX(4px); } }
+
+#face.angry  { animation: faceShake 0.4s ease; }
+#face.scared { animation: faceShake 0.3s infinite; }
+
+@keyframes faceShake {
+  0%,100%{ transform: translateX(0); }
+  25%    { transform: translateX(-6px); }
+  75%    { transform: translateX(6px); }
+}
+
+/* ── CHAT ── */
+#chat-area {
+  background: #13132a;
+  border-top: 2px solid #2a2a4a;
+  padding: 14px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#input {
+  flex: 1;
+  background: #1e1e3a;
+  border: 1px solid #3a3a6a;
+  border-radius: 30px;
+  padding: 12px 22px;
+  color: #e0e0ff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#input:focus {
+  border-color: #7c6fff;
+}
+
+#input::placeholder {
+  color: #5a5a8a;
+}
+
+#send-btn {
+  background: #7c6fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #fff;
+  transition: background 0.2s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#send-btn:hover  { background: #9a8fff; }
+#send-btn:active { transform: scale(0.9); }

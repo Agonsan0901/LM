@@ -1,0 +1,482 @@
+[
+  {
+    "nombre": "Real Madrid CF",
+    "escudo": "escudos/real_madrid.svg",
+    "ciudad": "Madrid",
+    "fundacion": 1902,
+    "apodo": "Los Blancos",
+    "colores": "Blanco y dorado",
+    "ligas": "36 Ligas",
+    "estadio": {
+      "nombre": "Santiago Bernabéu",
+      "imagen": "estadios/madrid_estadio.png"
+    },
+    "historia": "El Real Madrid Club de Fútbol fue fundado el 6 de marzo de 1902. Es el club con más títulos de la historia de la Champions League, con 15 copas de Europa. Considerado por la FIFA como el mejor club del siglo XX, ha dominado el fútbol español y europeo durante más de un siglo, siendo un referente mundial del deporte rey.",
+    "curiosidades": [
+      "Es el único club en ganar 5 Champions League consecutivas (1956–1960).",
+      "El Bernabéu fue reformado entre 2019 y 2023 con un techo retráctil único en Europa.",
+      "Cristiano Ronaldo es su máximo goleador histórico con 450 goles.",
+      "Ha ganado más Balones de Oro que cualquier otro club del mundo."
+    ]
+  },
+  {
+    "nombre": "FC Barcelona",
+    "escudo": "escudos/FC_Barcelona.png",
+    "ciudad": "Barcelona",
+    "fundacion": 1899,
+    "apodo": "El Barça / Blaugrana",
+    "colores": "Azul y grana",
+    "ligas": "27 Ligas",
+    "estadio": {
+      "nombre": "Spotify Camp Nou",
+      "imagen": "estadios/barça_estadio.png"
+    },
+    "historia": "Fundado en 1899 por Joan Gamper, el FC Barcelona es más que un club: es un símbolo de la identidad catalana. Con el lema 'Més que un club', ha sido referente político y cultural además de deportivo. Su época dorada bajo Pep Guardiola (2008–2012) es considerada la mejor de la historia del fútbol con el famoso tiki-taka.",
+    "curiosidades": [
+      "El Camp Nou es el estadio más grande de Europa con capacidad para más de 99.000 espectadores.",
+      "Lionel Messi marcó 672 goles oficiales con el club, un récord histórico.",
+      "La Masia ha formado a jugadores como Messi, Xavi, Iniesta y Puyol.",
+      "Es uno de los pocos clubes del mundo propiedad de sus socios."
+    ]
+  },
+  {
+    "nombre": "Atlético de Madrid",
+    "escudo": "escudos/atletico_madrid.png",
+    "ciudad": "Madrid",
+    "fundacion": 1903,
+    "apodo": "Los Colchoneros / El Atleti",
+    "colores": "Rojo y blanco",
+    "ligas": "11 Ligas",
+    "estadio": {
+      "nombre": "Wanda Metropolitano",
+      "imagen": "estadios/atletico_estadio.png"
+    },
+    "historia": "Fundado en 1903, el Atlético de Madrid es el tercer club más laureado de España. Conocido por su espíritu guerrero y su afición apasionada, ha sido el eterno rival del Real Madrid en la capital. Bajo la dirección de Diego Simeone desde 2011, el club vivió su época más exitosa ganando dos Ligas y llegando a dos finales de Champions.",
+    "curiosidades": [
+      "Su apodo 'Colchoneros' viene de su camiseta a rayas rojas y blancas, similar a un colchón antiguo.",
+      "El Wanda Metropolitano acogió la final de la Champions League 2019.",
+      "Fernando Torres es uno de sus ídolos históricos, formado en la cantera del club.",
+      "Ganaron la Liga 2020-21 en la última jornada, demostrando su carácter."
+    ]
+  },
+  {
+    "nombre": "Sevilla FC",
+    "escudo": "escudos/sevilla.png",
+    "ciudad": "Sevilla",
+    "fundacion": 1890,
+    "apodo": "Los Nervionenses / Sevillistas",
+    "colores": "Blanco y rojo",
+    "ligas": "1 Liga",
+    "estadio": {
+      "nombre": "Ramón Sánchez-Pizjuán",
+      "imagen": "estadios/sevilla.png"
+    },
+    "historia": "El Sevilla FC, fundado en 1890, es uno de los clubes más antiguos de España. Su gran especialidad es la UEFA Europa League, competición que ha dominado como ningún otro equipo en el mundo. Con seis títulos europeos en esta competición, el Sevilla se ha convertido en un referente del fútbol europeo moderno.",
+    "curiosidades": [
+      "Es el club con más títulos de la UEFA Europa League: 7 en total.",
+      "El derbi sevillano contra el Betis es uno de los más apasionados de España.",
+      "Monchi, su director deportivo, es considerado el mejor del mundo en su cargo.",
+      "El estadio Sánchez-Pizjuán es famoso por su ambiente intimidante para los visitantes."
+    ]
+  },
+  {
+    "nombre": "Real Betis",
+    "escudo": "escudos/betis.png",
+    "ciudad": "Sevilla",
+    "fundacion": 1907,
+    "apodo": "Los Verdiblancos / Béticos",
+    "colores": "Verde y blanco",
+    "ligas": "1 Liga",
+    "estadio": {
+      "nombre": "Benito Villamarín",
+      "imagen": "estadios/betis.png"
+    },
+    "historia": "El Real Betis Balompié fue fundado en 1907 y es uno de los clubes más queridos de Andalucía. Su única Liga la ganó en 1935. En los últimos años ha vivido un renacimiento bajo Manuel Pellegrini, ganando la Copa del Rey en 2022 y clasificándose regularmente para Europa, recuperando el protagonismo que merece.",
+    "curiosidades": [
+      "Su himno 'Himno del Betis' es uno de los más emotivos del fútbol español.",
+      "El Benito Villamarín tiene capacidad para más de 60.000 espectadores.",
+      "Joaquín Sánchez jugó hasta los 42 años siendo ídolo absoluto del club.",
+      "El derbi sevillano es el más antiguo de España, disputado desde 1915."
+    ]
+  },
+  {
+    "nombre": "Valencia CF",
+    "escudo": "escudos/valencia.png",
+    "ciudad": "Valencia",
+    "fundacion": 1919,
+    "apodo": "Los Che / Los Murciélagos",
+    "colores": "Blanco y negro",
+    "ligas": "6 Ligas",
+    "estadio": {
+      "nombre": "Mestalla",
+      "imagen": "estadios/valencia.png"
+    },
+    "historia": "El Valencia CF fue fundado en 1919 y es uno de los grandes históricos del fútbol español. Su época dorada llegó a principios de los 2000, cuando ganó dos Ligas consecutivas y llegó a dos finales de Champions League. Mestalla, su estadio, es conocido por su ambiente eléctrico y su fiel afición.",
+    "curiosidades": [
+      "El murciélago en su escudo proviene de la leyenda del rey Jaime I de Aragón.",
+      "Mestalla es el tercer estadio más antiguo de España en uso continuo.",
+      "Llegaron a dos finales de Champions League en 2000 y 2001.",
+      "David Villa y David Silva son sus jugadores más internacionales de la historia."
+    ]
+  },
+  {
+    "nombre": "Villarreal CF",
+    "escudo": "escudos/villareal.png",
+    "ciudad": "Villarreal",
+    "fundacion": 1923,
+    "apodo": "El Submarino Amarillo",
+    "colores": "Amarillo",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Estadio de la Cerámica",
+      "imagen": "estadios/villareal.png"
+    },
+    "historia": "El Villarreal CF, fundado en 1923 en una ciudad de apenas 50.000 habitantes, es uno de los mayores milagros del fútbol europeo. Ganó la UEFA Europa League en 2021 bajo las órdenes de Unai Emery, derrotando al Manchester United en la final. Su apodo 'Submarino Amarillo' refleja su capacidad de sorprender desde las profundidades.",
+    "curiosidades": [
+      "Es el club más pequeño por ciudad en ganar un título europeo importante.",
+      "Unai Emery los llevó a la semifinal de la Champions League en 2022.",
+      "El estadio lleva el nombre de la industria cerámica local, motor económico de la zona.",
+      "Tienen una de las mejores canteras de España proporcionalmente a su tamaño."
+    ]
+  },
+  {
+    "nombre": "Athletic Club",
+    "escudo": "escudos/bilbao.png",
+    "ciudad": "Bilbao",
+    "fundacion": 1898,
+    "apodo": "Los Leones",
+    "colores": "Rojo y blanco",
+    "ligas": "8 Ligas",
+    "estadio": {
+      "nombre": "San Mamés",
+      "imagen": "estadios/bilbao.png"
+    },
+    "historia": "El Athletic Club de Bilbao, fundado en 1898, es único en el mundo por su política de solo fichar jugadores vascos o formados en el País Vasco. A pesar de esta restricción, nunca ha descendido de Primera División, siendo uno de los tres clubes que jamás han bajado junto a Real Madrid y Barcelona.",
+    "curiosidades": [
+      "Nunca ha descendido de Primera División en toda su historia.",
+      "Solo ficha jugadores vascos o formados en la cantera vasca.",
+      "San Mamés es conocido como 'La Catedral del Fútbol'.",
+      "Ganaron la Copa del Rey en 2024, su primer título en 40 años."
+    ]
+  },
+  {
+    "nombre": "Real Sociedad",
+    "escudo": "escudos/real_sociedad.svg",
+    "ciudad": "San Sebastián",
+    "fundacion": 1909,
+    "apodo": "La Real / Txuri-urdin",
+    "colores": "Azul y blanco",
+    "ligas": "2 Ligas",
+    "estadio": {
+      "nombre": "Reale Arena",
+      "imagen": "estadios/real sociedad.png"
+    },
+    "historia": "La Real Sociedad fue fundada en 1909 en San Sebastián. Ganó dos Ligas consecutivas en 1981 y 1982, siendo la primera vez que un equipo no grande rompía el duopolio. En los últimos años ha vuelto a ser protagonista en Europa, clasificándose regularmente para la Champions League y la Europa League.",
+    "curiosidades": [
+      "Fue el primer equipo no grande en ganar la Liga en la era moderna (1981-82).",
+      "Txuri-urdin significa 'azul y blanco' en euskera.",
+      "La Reale Arena fue completamente renovada en 2019.",
+      "Xabi Alonso comenzó su carrera en la Real Sociedad antes de ir al Liverpool."
+    ]
+  },
+  {
+    "nombre": "Celta de Vigo",
+    "escudo": "escudos/celta.png",
+    "ciudad": "Vigo",
+    "fundacion": 1923,
+    "apodo": "Los Celestes",
+    "colores": "Celeste",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Abanca-Balaídos",
+      "imagen": "estadios/celta.png"
+    },
+    "historia": "El Celta de Vigo fue fundado en 1923 y es el club más representativo de Galicia. Conocido por su fútbol vistoso y ofensivo, ha producido grandes jugadores como Iago Aspas, su ídolo actual. Aunque nunca ha ganado la Liga, ha tenido momentos brillantes en Europa y es un referente del fútbol gallego.",
+    "curiosidades": [
+      "Iago Aspas es el máximo goleador histórico del club y un ídolo local.",
+      "Balaídos es uno de los estadios con más ambiente de España.",
+      "En 2001 llegaron a las semifinales de la UEFA Cup.",
+      "Su color celeste representa el cielo y el mar de Galicia."
+    ]
+  },
+  {
+    "nombre": "Getafe CF",
+    "escudo": "escudos/getafe.png",
+    "ciudad": "Getafe",
+    "fundacion": 1983,
+    "apodo": "Los Azulones / El Geta",
+    "colores": "Azul",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Coliseum Alfonso Pérez",
+      "imagen": "estadios/getafe.png"
+    },
+    "historia": "El Getafe CF fue fundado en 1983 y es uno de los clubes más jóvenes de Primera División. Bajo la dirección de Pepe Bordalás vivió su época dorada, clasificándose para la Europa League y siendo conocido por su fútbol físico y competitivo. Es el club de referencia del sur de la Comunidad de Madrid.",
+    "curiosidades": [
+      "Es uno de los clubes más jóvenes en haber jugado en Primera División.",
+      "Llegaron a los cuartos de final de la Europa League en 2019.",
+      "Su estadio lleva el nombre del exjugador Alfonso Pérez.",
+      "Bordalás los llevó a clasificarse para Europa tres temporadas seguidas."
+    ]
+  },
+  {
+    "nombre": "Rayo Vallecano",
+    "escudo": "escudos/rayo.png",
+    "ciudad": "Madrid",
+    "fundacion": 1924,
+    "apodo": "El Rayo / Los Franjirrojos",
+    "colores": "Blanco con franja roja",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Campo de Fútbol de Vallecas",
+      "imagen": "estadios/rayo.png"
+    },
+    "historia": "El Rayo Vallecano, fundado en 1924, es el club del barrio obrero de Vallecas en Madrid. Conocido por su identidad social y política de izquierdas, es uno de los clubes más queridos por su autenticidad. A pesar de sus limitados recursos, compite regularmente en Primera División y es famoso por su ambiente único.",
+    "curiosidades": [
+      "Es conocido como el club más de izquierdas del fútbol español.",
+      "Su estadio, el de Vallecas, tiene capacidad para solo 14.708 espectadores.",
+      "Teresa Rivero fue la primera presidenta de un club de Primera División en España.",
+      "Su franja roja en la camiseta es uno de los diseños más reconocibles del fútbol español."
+    ]
+  },
+  {
+    "nombre": "Osasuna",
+    "escudo": "escudos/Osasuna.png",
+    "ciudad": "Pamplona",
+    "fundacion": 1920,
+    "apodo": "Los Rojillos / El Sadar",
+    "colores": "Rojo y azul marino",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "El Sadar",
+      "imagen": "estadios/osasuna.png"
+    },
+    "historia": "Club Atlético Osasuna fue fundado en 1920 en Pamplona, capital de Navarra. Es propiedad de sus socios y nunca ha tenido deudas significativas, siendo un modelo de gestión en el fútbol español. Su estadio El Sadar es conocido por su ambiente intimidante y su fiel afición navarra.",
+    "curiosidades": [
+      "Es uno de los pocos clubes de Primera División propiedad íntegra de sus socios.",
+      "Osasuna significa 'salud' en euskera.",
+      "Llegaron a la final de la Copa del Rey en 2023.",
+      "El Sadar fue completamente renovado entre 2015 y 2021."
+    ]
+  },
+  {
+    "nombre": "Girona FC",
+    "escudo": "escudos/girona.png",
+    "ciudad": "Girona",
+    "fundacion": 1930,
+    "apodo": "Els Vermells / Los Blanquirrojos",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Montilivi",
+      "imagen": "estadios/girona.png"
+    },
+    "historia": "El Girona FC, fundado en 1930, vivió su gran revolución tras ser adquirido por el City Football Group en 2017. En la temporada 2023-24 protagonizó una de las mayores sorpresas del fútbol europeo al clasificarse para la Champions League por primera vez en su historia, terminando tercero en LaLiga.",
+    "curiosidades": [
+      "Se clasificó para la Champions League por primera vez en 2024.",
+      "Pertenece al City Football Group, el mismo grupo que el Manchester City.",
+      "Montilivi es uno de los estadios más pequeños de Primera División.",
+      "Michel, su entrenador, los llevó a hacer historia en el fútbol español."
+    ]
+  },
+  {
+    "nombre": "UD Las Palmas",
+    "escudo": "escudos/palmas.`png.png",
+    "ciudad": "Las Palmas de Gran Canaria",
+    "fundacion": 1949,
+    "apodo": "Los Amarillos / La UD",
+    "colores": "Amarillo",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Estadio Gran Canaria",
+      "imagen": "estadios/palmas.png"
+    },
+    "historia": "La Unión Deportiva Las Palmas fue fundada en 1949 y es el club más importante de las Islas Canarias. Conocida por su fútbol técnico y vistoso, ha producido grandes jugadores como David Silva. Tras años en Segunda División, regresó a Primera en 2023 y se ha consolidado como un equipo competitivo.",
+    "curiosidades": [
+      "David Silva, uno de los mejores centrocampistas de la historia, es de Gran Canaria.",
+      "El Estadio Gran Canaria tiene vistas al océano Atlántico.",
+      "Son conocidos por jugar un fútbol muy técnico y ofensivo.",
+      "La isla de Gran Canaria tiene una gran tradición futbolística."
+    ]
+  },
+  {
+    "nombre": "Deportivo Alavés",
+    "escudo": "escudos/alaves.png",
+    "ciudad": "Vitoria-Gasteiz",
+    "fundacion": 1921,
+    "apodo": "Los Babazorros / El Glorioso",
+    "colores": "Azul y blanco",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Mendizorrotza",
+      "imagen": "estadios/alaves.png"
+    },
+    "historia": "El Deportivo Alavés fue fundado en 1921 en Vitoria-Gasteiz, capital del País Vasco. Su momento más glorioso fue la temporada 2000-01, cuando llegó a la final de la UEFA Cup perdiendo ante el Liverpool en un dramático partido que terminó 5-4. Es un club con una historia rica a pesar de sus modestos recursos.",
+    "curiosidades": [
+      "Llegaron a la final de la UEFA Cup 2001 perdiendo 5-4 ante el Liverpool en un partido épico.",
+      "Mendizorrotza es uno de los estadios más antiguos de España.",
+      "Babazorros es el apodo de los habitantes de Vitoria.",
+      "Han alternado entre Primera y Segunda División durante décadas."
+    ]
+  },
+  {
+    "nombre": "RCD Mallorca",
+    "escudo": "escudos/mayorca.png",
+    "ciudad": "Palma",
+    "fundacion": 1916,
+    "apodo": "Los Bermellones / El Mallorca",
+    "colores": "Rojo, negro y blanco",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Visit Mallorca Estadi",
+      "imagen": "estadios/mallorca.png"
+    },
+    "historia": "El Real Club Deportivo Mallorca fue fundado en 1916 y es el club más importante de las Islas Baleares. Su época dorada fue a finales de los 90 y principios de los 2000, cuando llegó a la final de la Copa del Rey y la Recopa de Europa. Actualmente es un equipo consolidado en Primera División.",
+    "curiosidades": [
+      "Llegaron a la final de la Recopa de Europa en 1999.",
+      "Samuel Eto'o comenzó su carrera en España en el Mallorca.",
+      "El estadio tiene vistas a la Sierra de Tramuntana.",
+      "Son el único equipo de Primera División de las Islas Baleares."
+    ]
+  },
+  {
+    "nombre": "RCD Espanyol",
+    "escudo": "escudos/espayol.png",
+    "ciudad": "Barcelona",
+    "fundacion": 1900,
+    "apodo": "Los Pericos / Blanquiazules",
+    "colores": "Azul y blanco",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "RCDE Stadium",
+      "imagen": "estadios/espayol.png"
+    },
+    "historia": "El Real Club Deportivo Espanyol fue fundado en 1900 y es el segundo club de Barcelona. Históricamente ha sido el rival del FC Barcelona, representando a una parte de la ciudad con identidad propia. Ha ganado cuatro Copas del Rey y llegó a la final de la UEFA Cup en 1988 y 2007.",
+    "curiosidades": [
+      "Es el segundo club más antiguo de Barcelona, fundado solo un año después que el Barça.",
+      "Llegaron a dos finales de la UEFA Cup (1988 y 2007), perdiendo ambas en penaltis.",
+      "El RCDE Stadium está ubicado en Cornellà de Llobregat, fuera de Barcelona.",
+      "Raúl Tamudo es su máximo goleador histórico."
+    ]
+  },
+  {
+    "nombre": "Real Valladolid",
+    "escudo": "escudos/vayadolid.png",
+    "ciudad": "Valladolid",
+    "fundacion": 1928,
+    "apodo": "Los Pucelanos / El Pucela",
+    "colores": "Violeta y blanco",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Estadio José Zorrilla",
+      "imagen": "estadios/valladolid.png"
+    },
+    "historia": "El Real Valladolid fue fundado en 1928 y es el club más representativo de Castilla y León. Conocido por su color violeta único en el fútbol español, el club fue adquirido por Ronaldo Nazário en 2018, lo que le dio proyección internacional. Ha alternado entre Primera y Segunda División en los últimos años.",
+    "curiosidades": [
+      "Ronaldo Nazário, el fenómeno brasileño, es propietario del club desde 2018.",
+      "Su color violeta es único en el fútbol profesional español.",
+      "El estadio lleva el nombre del poeta romántico José Zorrilla, nacido en Valladolid.",
+      "Pucela es el apodo cariñoso de los vallisoletanos."
+    ]
+  },
+  {
+    "nombre": "Leganés",
+    "escudo": "escudos/leganes.png",
+    "ciudad": "Leganés",
+    "fundacion": 1928,
+    "apodo": "Los Pepineros / El Lega",
+    "colores": "Azul y blanco",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Estadio Municipal de Butarque",
+      "imagen": "estadios/leganes.png"
+    },
+    "historia": "El Club Deportivo Leganés fue fundado en 1928 en Leganés, municipio del sur de Madrid. Conocido como 'Los Pepineros' por la tradición agrícola de la zona, el club vivió su época más gloriosa entre 2016 y 2019, cuando militó tres temporadas en Primera División por primera vez en su historia. Regresó a Primera en 2024.",
+    "curiosidades": [
+      "Su apodo 'Pepineros' viene de los pepinos que se cultivaban en la zona.",
+      "Jugaron en Primera División por primera vez en su historia en 2016.",
+      "El estadio Butarque tiene capacidad para 11.454 espectadores.",
+      "Son el equipo con menor presupuesto que ha competido en Primera División recientemente."
+    ]
+  },
+  {
+    "nombre": "UD Almería",
+    "escudo": "escudos/almeria.png",
+    "ciudad": "Almería",
+    "fundacion": 1989,
+    "apodo": "Los Rojiblancos / La Unión",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Power Horse Stadium",
+      "imagen": "estadios/almeria.png"
+    },
+    "historia": "La Unión Deportiva Almería fue fundada en 1989 y es el club más representativo de la provincia de Almería. Tras años en categorías inferiores, vivió su gran ascenso bajo la propiedad del jeque turco-árabe Turki Al-Sheikh, que invirtió fuertemente en el club. Ascendió a Primera División en 2022 y compitió dos temporadas en la élite del fútbol español.",
+    "curiosidades": [
+      "El estadio fue construido para los Juegos del Mediterráneo de 2005.",
+      "Turki Al-Sheikh, magnate saudí, adquirió el club en 2019 e impulsó su crecimiento.",
+      "Ascendieron a Primera División en 2022 tras ganar la Segunda División.",
+      "El invernadero almeriense es el más grande de Europa, símbolo de la región."
+    ]
+  },
+  {
+    "nombre": "Elche CF",
+    "escudo": "escudos/elche.png",
+    "ciudad": "Elche",
+    "fundacion": 1923,
+    "apodo": "Los Franjiverdes / El Elche",
+    "colores": "Verde y blanco",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Estadio Manuel Martínez Valero",
+      "imagen": "estadios/elche.png"
+    },
+    "historia": "El Elche CF fue fundado en 1923 en la ciudad alicantina de Elche, famosa por su palmeral declarado Patrimonio de la Humanidad. El club ha alternado entre Primera y Segunda División a lo largo de su historia. Su mejor época en Primera fue en los años 60 y 70, y más recientemente entre 2013 y 2015, y de nuevo en 2021-2023.",
+    "curiosidades": [
+      "La ciudad de Elche alberga el palmeral más grande de Europa, Patrimonio de la Humanidad.",
+      "Sus colores verde y blanco representan las palmeras y la luz de la ciudad.",
+      "El estadio tiene capacidad para más de 33.000 espectadores.",
+      "Han tenido varias etapas en Primera División a lo largo de su historia."
+    ]
+  },
+  {
+    "nombre": "Real Oviedo",
+    "escudo": "escudos/oviedo.png",
+    "ciudad": "Oviedo",
+    "fundacion": 1926,
+    "apodo": "Los Carbayones / El Oviedo",
+    "colores": "Azul",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Carlos Tartiere",
+      "imagen": "estadios/oviedo.png"
+    },
+    "historia": "El Real Oviedo fue fundado en 1926 y es el club más representativo de Asturias. Vivió sus mejores años en los años 90, cuando militó en Primera División y llegó a semifinales de la Copa de la UEFA. Tras una grave crisis económica que casi lo llevó a la desaparición, fue salvado por miles de pequeños accionistas de todo el mundo en 2012.",
+    "curiosidades": [
+      "En 2012 fue salvado de la desaparición gracias a una campaña de micromecenazgo mundial.",
+      "El Carbayón es el árbol símbolo de Oviedo, de ahí el apodo del equipo.",
+      "Llegaron a semifinales de la Copa de la UEFA en la temporada 1990-91.",
+      "El Carlos Tartiere fue inaugurado en 2000 y tiene capacidad para 30.500 espectadores."
+    ]
+  },
+  {
+    "nombre": "Levante UD",
+    "escudo": "escudos/levante.png",
+    "ciudad": "Valencia",
+    "fundacion": 1909,
+    "apodo": "Los Granotas / El Levante",
+    "colores": "Rojo y azul",
+    "ligas": "0 Ligas",
+    "estadio": {
+      "nombre": "Estadio Ciudad de Valencia",
+      "imagen": "estadios/levante_estadio.png"
+    },
+    "historia": "El Levante UD fue fundado en 1909 y es el segundo club de la ciudad de Valencia. Conocido como 'Los Granotas' (las ranas en valenciano), el club vivió su mejor época en la primera mitad de los años 2010, cuando se consolidó en Primera División y llegó a clasificarse para la Europa League en la temporada 2011-12.",
+    "curiosidades": [
+      "'Granota' significa rana en valenciano, de ahí el apodo del equipo.",
+      "Se clasificaron para la Europa League en 2011-12, su mejor logro histórico.",
+      "El estadio Ciudad de Valencia tiene capacidad para más de 25.000 espectadores.",
+      "Es el segundo club más antiguo de la ciudad de Valencia tras el Valencia CF."
+    ]
+  }
+]

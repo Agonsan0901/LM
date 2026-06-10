@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Equipo · LaLiga 25/26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="detalle-body">
+
+    <div id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <a href="index.html" class="btn-volver">← Volver</a>
+        <a href="encuesta.html" class="btn-encuesta">🗳️ Encuesta & Juegos</a>
+        <div class="hero-content">
+            <img id="escudo" src="" alt="" class="detalle-escudo">
+            <h1 id="nombre"></h1>
+            <p id="estadio-nombre" class="hero-estadio"></p>
+        </div>
+    </div>
+
+    <main class="detalle-main">
+        <div class="detalle-grid">
+
+            <section class="detalle-card datos-card">
+                <h2>📋 Datos del Club</h2>
+                <ul id="datos-lista"></ul>
+            </section>
+
+            <section class="detalle-card historia-card">
+                <h2>📖 Historia</h2>
+                <p id="historia-texto"></p>
+            </section>
+
+            <section class="detalle-card curiosidades-card">
+                <h2>💡 Datos Curiosos</h2>
+                <ul id="curiosidades-lista"></ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 LaLiga 25/26 · Datos con fines educativos</p>
+    </footer>
+
+    <script src="js/detalle.js"></script>
+</body>
+</html>

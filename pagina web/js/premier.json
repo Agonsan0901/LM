@@ -1,0 +1,342 @@
+[
+  {
+    "nombre": "Manchester City",
+    "escudo": "escudos/manchester_city.png",
+    "ciudad": "Mánchester",
+    "fundacion": 1880,
+    "apodo": "The Citizens / The Blues",
+    "colores": "Azul celeste",
+    "ligas": "10 Ligas",
+    "estadio": { "nombre": "Etihad Stadium", "imagen": "estadios/manchester_city.png" },
+    "historia": "El Manchester City fue fundado en 1880 como St. Mark's. Tras ser adquirido por el jeque Mansour en 2008, se convirtió en uno de los clubes más poderosos del mundo. Bajo Pep Guardiola ganaron la histórica Treble en 2023 (Premier, FA Cup y Champions League), consolidándose como la mejor máquina futbolística de Europa.",
+    "curiosidades": [
+      "Ganaron la Champions League por primera vez en 2023, completando el Treble.",
+      "Pep Guardiola es el entrenador más exitoso de su historia.",
+      "El Etihad Stadium tiene capacidad para más de 53.000 espectadores.",
+      "Erling Haaland marcó 36 goles en su primera temporada en la Premier League, un récord histórico."
+    ]
+  },
+  {
+    "nombre": "Arsenal FC",
+    "escudo": "escudos/arsenal.png",
+    "ciudad": "Londres",
+    "fundacion": 1886,
+    "apodo": "The Gunners",
+    "colores": "Rojo y blanco",
+    "ligas": "13 Ligas",
+    "estadio": { "nombre": "Emirates Stadium", "imagen": "estadios/arsenal.png" },
+    "historia": "El Arsenal fue fundado en 1886 en Woolwich. Es el único equipo en ganar la Premier League de forma invicta, en la temporada 2003-04 bajo Arsène Wenger, siendo conocidos como 'The Invincibles'. Con 13 títulos de liga y 14 FA Cups, es uno de los clubes más laureados de Inglaterra.",
+    "curiosidades": [
+      "Son los únicos en ganar la Premier League sin perder ningún partido (2003-04).",
+      "Arsène Wenger dirigió el club durante 22 años consecutivos.",
+      "El Emirates Stadium fue inaugurado en 2006 con capacidad para 60.000 espectadores.",
+      "Thierry Henry es su máximo goleador histórico con 228 goles."
+    ]
+  },
+  {
+    "nombre": "Liverpool FC",
+    "escudo": "escudos/liverpool.png",
+    "ciudad": "Liverpool",
+    "fundacion": 1892,
+    "apodo": "The Reds",
+    "colores": "Rojo",
+    "ligas": "19 Ligas",
+    "estadio": { "nombre": "Anfield", "imagen": "estadios/liverpool.png" },
+    "historia": "El Liverpool FC fue fundado en 1892 y es uno de los clubes más exitosos de Europa. Con 6 Champions League y 19 títulos de liga, es un gigante del fútbol mundial. Bajo Jürgen Klopp vivió su renacimiento, ganando la Premier en 2020 tras 30 años de espera y la Champions en 2019.",
+    "curiosidades": [
+      "Anfield es famoso por el himno 'You'll Never Walk Alone', cantado antes de cada partido.",
+      "Han ganado 6 Champions League, solo superados por el Real Madrid.",
+      "La remontada ante el Barcelona en 2019 (4-0) es considerada una de las mejores de la historia.",
+      "Steven Gerrard nunca ganó la Premier League a pesar de ser el capitán más emblemático."
+    ]
+  },
+  {
+    "nombre": "Chelsea FC",
+    "escudo": "escudos/chelsea.png",
+    "ciudad": "Londres",
+    "fundacion": 1905,
+    "apodo": "The Blues",
+    "colores": "Azul",
+    "ligas": "6 Ligas",
+    "estadio": { "nombre": "Stamford Bridge", "imagen": "estadios/chelsea.png" },
+    "historia": "El Chelsea FC fue fundado en 1905 y durante décadas fue un club sin grandes títulos. Todo cambió en 2003 cuando Roman Abramovich lo adquirió e invirtió masivamente. Ganaron 2 Champions League (2012 y 2021) y se convirtieron en uno de los clubes más ricos del mundo.",
+    "curiosidades": [
+      "Ganaron la Champions League en 2012 de forma épica, remontando al Bayern en su propio estadio.",
+      "Stamford Bridge lleva el nombre del estadio desde 1877, antes de que el Chelsea existiera.",
+      "Didier Drogba es considerado el mejor jugador de su historia.",
+      "En 2022 fueron vendidos por 4.250 millones de libras, el mayor precio de la historia del fútbol."
+    ]
+  },
+  {
+    "nombre": "Manchester United",
+    "escudo": "escudos/manchester_uniter.png",
+    "ciudad": "Mánchester",
+    "fundacion": 1878,
+    "apodo": "The Red Devils",
+    "colores": "Rojo y negro",
+    "ligas": "20 Ligas",
+    "estadio": { "nombre": "Old Trafford", "imagen": "estadios/united.png" },
+    "historia": "El Manchester United es el club más laureado de Inglaterra con 20 títulos de liga. Bajo Sir Alex Ferguson (1986-2013) dominó el fútbol inglés y europeo, ganando 3 Champions League. Old Trafford, conocido como 'El Teatro de los Sueños', es uno de los estadios más icónicos del mundo.",
+    "curiosidades": [
+      "Sir Alex Ferguson dirigió el club durante 27 años, ganando 13 Premiers League.",
+      "Old Trafford tiene capacidad para más de 74.000 espectadores.",
+      "La Clase del 92 (Giggs, Beckham, Scholes, Neville) es la mejor generación de canteranos ingleses.",
+      "Cristiano Ronaldo jugó aquí dos etapas, siendo ídolo de la afición."
+    ]
+  },
+  {
+    "nombre": "Tottenham Hotspur",
+    "escudo": "escudos/Tottenham.png",
+    "ciudad": "Londres",
+    "fundacion": 1882,
+    "apodo": "Spurs",
+    "colores": "Blanco y azul marino",
+    "ligas": "2 Ligas",
+    "estadio": { "nombre": "Tottenham Hotspur Stadium", "imagen": "estadios/tottenham.png" },
+    "historia": "El Tottenham Hotspur fue fundado en 1882 y es uno de los clubes más populares de Londres. Fue el primer club del siglo XX en ganar el doblete (1961). Llegó a la final de la Champions League en 2019 bajo Mauricio Pochettino, siendo uno de los momentos más emocionantes de su historia reciente.",
+    "curiosidades": [
+      "Su estadio nuevo, inaugurado en 2019, tiene capacidad para 62.850 espectadores.",
+      "Harry Kane es su máximo goleador histórico con más de 280 goles.",
+      "Fueron el primer club del siglo XX en ganar Liga y FA Cup en la misma temporada.",
+      "El estadio tiene un campo de NFL retráctil bajo el césped de fútbol."
+    ]
+  },
+  {
+    "nombre": "Newcastle United",
+    "escudo": "escudos/newcastle.png",
+    "ciudad": "Newcastle",
+    "fundacion": 1892,
+    "apodo": "The Magpies / Toon",
+    "colores": "Negro y blanco",
+    "ligas": "4 Ligas",
+    "estadio": { "nombre": "St. James' Park", "imagen": "estadios/newcattle.png" },
+    "historia": "El Newcastle United fue fundado en 1892 y es el club más importante del noreste de Inglaterra. Tras ser adquirido por el fondo soberano de Arabia Saudí en 2021, se convirtió en el club más rico del mundo. St. James' Park, con su atmósfera única, es uno de los estadios más intimidantes de la Premier League.",
+    "curiosidades": [
+      "St. James' Park tiene capacidad para más de 52.000 espectadores.",
+      "Alan Shearer es su máximo goleador histórico y leyenda absoluta del club.",
+      "En 2021 fue adquirido por el fondo PIF de Arabia Saudí por 305 millones de libras.",
+      "Su última Liga fue en 1927, siendo uno de los títulos más esperados del fútbol inglés."
+    ]
+  },
+  {
+    "nombre": "Aston Villa",
+    "escudo": "escudos/Aston_Villa.png",
+    "ciudad": "Birmingham",
+    "fundacion": 1874,
+    "apodo": "The Villans",
+    "colores": "Granate y azul celeste",
+    "ligas": "7 Ligas",
+    "estadio": { "nombre": "Villa Park", "imagen": "estadios/aston villa.png" },
+    "historia": "El Aston Villa fue fundado en 1874 y es uno de los clubes fundadores de la Football League. Ganó la Copa de Europa en 1982, siendo uno de los logros más sorprendentes del fútbol inglés. Bajo Unai Emery ha vivido un renacimiento espectacular, clasificándose para la Champions League en 2024.",
+    "curiosidades": [
+      "Ganaron la Copa de Europa en 1982, siendo el último club inglés en ganarla antes del dominio del Liverpool.",
+      "Villa Park ha acogido más partidos de la selección inglesa que cualquier otro estadio fuera de Wembley.",
+      "Unai Emery los llevó a la Champions League en su primera temporada completa.",
+      "Son uno de los 7 clubes fundadores de la Premier League en 1992."
+    ]
+  },
+  {
+    "nombre": "West Ham United",
+    "escudo": "escudos/west_ham.png",
+    "ciudad": "Londres",
+    "fundacion": 1895,
+    "apodo": "The Hammers / Irons",
+    "colores": "Granate y azul",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "London Stadium", "imagen": "estadios/west ham.png" },
+    "historia": "El West Ham United fue fundado en 1895 y es conocido como la 'Academia del Fútbol' por haber formado a Bobby Moore, Geoff Hurst y Martin Peters, los tres héroes del Mundial de 1966. Ganó la UEFA Europa Conference League en 2023, su primer título europeo en 58 años.",
+    "curiosidades": [
+      "Tres de sus jugadores (Moore, Hurst, Peters) fueron titulares en la final del Mundial 1966.",
+      "Ganaron la Europa Conference League en 2023 en Praga.",
+      "El London Stadium fue construido para los Juegos Olímpicos de 2012.",
+      "Bobby Moore, su capitán más legendario, es considerado el mejor defensa inglés de la historia."
+    ]
+  },
+  {
+    "nombre": "Brighton & Hove Albion",
+    "escudo": "escudos/Brighton & Hove Albion.png",
+    "ciudad": "Brighton",
+    "fundacion": 1901,
+    "apodo": "The Seagulls",
+    "colores": "Azul y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Amex Stadium", "imagen": "estadios/brighton.png" },
+    "historia": "El Brighton & Hove Albion fue fundado en 1901 y durante décadas fue un club modesto. Bajo Roberto De Zerbi se convirtió en uno de los equipos más atractivos de Europa, clasificándose para la Europa League en 2023. Su modelo de datos y análisis es referente mundial en el fútbol moderno.",
+    "curiosidades": [
+      "Su director deportivo Paul Barber es pionero en el uso de datos y analítica en el fútbol.",
+      "Se clasificaron para Europa por primera vez en su historia en 2023.",
+      "El Amex Stadium fue inaugurado en 2011 con capacidad para 31.800 espectadores.",
+      "Han vendido jugadores como Moises Caicedo por 115 millones, récord de la Premier League."
+    ]
+  },
+  {
+    "nombre": "Everton FC",
+    "escudo": "escudos/everton.png",
+    "ciudad": "Liverpool",
+    "fundacion": 1878,
+    "apodo": "The Toffees",
+    "colores": "Azul",
+    "ligas": "9 Ligas",
+    "estadio": { "nombre": "Goodison Park", "imagen": "estadios/everton.png" },
+    "historia": "El Everton fue fundado en 1878 y es uno de los clubes más antiguos de Inglaterra. Fue el primer club en ganar la First Division tres veces. Goodison Park, su estadio histórico, es uno de los más emblemáticos del fútbol inglés. En 2025 se mudaron a su nuevo estadio en el puerto de Liverpool.",
+    "curiosidades": [
+      "Goodison Park fue el primer estadio en tener gradas en todos sus lados.",
+      "Dixie Dean marcó 60 goles en una sola temporada de liga en 1927-28, un récord imbatible.",
+      "Son el único club que ha jugado en todas las temporadas de la First Division/Premier League.",
+      "Su nuevo estadio en Bramley-Moore Dock tiene capacidad para 52.888 espectadores."
+    ]
+  },
+  {
+    "nombre": "Fulham FC",
+    "escudo": "escudos/fulham.png",
+    "ciudad": "Londres",
+    "fundacion": 1879,
+    "apodo": "The Cottagers",
+    "colores": "Blanco y negro",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Craven Cottage", "imagen": "estadios/fulham.png" },
+    "historia": "El Fulham FC fue fundado en 1879 y es el club de fútbol más antiguo de Londres. Craven Cottage, su estadio junto al Támesis, es uno de los más pintorescos del fútbol inglés. Aunque nunca ha ganado la liga, es un club con gran historia y tradición en el fútbol londinense.",
+    "curiosidades": [
+      "Craven Cottage está situado junto al río Támesis, siendo uno de los estadios más bonitos de Inglaterra.",
+      "Es el club de fútbol más antiguo de Londres, fundado en 1879.",
+      "Mohamed Al-Fayed, padre de Dodi Al-Fayed, fue propietario del club durante años.",
+      "Aleksandar Mitrovic marcó 43 goles en la Championship 2021-22, un récord histórico."
+    ]
+  },
+  {
+    "nombre": "Brentford FC",
+    "escudo": "escudos/Brentford.png",
+    "ciudad": "Londres",
+    "fundacion": 1889,
+    "apodo": "The Bees",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Gtech Community Stadium", "imagen": "estadios/brentford.png" },
+    "historia": "El Brentford FC fue fundado en 1889 y es uno de los clubes más innovadores del fútbol moderno. Ascendió a la Premier League en 2021 por primera vez en 74 años, usando un modelo de datos y análisis revolucionario. Su estadio nuevo, inaugurado en 2020, es uno de los más modernos de Londres.",
+    "curiosidades": [
+      "Su modelo de análisis de datos es considerado el más avanzado del fútbol inglés.",
+      "El Gtech Community Stadium está a solo 400 metros del antiguo Griffin Park.",
+      "Ivan Toney fue suspendido 8 meses por apuestas pero volvió siendo uno de los mejores delanteros.",
+      "Son el único club en tener un pub en cada esquina de su antiguo estadio Griffin Park."
+    ]
+  },
+  {
+    "nombre": "Crystal Palace",
+    "escudo": "escudos/Crystal_Palace.png",
+    "ciudad": "Londres",
+    "fundacion": 1905,
+    "apodo": "The Eagles",
+    "colores": "Rojo y azul",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Selhurst Park", "imagen": "estadios/crystal.png" },
+    "historia": "El Crystal Palace fue fundado en 1905 y es uno de los clubes más queridos del sur de Londres. Selhurst Park es conocido por su ambiente eléctrico y su fiel afición. Bajo Oliver Glasner ganaron la FA Cup en 2024, su primer título importante en la historia del club.",
+    "curiosidades": [
+      "Selhurst Park es uno de los estadios con más ambiente de la Premier League.",
+      "Wilfried Zaha jugó 11 temporadas en el club, siendo su mayor ídolo moderno.",
+      "Ganaron la FA Cup en 2024 bajo las órdenes de Oliver Glasner.",
+      "El club toma su nombre del Palacio de Cristal construido para la Gran Exposición de 1851."
+    ]
+  },
+  {
+    "nombre": "Wolverhampton Wanderers",
+    "escudo": "escudos/Wolverhampton_Wanderers.png",
+    "ciudad": "Wolverhampton",
+    "fundacion": 1877,
+    "apodo": "Wolves",
+    "colores": "Naranja y negro",
+    "ligas": "3 Ligas",
+    "estadio": { "nombre": "Molineux Stadium", "imagen": "estadios/wolverhampton.png" },
+    "historia": "Los Wolverhampton Wanderers fueron fundados en 1877 y son uno de los clubes fundadores de la Football League. Dominaron el fútbol inglés en los años 50 bajo Billy Wright. En los últimos años, bajo la propiedad del grupo Fosun, han contado con una gran presencia de jugadores portugueses.",
+    "curiosidades": [
+      "Fueron pioneros en el fútbol europeo, jugando amistosos contra clubes del continente en los años 50.",
+      "Molineux es uno de los estadios más antiguos del fútbol profesional inglés.",
+      "Bajo Nuno Espírito Santo ascendieron a la Premier y se clasificaron para Europa.",
+      "Han tenido más jugadores portugueses que cualquier otro club inglés en su historia reciente."
+    ]
+  },
+  {
+    "nombre": "Leicester City",
+    "escudo": "escudos/Leicester_City.png",
+    "ciudad": "Leicester",
+    "fundacion": 1884,
+    "apodo": "The Foxes",
+    "colores": "Azul y blanco",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "King Power Stadium", "imagen": "estadios/leicester.png" },
+    "historia": "El Leicester City fue fundado en 1884 y protagonizó el mayor milagro del fútbol moderno al ganar la Premier League en 2015-16 con una cuota de 5.000 a 1. Bajo Claudio Ranieri, con Vardy, Mahrez y Kanté, demostraron que todo es posible en el fútbol. Descendieron en 2023 pero volvieron en 2024.",
+    "curiosidades": [
+      "Ganaron la Premier League 2015-16 con una cuota de 5.000 a 1, el mayor milagro del fútbol moderno.",
+      "Jamie Vardy marcó en 11 partidos consecutivos, un récord de la Premier League.",
+      "N'Golo Kanté fue vendido al Chelsea tras la temporada milagro y ganó la Premier con ellos también.",
+      "El propietario Vichai Srivaddhanaprabha murió en un accidente de helicóptero en 2018."
+    ]
+  },
+  {
+    "nombre": "Nottingham Forest",
+    "escudo": "escudos/nottingham forest.png",
+    "ciudad": "Nottingham",
+    "fundacion": 1865,
+    "apodo": "The Reds / Forest",
+    "colores": "Rojo y blanco",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "City Ground", "imagen": "estadios/nottingham.png" },
+    "historia": "El Nottingham Forest fue fundado en 1865 y es uno de los clubes más históricos de Inglaterra. Bajo Brian Clough ganaron 2 Copas de Europa consecutivas (1979 y 1980), siendo uno de los logros más increíbles del fútbol europeo. Regresaron a la Premier League en 2022 tras 23 años de ausencia.",
+    "curiosidades": [
+      "Ganaron 2 Copas de Europa consecutivas (1979-80) siendo un club de ciudad pequeña.",
+      "Brian Clough es considerado uno de los mejores entrenadores de la historia del fútbol.",
+      "El City Ground está situado junto al río Trent, siendo uno de los estadios más pintorescos.",
+      "Estuvieron 23 años fuera de la Premier League antes de regresar en 2022."
+    ]
+  },
+  {
+    "nombre": "Bournemouth AFC",
+    "escudo": "escudos/bournemouth.png",
+    "ciudad": "Bournemouth",
+    "fundacion": 1899,
+    "apodo": "The Cherries",
+    "colores": "Rojo y negro",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Vitality Stadium", "imagen": "estadios/bournemouth.png" },
+    "historia": "El AFC Bournemouth fue fundado en 1899 y es uno de los clubes más pequeños de la Premier League por tamaño de ciudad. Bajo Eddie Howe ascendieron desde la League One hasta la Premier League en pocos años. Su historia es un ejemplo de crecimiento sostenido y trabajo bien hecho.",
+    "curiosidades": [
+      "El Vitality Stadium tiene capacidad para solo 11.307 espectadores, el más pequeño de la Premier.",
+      "Pasaron de la League One a la Premier League en 5 años bajo Eddie Howe.",
+      "Son el club más pequeño por población en haber jugado en la Premier League.",
+      "Su apodo 'The Cherries' viene de los cerezos que había cerca de su antiguo campo."
+    ]
+  },
+  {
+    "nombre": "Southampton FC",
+    "escudo": "escudos/FC_Southampton.png",
+    "ciudad": "Southampton",
+    "fundacion": 1885,
+    "apodo": "The Saints",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "St. Mary's Stadium", "imagen": "estadios/southampton.png" },
+    "historia": "El Southampton FC fue fundado en 1885 y es conocido por su excelente cantera, que ha producido jugadores como Gareth Bale, Theo Walcott y Alex Oxlade-Chamberlain. St. Mary's Stadium, inaugurado en 2001, es uno de los estadios más modernos del sur de Inglaterra.",
+    "curiosidades": [
+      "Su academia ha producido más jugadores internacionales ingleses que cualquier otro club.",
+      "Gareth Bale, Theo Walcott y Luke Shaw son algunos de sus canteranos más famosos.",
+      "Llegaron a la final de la FA Cup en 1976, ganándola al Manchester United.",
+      "St. Mary's fue construido en el lugar donde estaba el antiguo gasómetro de la ciudad."
+    ]
+  },
+  {
+    "nombre": "Ipswich Town",
+    "escudo": "escudos/Ipswich Town.png",
+    "ciudad": "Ipswich",
+    "fundacion": 1878,
+    "apodo": "The Tractor Boys / Blues",
+    "colores": "Azul y blanco",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Portman Road", "imagen": "estadios/ipswich.png" },
+    "historia": "El Ipswich Town fue fundado en 1878 y vivió su época dorada bajo Bobby Robson, ganando la FA Cup en 1978 y la UEFA Cup en 1981. Regresaron a la Premier League en 2024 tras 22 años de ausencia, siendo uno de los regresos más esperados del fútbol inglés.",
+    "curiosidades": [
+      "Ganaron la UEFA Cup en 1981 bajo Bobby Robson, siendo uno de los mayores logros del fútbol inglés.",
+      "Portman Road es uno de los estadios más antiguos del fútbol profesional inglés.",
+      "Regresaron a la Premier League en 2024 tras 22 años en divisiones inferiores.",
+      "Bobby Robson, su entrenador más legendario, luego dirigió a la selección inglesa."
+    ]
+  }
+]

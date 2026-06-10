@@ -14,7 +14,7 @@ type Autocaravana = {
 
 type Props = { item: Autocaravana; tipo: string }
 
-export const AutocaravanaCard = ({ item, tipo }: Props) => {
+export const AgsAutocaravanaCard = ({ item, tipo }: Props) => {
   const navigate = useNavigate()
 
   return (

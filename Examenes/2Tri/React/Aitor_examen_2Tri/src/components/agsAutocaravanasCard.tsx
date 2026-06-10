@@ -1,4 +1,4 @@
-import { AutocaravanaCard } from './agsAutocaravanaCard'
+import { AgsAutocaravanaCard } from './agsAutocaravanaCard'
 
 type Autocaravana = {
   cod: number
@@ -14,13 +14,13 @@ type Autocaravana = {
 
 type Props = { items: Autocaravana[]; tipo: string }
 
-export const AutocaravanasCard = ({ items, tipo }: Props) => {
+export const AgsAutocaravanasCard = ({ items, tipo }: Props) => {
   if (items.length === 0)
     return <p style={{ color: 'var(--text)' }}>No hay modelos disponibles.</p>
 
   return (
     <div className="grid">
-      {items.map((a) => <AutocaravanaCard key={a.cod} item={a} tipo={tipo} />)}
+      {items.map((a) => <AgsAutocaravanaCard key={a.cod} item={a} tipo={tipo} />)}
     </div>
   )
 }

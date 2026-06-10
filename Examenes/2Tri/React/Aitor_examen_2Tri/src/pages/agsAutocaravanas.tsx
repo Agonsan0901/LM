@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import datos from '../json/agsautocarabanas.json'
-import { AutocaravanasCard } from '../components/agsAutocaravanasCard'
+import { AgsAutocaravanasCard } from '../components/agsAutocaravanasCard'
 
 const iconos: Record<string, string> = {
   integrales: '🚌',
@@ -9,7 +9,7 @@ const iconos: Record<string, string> = {
   capuchinas:  '🏕️',
 }
 
-export const Autocaravanas = () => {
+export const AgsAutocaravanas = () => {
   const { tipo } = useParams<{ tipo: string }>()
   const filtrados = datos.filter((a) => a.tipo === tipo)
 
@@ -22,7 +22,7 @@ export const Autocaravanas = () => {
           <p>{filtrados.length} modelo{filtrados.length !== 1 ? 's' : ''} disponible{filtrados.length !== 1 ? 's' : ''}</p>
         </div>
       </div>
-      <AutocaravanasCard items={filtrados} tipo={tipo!} />
+      <AgsAutocaravanasCard items={filtrados} tipo={tipo!} />
     </section>
   )
 }

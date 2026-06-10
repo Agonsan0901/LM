@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IA con Cara</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <div id="face">
+    <div id="bubble"></div>
+
+    <div id="brows">
+      <div class="brow" id="brow-l"></div>
+      <div class="brow" id="brow-r"></div>
+    </div>
+
+    <div id="eyes">
+      <div class="eye" id="eye-l">
+        <div class="pupil" id="pupil-l"></div>
+        <div class="tear left"></div>
+      </div>
+      <div class="eye" id="eye-r">
+        <div class="pupil" id="pupil-r"></div>
+        <div class="tear right"></div>
+      </div>
+    </div>
+
+    <div id="mouth-wrap">
+      <svg id="mouth-svg" viewBox="0 0 100 40" preserveAspectRatio="none">
+        <path id="mouth-path" d="M10,10 Q50,30 90,10" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="chat-area">
+    <input id="input" type="text" placeholder="Escribe tu mensaje..." autocomplete="off" />
+    <button id="send-btn">➤</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

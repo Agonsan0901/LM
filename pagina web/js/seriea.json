@@ -1,0 +1,342 @@
+[
+  {
+    "nombre": "Inter de Milán",
+    "escudo": "",
+    "ciudad": "Milán",
+    "fundacion": 1908,
+    "apodo": "La Beneamata / Nerazzurri",
+    "colores": "Azul y negro",
+    "ligas": "20 Ligas",
+    "estadio": { "nombre": "Giuseppe Meazza (San Siro)", "imagen": "" },
+    "historia": "El Inter de Milán fue fundado en 1908 por disidentes del Milan que querían un club más internacional. Es el único club italiano en no haber descendido nunca de la Serie A. Bajo José Mourinho ganó el histórico Triplete en 2010 (Serie A, Copa Italia y Champions League). Ganaron la Serie A en 2024 con Simone Inzaghi.",
+    "curiosidades": [
+      "Son el único club italiano en no haber descendido nunca de la Serie A.",
+      "Ganaron el Triplete en 2010 bajo José Mourinho: Serie A, Copa Italia y Champions League.",
+      "Comparten el estadio San Siro con el AC Milan, siendo el único caso en Italia.",
+      "Javier Zanetti es su capitán más legendario, jugando 19 temporadas en el club."
+    ]
+  },
+  {
+    "nombre": "AC Milan",
+    "escudo": "",
+    "ciudad": "Milán",
+    "fundacion": 1899,
+    "apodo": "Il Diavolo Rosso / Rossoneri",
+    "colores": "Rojo y negro",
+    "ligas": "19 Ligas",
+    "estadio": { "nombre": "Giuseppe Meazza (San Siro)", "imagen": "" },
+    "historia": "El AC Milan fue fundado en 1899 por el inglés Herbert Kilpin. Es el segundo club con más Champions League (7) y uno de los más exitosos del mundo. Bajo Arrigo Sacchi y Fabio Capello dominó el fútbol europeo en los años 80 y 90 con jugadores como Van Basten, Gullit y Baresi.",
+    "curiosidades": [
+      "Han ganado 7 Champions League, siendo el segundo club más exitoso en Europa.",
+      "El trío holandés Van Basten, Gullit y Rijkaard es considerado uno de los mejores de la historia.",
+      "Paolo Maldini jugó 25 temporadas en el club, siendo el símbolo del fútbol italiano.",
+      "Ganaron la Champions League en 2003 y 2007 bajo Carlo Ancelotti."
+    ]
+  },
+  {
+    "nombre": "Juventus FC",
+    "escudo": "",
+    "ciudad": "Turín",
+    "fundacion": 1897,
+    "apodo": "La Vecchia Signora / Bianconeri",
+    "colores": "Blanco y negro",
+    "ligas": "36 Ligas",
+    "estadio": { "nombre": "Allianz Stadium", "imagen": "" },
+    "historia": "La Juventus fue fundada en 1897 y es el club más laureado de Italia con 36 Scudetti. Dominó la Serie A con 9 títulos consecutivos entre 2012 y 2020. Cristiano Ronaldo jugó aquí entre 2018 y 2021. Fue penalizada con 10 puntos en 2023 por irregularidades contables, lo que afectó su temporada.",
+    "curiosidades": [
+      "Ganaron 9 Serie A consecutivas entre 2012 y 2020, un récord histórico.",
+      "Cristiano Ronaldo jugó en la Juventus entre 2018 y 2021, marcando 101 goles.",
+      "El Allianz Stadium fue el primer estadio de propiedad de un club en Italia.",
+      "Fueron penalizados con 10 puntos en 2023 por irregularidades en sus cuentas."
+    ]
+  },
+  {
+    "nombre": "SSC Napoli",
+    "escudo": "",
+    "ciudad": "Nápoles",
+    "fundacion": 1926,
+    "apodo": "Gli Azzurri / Partenopei",
+    "colores": "Azul celeste",
+    "ligas": "3 Ligas",
+    "estadio": { "nombre": "Stadio Diego Armando Maradona", "imagen": "" },
+    "historia": "El SSC Napoli fue fundado en 1926 y es el club más importante del sur de Italia. Diego Maradona lo llevó a ganar 2 Scudetti (1987 y 1990) y la Copa UEFA en 1989, siendo considerado un dios en la ciudad. En 2023 ganaron su tercer Scudetto bajo Luciano Spalletti, rompiendo 33 años de espera.",
+    "curiosidades": [
+      "Diego Maradona es considerado un dios en Nápoles, con un altar en su honor en la ciudad.",
+      "El estadio fue renombrado 'Diego Armando Maradona' tras su muerte en 2020.",
+      "Ganaron el Scudetto 2023 tras 33 años de espera, desatando una celebración histórica.",
+      "Victor Osimhen marcó 26 goles en la temporada del título 2022-23."
+    ]
+  },
+  {
+    "nombre": "AS Roma",
+    "escudo": "",
+    "ciudad": "Roma",
+    "fundacion": 1927,
+    "apodo": "I Giallorossi / La Lupa",
+    "colores": "Amarillo y rojo",
+    "ligas": "3 Ligas",
+    "estadio": { "nombre": "Stadio Olimpico", "imagen": "" },
+    "historia": "La AS Roma fue fundada en 1927 y es uno de los dos grandes clubes de la capital italiana. Ganó 3 Scudetti y llegó a la final de la Champions League en 1984. Bajo José Mourinho ganó la UEFA Conference League en 2022, su primer título europeo en 31 años.",
+    "curiosidades": [
+      "Ganaron la UEFA Conference League en 2022 bajo Mourinho, su primer título europeo en 31 años.",
+      "Francesco Totti jugó 25 temporadas en el club, siendo el símbolo de Roma.",
+      "El Estadio Olímpico es compartido con la Lazio, siendo el derbi más apasionado de Italia.",
+      "Llegaron a la final de la Champions League en 1984, perdiendo ante el Liverpool en penaltis."
+    ]
+  },
+  {
+    "nombre": "SS Lazio",
+    "escudo": "",
+    "ciudad": "Roma",
+    "fundacion": 1900,
+    "apodo": "Le Aquile / Biancocelesti",
+    "colores": "Azul celeste y blanco",
+    "ligas": "2 Ligas",
+    "estadio": { "nombre": "Stadio Olimpico", "imagen": "" },
+    "historia": "La SS Lazio fue fundada en 1900 y es el eterno rival de la Roma en la capital italiana. Ganó 2 Scudetti y la Copa de la UEFA en 1999. El derbi de Roma, conocido como 'Derby della Capitale', es uno de los más apasionados e intensos del fútbol mundial.",
+    "curiosidades": [
+      "El Derby della Capitale contra la Roma es uno de los más intensos del mundo.",
+      "Ganaron la Serie A en 2000 con Sven-Göran Eriksson como entrenador.",
+      "Alessandro Nesta y Pavel Nedved son algunas de sus mayores leyendas.",
+      "Comparten el Estadio Olímpico con la Roma, siendo el único caso en la Serie A."
+    ]
+  },
+  {
+    "nombre": "Atalanta BC",
+    "escudo": "",
+    "ciudad": "Bérgamo",
+    "fundacion": 1907,
+    "apodo": "La Dea / Nerazzurri",
+    "colores": "Azul y negro",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Gewiss Stadium", "imagen": "" },
+    "historia": "El Atalanta BC fue fundado en 1907 en Bérgamo y es el mayor milagro del fútbol italiano moderno. Bajo Gian Piero Gasperini desarrolló un fútbol ofensivo y espectacular que los llevó a semifinales de Champions en 2020. Ganaron la Europa League en 2024, su primer título europeo.",
+    "curiosidades": [
+      "Llegaron a semifinales de la Champions League en 2020 con un fútbol espectacular.",
+      "Ganaron la Europa League en 2024, su primer título europeo en la historia.",
+      "Gian Piero Gasperini lleva más de 8 años transformando el club.",
+      "Bérgamo fue una de las ciudades más afectadas por el COVID-19 en 2020."
+    ]
+  },
+  {
+    "nombre": "Fiorentina",
+    "escudo": "",
+    "ciudad": "Florencia",
+    "fundacion": 1926,
+    "apodo": "La Viola / I Gigliati",
+    "colores": "Violeta",
+    "ligas": "2 Ligas",
+    "estadio": { "nombre": "Stadio Artemio Franchi", "imagen": "" },
+    "historia": "La Fiorentina fue fundada en 1926 y es el club más importante de la Toscana. Su color violeta es único en el fútbol italiano. Llegó a la final de la Champions League en 1957 y ganó 2 Scudetti. Gabriel Batistuta, 'Batigol', es su máximo goleador histórico y leyenda absoluta del club.",
+    "curiosidades": [
+      "Gabriel Batistuta marcó 168 goles en la Serie A con la Fiorentina, siendo su máximo ídolo.",
+      "Su color violeta es único en el fútbol profesional italiano.",
+      "El Stadio Artemio Franchi es uno de los estadios más históricos de Italia.",
+      "Llegaron a dos finales de la Copa UEFA (1990 y 1994)."
+    ]
+  },
+  {
+    "nombre": "Torino FC",
+    "escudo": "",
+    "ciudad": "Turín",
+    "fundacion": 1906,
+    "apodo": "Il Toro / Granata",
+    "colores": "Granate",
+    "ligas": "7 Ligas",
+    "estadio": { "nombre": "Stadio Olimpico Grande Torino", "imagen": "" },
+    "historia": "El Torino FC fue fundado en 1906 y es el eterno rival de la Juventus en Turín. El 'Grande Torino' de los años 40 es considerado el mejor equipo de la historia del fútbol italiano, ganando 5 Scudetti consecutivos. Toda la plantilla murió en el accidente aéreo de Superga en 1949, una tragedia que marcó al fútbol italiano.",
+    "curiosidades": [
+      "El 'Grande Torino' murió en el accidente aéreo de Superga el 4 de mayo de 1949.",
+      "Ganaron 5 Scudetti consecutivos entre 1943 y 1949 con el mejor equipo de su época.",
+      "El Derby della Mole contra la Juventus es uno de los más históricos de Italia.",
+      "Valentino Mazzola, capitán del Grande Torino, es considerado el mejor jugador italiano de la historia."
+    ]
+  },
+  {
+    "nombre": "Bologna FC",
+    "escudo": "",
+    "ciudad": "Bolonia",
+    "fundacion": 1909,
+    "apodo": "I Rossoblu / Felsinei",
+    "colores": "Rojo y azul",
+    "ligas": "7 Ligas",
+    "estadio": { "nombre": "Stadio Renato Dall'Ara", "imagen": "" },
+    "historia": "El Bologna FC fue fundado en 1909 y es uno de los clubes más históricos de Italia. Ganó 7 Scudetti, siendo el cuarto club más laureado del país. Bajo Thiago Motta vivió un renacimiento espectacular, clasificándose para la Champions League en 2024 por primera vez en 60 años.",
+    "curiosidades": [
+      "Se clasificaron para la Champions League en 2024 por primera vez en 60 años.",
+      "Thiago Motta, exjugador del Barcelona, los llevó a Europa con un fútbol brillante.",
+      "El Stadio Renato Dall'Ara fue sede del Mundial de 1990.",
+      "Son el cuarto club más laureado de la historia de la Serie A."
+    ]
+  },
+  {
+    "nombre": "Genoa CFC",
+    "escudo": "",
+    "ciudad": "Génova",
+    "fundacion": 1893,
+    "apodo": "Il Grifone / Rossoblu",
+    "colores": "Rojo y azul",
+    "ligas": "9 Ligas",
+    "estadio": { "nombre": "Stadio Luigi Ferraris", "imagen": "" },
+    "historia": "El Genoa CFC fue fundado en 1893 y es el club de fútbol más antiguo de Italia. Ganó 9 Scudetti, todos antes de 1924. El Stadio Luigi Ferraris, compartido con la Sampdoria, es uno de los estadios más históricos del fútbol italiano. Regresaron a la Serie A en 2023 tras varios años en Segunda.",
+    "curiosidades": [
+      "Es el club de fútbol más antiguo de Italia, fundado en 1893 por marineros ingleses.",
+      "Ganaron 9 Scudetti, todos antes de 1924.",
+      "Comparten el Stadio Luigi Ferraris con la Sampdoria, siendo el único caso en Italia.",
+      "El estadio es conocido como 'La Gradinata Nord' por su famosa tribuna."
+    ]
+  },
+  {
+    "nombre": "Udinese Calcio",
+    "escudo": "",
+    "ciudad": "Udine",
+    "fundacion": 1896,
+    "apodo": "I Bianconeri / Zebrette",
+    "colores": "Blanco y negro",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Bluenergy Stadium", "imagen": "" },
+    "historia": "El Udinese Calcio fue fundado en 1896 y es uno de los clubes más estables de la Serie A. Bajo la propiedad de la familia Pozzo, que también posee el Watford inglés, ha desarrollado un modelo de negocio basado en la compra y venta de jugadores. Zico, el brasileño, es su jugador más legendario.",
+    "curiosidades": [
+      "La familia Pozzo posee tanto el Udinese como el Watford inglés.",
+      "Zico, considerado uno de los mejores jugadores de la historia, jugó aquí.",
+      "Son expertos en descubrir y vender talentos, siendo un modelo de negocio en el fútbol.",
+      "Antonio Di Natale marcó 134 goles en la Serie A con el Udinese."
+    ]
+  },
+  {
+    "nombre": "Cagliari Calcio",
+    "escudo": "",
+    "ciudad": "Cagliari",
+    "fundacion": 1920,
+    "apodo": "I Rossoblù / Isolani",
+    "colores": "Rojo y azul",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Unipol Domus", "imagen": "" },
+    "historia": "El Cagliari Calcio fue fundado en 1920 y es el club más importante de Cerdeña. Ganó su único Scudetto en 1970 con Gigi Riva, el máximo goleador histórico de la selección italiana. Es el único club de una isla en haber ganado la Serie A.",
+    "curiosidades": [
+      "Son el único club de una isla en haber ganado la Serie A (1970).",
+      "Gigi Riva, su máximo ídolo, es el máximo goleador histórico de la selección italiana.",
+      "El Unipol Domus fue inaugurado en 2022, siendo uno de los estadios más modernos de Italia.",
+      "Cerdeña es la segunda isla más grande del Mediterráneo."
+    ]
+  },
+  {
+    "nombre": "Hellas Verona",
+    "escudo": "",
+    "ciudad": "Verona",
+    "fundacion": 1903,
+    "apodo": "I Gialloblu / Mastini",
+    "colores": "Amarillo y azul",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Stadio Marcantonio Bentegodi", "imagen": "" },
+    "historia": "El Hellas Verona fue fundado en 1903 y protagonizó uno de los mayores milagros del fútbol italiano al ganar la Serie A en 1985, siendo un club modesto de una ciudad mediana. Ese título sigue siendo el mayor logro del fútbol italiano de provincias.",
+    "curiosidades": [
+      "Ganaron la Serie A en 1985, siendo considerado el mayor milagro del fútbol italiano.",
+      "El Stadio Bentegodi fue sede del Mundial de 1990.",
+      "Verona es la ciudad de Romeo y Julieta, de Shakespeare.",
+      "Luca Toni, campeón del mundo con Italia en 2006, jugó aquí."
+    ]
+  },
+  {
+    "nombre": "Parma Calcio",
+    "escudo": "",
+    "ciudad": "Parma",
+    "fundacion": 1913,
+    "apodo": "I Crociati / Ducali",
+    "colores": "Amarillo y azul",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stadio Ennio Tardini", "imagen": "" },
+    "historia": "El Parma Calcio fue fundado en 1913 y vivió su época dorada en los años 90, ganando 3 Copas UEFA, 2 Copas de Italia y 1 Supercopa de Europa. Con jugadores como Buffon, Cannavaro, Thuram y Crespo, fue uno de los mejores equipos de Europa. Quebró en 2015 pero renació y regresó a la Serie A en 2024.",
+    "curiosidades": [
+      "En los años 90 tenían a Buffon, Cannavaro, Thuram, Crespo y Veron al mismo tiempo.",
+      "Ganaron 3 Copas UEFA en 1995, 1999 y 2000.",
+      "Quebraron en 2015 y tuvieron que empezar desde la cuarta división.",
+      "Regresaron a la Serie A en 2024 tras su increíble resurrección."
+    ]
+  },
+  {
+    "nombre": "Como 1907",
+    "escudo": "",
+    "ciudad": "Como",
+    "fundacion": 1907,
+    "apodo": "I Lariani / Como",
+    "colores": "Azul",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stadio Giuseppe Sinigaglia", "imagen": "" },
+    "historia": "El Como 1907 fue fundado en 1907 a orillas del lago de Como. Tras décadas en divisiones inferiores, regresó a la Serie A en 2024 por primera vez en 21 años, respaldado por inversores indonesios. Su estadio junto al lago es uno de los más pintorescos del fútbol europeo.",
+    "curiosidades": [
+      "El Stadio Sinigaglia está situado a orillas del lago de Como, siendo uno de los más bonitos de Europa.",
+      "Regresaron a la Serie A en 2024 tras 21 años de ausencia.",
+      "Cesc Fàbregas, exjugador del Arsenal y Barcelona, es su entrenador.",
+      "El lago de Como es uno de los destinos turísticos más famosos de Italia."
+    ]
+  },
+  {
+    "nombre": "Venezia FC",
+    "escudo": "",
+    "ciudad": "Venecia",
+    "fundacion": 1907,
+    "apodo": "I Arancioneroverdi / Lagunari",
+    "colores": "Naranja, negro y verde",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stadio Pier Luigi Penzo", "imagen": "" },
+    "historia": "El Venezia FC fue fundado en 1907 y es el club más único del fútbol europeo por su ubicación en la ciudad de los canales. Su estadio, el Pier Luigi Penzo, solo es accesible en barco o a pie. Regresaron a la Serie A en 2024 y son conocidos mundialmente por sus elegantes camisetas de diseño.",
+    "curiosidades": [
+      "Su estadio solo es accesible en barco o a pie, siendo único en el mundo.",
+      "Sus camisetas de diseño son consideradas las más elegantes del fútbol mundial.",
+      "Venecia es la única ciudad del mundo sin coches, con canales como calles.",
+      "Regresaron a la Serie A en 2024 con una gran expectación internacional."
+    ]
+  },
+  {
+    "nombre": "Empoli FC",
+    "escudo": "",
+    "ciudad": "Empoli",
+    "fundacion": 1920,
+    "apodo": "Gli Azzurri / Empolese",
+    "colores": "Azul celeste",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stadio Carlo Castellani", "imagen": "" },
+    "historia": "El Empoli FC fue fundado en 1920 y es conocido por ser una de las mejores canteras de Italia. Ha formado y cedido jugadores como Donnarumma, Verratti y Zaniolo. Es un club modesto que alterna entre Serie A y Serie B, pero siempre con un fútbol técnico y atractivo.",
+    "curiosidades": [
+      "Han formado o cedido a jugadores como Donnarumma, Verratti y Zaniolo.",
+      "Son considerados uno de los mejores clubes en el desarrollo de jóvenes talentos.",
+      "El Stadio Castellani tiene capacidad para 16.284 espectadores.",
+      "Empoli está en la Toscana, a pocos kilómetros de Florencia."
+    ]
+  },
+  {
+    "nombre": "Lecce",
+    "escudo": "",
+    "ciudad": "Lecce",
+    "fundacion": 1908,
+    "apodo": "I Giallorossi / Salentini",
+    "colores": "Amarillo y rojo",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stadio Via del Mare", "imagen": "" },
+    "historia": "El Lecce fue fundado en 1908 y es el club más importante del Salento, en el extremo sur de Italia. Conocido por su fútbol técnico y ofensivo, ha alternado entre Serie A y Serie B a lo largo de su historia. Su estadio, el Via del Mare, es uno de los más acogedores del sur de Italia.",
+    "curiosidades": [
+      "Lecce está en el 'tacón' de la bota italiana, siendo el club más al sur de la Serie A.",
+      "Son conocidos por su fútbol técnico y ofensivo, formando buenos jugadores.",
+      "El Stadio Via del Mare tiene capacidad para 33.876 espectadores.",
+      "La ciudad de Lecce es conocida como 'La Florencia del Sur' por su arquitectura barroca."
+    ]
+  },
+  {
+    "nombre": "Monza",
+    "escudo": "",
+    "ciudad": "Monza",
+    "fundacion": 1912,
+    "apodo": "I Biancorossi / Brianzoli",
+    "colores": "Blanco y rojo",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stadio Brianteo", "imagen": "" },
+    "historia": "El Monza fue fundado en 1912 y ascendió a la Serie A por primera vez en su historia en 2022, tras ser adquirido por Silvio Berlusconi y Adriano Galliani en 2018. Con la experiencia del dúo que llevó al Milan a dominar Europa, el Monza se convirtió en un proyecto ambicioso del norte de Italia.",
+    "curiosidades": [
+      "Silvio Berlusconi y Adriano Galliani, exdueños del Milan, compraron el club en 2018.",
+      "Ascendieron a la Serie A por primera vez en su historia en 2022.",
+      "Monza es famosa por su circuito de Fórmula 1, el más rápido del mundo.",
+      "Berlusconi prometió llevar al equipo a la Serie A y lo cumplió antes de morir en 2023."
+    ]
+  }
+]

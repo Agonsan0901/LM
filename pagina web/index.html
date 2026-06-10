@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos · Fútbol Europeo</title>
+    <meta name="description" content="Explora los equipos de las principales ligas de fútbol europeo: LaLiga, Premier League, Bundesliga, Serie A y Ligue 1.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-brand">
+                <span class="header-badge">⚽</span>
+                <div>
+                    <h1 id="header-titulo">LaLiga 25/26</h1>
+                    <p class="header-sub" id="header-sub">Primera División · España</p>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link active">Equipos</a>
+                <a href="encuesta.html" class="nav-link">Encuesta & Juegos</a>
+            </nav>
+            <div class="header-search">
+                <input type="text" id="buscador" placeholder="Buscar equipo..." aria-label="Buscar equipo">
+            </div>
+        </div>
+
+        <!-- FILTRO LIGAS -->
+        <div class="ligas-bar">
+            <button class="liga-btn active" data-liga="laliga" data-json="js/equipos.json" data-titulo="LaLiga 25/26" data-sub="Primera División · España" data-bandera="🇪🇸">
+                🇪🇸 LaLiga
+            </button>
+            <button class="liga-btn" data-liga="premier" data-json="js/premier.json" data-titulo="Premier League 25/26" data-sub="Primera División · Inglaterra" data-bandera="🏴󠁧󠁢󠁥󠁮󠁧󠁿">
+                🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League
+            </button>
+            <button class="liga-btn" data-liga="bundesliga" data-json="js/bundesliga.json" data-titulo="Bundesliga 25/26" data-sub="Primera División · Alemania" data-bandera="🇩🇪">
+                🇩🇪 Bundesliga
+            </button>
+            <button class="liga-btn" data-liga="seriea" data-json="js/seriea.json" data-titulo="Serie A 25/26" data-sub="Primera División · Italia" data-bandera="🇮🇹">
+                🇮🇹 Serie A
+            </button>
+            <button class="liga-btn" data-liga="ligue1" data-json="js/ligue1.json" data-titulo="Ligue 1 25/26" data-sub="Primera División · Francia" data-bandera="🇫🇷">
+                🇫🇷 Ligue 1
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="stats-bar">
+            <div class="stat-item"><span class="stat-num" id="stat-equipos">20</span><span class="stat-label">Equipos</span></div>
+            <div class="stat-item"><span class="stat-num" id="stat-partidos">380</span><span class="stat-label">Partidos</span></div>
+            <div class="stat-item"><span class="stat-num">25/26</span><span class="stat-label">Temporada</span></div>
+        </section>
+
+        <section id="equipos-container" aria-label="Equipos"></section>
+
+        <p id="no-resultados" hidden>No se encontraron equipos.</p>
+    </main>
+
+    <footer>
+        <p>© 2025 Fútbol Europeo · Datos con fines educativos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

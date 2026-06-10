@@ -2,7 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import datos from '../json/agsautocarabanas.json'
 
-export const AutocaravanaDetalle = () => {
+export const AgsAutocaravanaDetalle = () => {
   const { cod } = useParams<{ cod: string }>()
   const navigate = useNavigate()
   const item = datos.find((a) => a.cod === Number(cod))
