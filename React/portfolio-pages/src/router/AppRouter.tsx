@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom"; 
 import MainLayout from "../layouts/MainLayout";
 import DashboardLayout from "../layouts/Dashboardlayout.tsx";
 import Home from "../pages/Home";
@@ -15,10 +15,10 @@ import { StoreProvider } from "../Context/StoreContext.tsx";
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter> 
       <StoreProvider>
         <Routes>
-          {/* Portfolio público */}
+        
           <Route element={<MainLayout />}>
             <Route path="/"          element={<Home />} />
             <Route path="/servicios" element={<Servicios />} />
@@ -27,7 +27,7 @@ export default function AppRouter() {
             <Route path="/contacto"  element={<Contacto />} />
           </Route>
 
-          {/* Admin */}
+         
           <Route path="/admin" element={<DashboardLayout />}>
             <Route index              element={<AdminHome />} />
             <Route path="cursos"      element={<AdminCursos />} />
@@ -35,8 +35,11 @@ export default function AppRouter() {
             <Route path="trabajos"    element={<AdminTrabajos />} />
             <Route path="formacion"   element={<AdminFormacion />} />
           </Route>
+
+          
+          <Route path="*" element={<Home />} />
         </Routes>
       </StoreProvider>
-    </BrowserRouter>
+    </HashRouter> 
   );
 }
