@@ -1,8 +1,10 @@
-import { HashRouter, Routes, Route } from "react-router-dom"; 
+import { HashRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import DashboardLayout from "../layouts/Dashboardlayout.tsx";
+
+import DashboardLayout from "../layouts/Dashboardlayout"; 
 import Home from "../pages/Home";
-import Servicios from "../pages/Servicios.tsx";
+
+import Servicios from "../pages/Servicios"; 
 import Trabajos from "../pages/Trabajos";
 import Cursos from "../pages/Cursos";
 import Contacto from "../pages/Contacto";
@@ -11,14 +13,15 @@ import AdminCursos    from "../pages/Admin/AdminCursos";
 import AdminServicios from "../pages/Admin/AdminServicios";
 import AdminTrabajos  from "../pages/Admin/AdminTrabajos";
 import AdminFormacion from "../pages/Admin/AdminFormacion";
-import { StoreProvider } from "../Context/StoreContext.tsx";
+
+import { StoreProvider } from "../Context/StoreContext"; 
 
 export default function AppRouter() {
   return (
-    <HashRouter> 
+    <HashRouter>
       <StoreProvider>
         <Routes>
-        
+          {/* Portfolio público */}
           <Route element={<MainLayout />}>
             <Route path="/"          element={<Home />} />
             <Route path="/servicios" element={<Servicios />} />
@@ -36,10 +39,10 @@ export default function AppRouter() {
             <Route path="formacion"   element={<AdminFormacion />} />
           </Route>
 
-          
+          {/* Ruta comodín para evitar el 404 */}
           <Route path="*" element={<Home />} />
         </Routes>
       </StoreProvider>
-    </HashRouter> 
+    </HashRouter>
   );
 }
