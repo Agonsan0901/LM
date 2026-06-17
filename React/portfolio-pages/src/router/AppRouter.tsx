@@ -1,48 +1,42 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { MainLayout } from "../layouts/MainLayout"
-import { Home } from "../pages/Home"
-import { Trabajos } from "../pages/Trabajos"
-import { Contacto } from "../pages/Contacto"
-import { Servicios } from "../pages/Servicios"
-import { ServicioDetalle } from "../pages/ServicioDetalle"
-import { Ventas } from "../pages/Ventas"
-import { Tienda } from "../pages/Tienda"
-import { ProductoDetalle } from "../pages/ProductoDetalle"
-import { BackendLayout } from "../layouts/BackendLayout"
-import { AdminExperiencias } from "../pages/backend/AdminExperiencias"
-import { AdminProductos } from "../pages/backend/AdminProductos"
-import { AdminTrabajos } from "../pages/backend/AdminTrabajos"
-import { AdminServicios } from "../pages/backend/AdminServicios"
-import { AdminMensajes } from "../pages/backend/AdminMensajes"
-import { AdminLogin } from "../pages/backend/AdminLogin"
-import { ProtectedRoute } from "../components/ProtectedRoute"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "../layouts/MainLayout";
+import DashboardLayout from "../layouts/Dashboardlayout.tsx";
+import Home from "../pages/Home";
+import Servicios from "../pages/Servicios.tsx";
+import Trabajos from "../pages/Trabajos";
+import Cursos from "../pages/Cursos";
+import Contacto from "../pages/Contacto";
+import AdminHome      from "../pages/Admin/AdminHome";
+import AdminCursos    from "../pages/Admin/AdminCursos";
+import AdminServicios from "../pages/Admin/AdminServicios";
+import AdminTrabajos  from "../pages/Admin/AdminTrabajos";
+import AdminFormacion from "../pages/Admin/AdminFormacion";
+import { StoreProvider } from "../Context/StoreContext.tsx";
 
-export const AppRouter = () => {
+export default function AppRouter() {
   return (
     <BrowserRouter>
+      <StoreProvider>
         <Routes>
-            <Route element={<MainLayout />} >
-                <Route path="/" element={<Home />} />
-                <Route path="/trabajos" element={<Trabajos />} />
-                <Route path="/contacto" element={<Contacto />} />
-                <Route path="/servicios" element={<Servicios />} />
-                <Route path="/servicios/:id" element={<ServicioDetalle />} />
-                <Route path="/ventas" element={<Ventas />} />
-                <Route path="/tienda" element={<Tienda />} />
-                <Route path="/tienda/:id" element={<ProductoDetalle />} />
-            </Route>
-            <Route path="/admin/login" element={<AdminLogin />} />
-            <Route element={<ProtectedRoute />}>
-              <Route element={<BackendLayout />}>
-                <Route path="/admin" element={<AdminMensajes />} />
-                <Route path="/admin/experiencias" element={<AdminExperiencias />} />
-                <Route path="/admin/productos" element={<AdminProductos />} />
-                <Route path="/admin/trabajos" element={<AdminTrabajos />} />
-                <Route path="/admin/servicios" element={<AdminServicios />} />
-                <Route path="/admin/mensajes" element={<AdminMensajes />} />
-              </Route>
-            </Route>
+          {/* Portfolio público */}
+          <Route element={<MainLayout />}>
+            <Route path="/"          element={<Home />} />
+            <Route path="/servicios" element={<Servicios />} />
+            <Route path="/trabajos"  element={<Trabajos />} />
+            <Route path="/cursos"    element={<Cursos />} />
+            <Route path="/contacto"  element={<Contacto />} />
+          </Route>
+
+          {/* Admin */}
+          <Route path="/admin" element={<DashboardLayout />}>
+            <Route index              element={<AdminHome />} />
+            <Route path="cursos"      element={<AdminCursos />} />
+            <Route path="servicios"   element={<AdminServicios />} />
+            <Route path="trabajos"    element={<AdminTrabajos />} />
+            <Route path="formacion"   element={<AdminFormacion />} />
+          </Route>
         </Routes>
+      </StoreProvider>
     </BrowserRouter>
-  )
+  );
 }
