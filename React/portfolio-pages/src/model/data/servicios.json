@@ -1,38 +1,51 @@
+
 [
-  {
-    "id": 1,
-    "titulo": "Desarrollo Web",
-    "descripcion": "Sitios web modernos y responsivos con HTML, CSS, JavaScript y React.",
-    "imagen": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80"
-  },
-  {
-    "id": 2,
-    "titulo": "Administración de Sistemas",
-    "descripcion": "Gestión de servidores Linux/Windows, redes y virtualización.",
-    "imagen": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80"
-  },
-  {
-    "id": 3,
-    "titulo": "Redes & Infraestructura",
-    "descripcion": "Configuración de redes, switches, routers y seguridad.",
-    "imagen": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80"
-  },
-  {
-    "id": 4,
-    "titulo": "Seguridad Informática",
-    "descripcion": "Análisis de vulnerabilidades, firewalls y protección de sistemas.",
-    "imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&q=80"
-  },
-  {
-    "id": 5,
-    "titulo": "Virtualización",
-    "descripcion": "Configuración de máquinas virtuales con VMware y VirtualBox.",
-    "imagen": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=80"
-  },
-  {
-    "id": 6,
-    "titulo": "Soporte Técnico",
-    "descripcion": "Resolución de incidencias hardware y software en entornos profesionales.",
-    "imagen": "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600&q=80"
-  }
+    {
+        "id": 1,
+        "titulo": "Fusión de Fibra",
+        "categoria": "Redes de Comunuicaciones",
+        "descripcion": "La fusión de fibra óptica es un proceso que consiste en unir dos fibras ópticas para crear una conexión continua. Este proceso se realiza utilizando una máquina de fusión que alinea y fusiona las fibras mediante calor o electricidad. La fusión de fibra es esencial para garantizar una transmisión de datos eficiente y sin pérdidas en redes de comunicaciones, ya que minimiza la atenuación y la dispersión de la señal, permitiendo así una mayor capacidad y velocidad de transmisión.",
+        "imagen": "https://www.honecable.com/wp-content/uploads/2021/07/optical-splice-loss-and-methods-to-reduce-it.jpg",
+        "tecnologias": ["Fusión de Fibra", "Redes de Comunicaciones", "Fujikura 310S"]
+    },
+    {
+        "id": 2,
+        "titulo": "Configuración de Routers Cisco",
+        "categoria": "Redes de Comunuicaciones",
+        "descripcion": "La configuración de routers Cisco implica la instalación y ajuste de dispositivos de red fabricados por Cisco Systems para gestionar el tráfico de datos en una red. Esto incluye la asignación de direcciones IP, la configuración de protocolos de enrutamiento, la implementación de medidas de seguridad y la optimización del rendimiento de la red. Los routers Cisco son ampliamente utilizados en entornos empresariales y ofrecen una amplia gama de características para garantizar una conectividad eficiente y segura.",
+        "imagen": "https://www.adslzone.net/app/uploads-adslzone.net/2022/01/Router-WiFi-con-cable-Ethernet.png",
+        "tecnologias": ["Routers", "Redes de Comunicaciones", "Cisco ISR 4000 Series"]
+    },
+    {
+        "id": 3,
+        "titulo": "Gestion de base de datos",
+        "categoria": "Desarrollo de Software",
+        "descripcion": "La gestión de bases de datos utiliza un Sistema Gestor (SGBD o DBMS) para organizar, almacenar, proteger y recuperar datos de manera eficiente. Actúa como interfaz entre la base de datos y los usuarios, garantizando la integridad, la seguridad y el acceso concurrente",
+        "imagen": "https://www.ui1.es/sites/default/files/blog/images/dbms_retocada.jpg",
+        "tecnologias": ["Microservicios", "NestJS", "Redes Nats"]
+    },
+    {
+        "id": 4,
+        "titulo": "Montaje y mantenimiento de equipos",
+        "categoria": "Despliegue de Aplicaciones",
+        "descripcion": "conectar correctamente los componentes físicos (hardware), mientras que el mantenimiento alarga su vida útil y asegura el máximo rendimiento, abarcando desde la limpieza del polvo hasta la optimización del sistema operativo. ",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpbnbh0VE5UCTkxql61og1SHdptI1EREWOpwJ0DIxXZw&s=10",
+        "tecnologias": ["DevOps", "Kubernetes", "Jenkins"]
+    },
+    {
+        "id": 5,
+        "titulo": "implantacion de sistemas en entornos de empresa",
+        "categoria": "Despliegue de Aplicaciones",
+        "descripcion": "proceso integral de instalar, configurar, optimizar y mantener un sistema operativo (como Windows, Linux o macOS) en un entorno tecnológico. Garantiza que el hardware y el software interactúen de manera eficiente y segura según las necesidades del usuario u organización.",
+        "imagen": "https://franciscojesusgu.wordpress.com/wp-content/uploads/2020/06/1454403057_788324_1454404583_noticia_normal.jpg?w=656&h=300&crop=1",
+        "tecnologias": ["DevOps", "Kubernetes", "Jenkins"]
+    },
+    {
+        "id": 6,
+        "titulo": "Ciberseguridad y haking",
+        "categoria": "microservicios, NestJS",
+        "descripcion": "La ciberseguridad protege los sistemas, redes y datos frente a accesos no autorizados, mientras que el hacking es el uso de técnicas (como pentesting o ingeniería social) para evaluar y vulnerar dichos sistemas. Ambas disciplinas están conectadas: los expertos en seguridad utilizan las tácticas de los hackers para fortalecer la protección.",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsS0kXP5zpqMchaXG-tc6PV3zcp7TEBWEnqekWyvsYaV-q2lsqlYU20Ky&s=10",
+        "tecnologias": ["DevOps", "Kubernetes", "Jenkins"]
+    }
 ]

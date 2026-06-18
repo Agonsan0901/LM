@@ -1,48 +1,36 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
-import MainLayout from "../layouts/MainLayout";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { MainLayout } from "@/layouts/MainLayout"
+import { Home } from "../pages/Home"
+import Trabajos from "@/pages/trabajos/Trabajos"
+import { TrabajoDetalle } from "@/pages/trabajos/TrabajoDetalle"
+import { Contacto } from "@/pages/Contacto"
+import Servicios from "@/pages/servicios/Servicios"
+import { ServicioDetalle } from "@/pages/servicios/ServicioDetalle"
+import { BackendLayout } from "@/layouts/BackendLayout";
 
-import DashboardLayout from "../layouts/Dashboardlayout"; 
-import Home from "../pages/Home";
 
-import Servicios from "../pages/Servicios"; 
-import Trabajos from "../pages/Trabajos";
-import Cursos from "../pages/Cursos";
-import Contacto from "../pages/Contacto";
-import AdminHome      from "../pages/Admin/AdminHome";
-import AdminCursos    from "../pages/Admin/AdminCursos";
-import AdminServicios from "../pages/Admin/AdminServicios";
-import AdminTrabajos  from "../pages/Admin/AdminTrabajos";
-import AdminFormacion from "../pages/Admin/AdminFormacion";
-
-import { StoreProvider } from "../Context/StoreContext"; 
-
-export default function AppRouter() {
+export const AppRouter = () => {
   return (
-    <HashRouter>
-      <StoreProvider>
-        <Routes>
-          {/* Portfolio público */}
-          <Route element={<MainLayout />}>
-            <Route path="/"          element={<Home />} />
-            <Route path="/servicios" element={<Servicios />} />
-            <Route path="/trabajos"  element={<Trabajos />} />
-            <Route path="/cursos"    element={<Cursos />} />
-            <Route path="/contacto"  element={<Contacto />} />
-          </Route>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
 
-         
-          <Route path="/admin" element={<DashboardLayout />}>
-            <Route index              element={<AdminHome />} />
-            <Route path="cursos"      element={<AdminCursos />} />
-            <Route path="servicios"   element={<AdminServicios />} />
-            <Route path="trabajos"    element={<AdminTrabajos />} />
-            <Route path="formacion"   element={<AdminFormacion />} />
-          </Route>
+          <Route path="/trabajos" element={<Trabajos />} />
+          <Route path="/trabajos/:id" element={<TrabajoDetalle />} />
 
-          {/* Ruta comodín para evitar el 404 */}
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </StoreProvider>
-    </HashRouter>
-  );
+          <Route path="/contacto" element={<Contacto />} />
+
+          <Route path="/servicios" element={<Servicios />} />
+          <Route path="/servicios/:id" element={<ServicioDetalle />} />
+        </Route>
+<Route path="/admin" element={<BackendLayout />}>
+  <Route index element={<h1>Dashboard</h1>} />
+  <Route path="productos" element={<h1>Productos</h1>} />
+  <Route path="trabajos" element={<h1>Trabajos</h1>} />
+  <Route path="mensajes" element={<h1>Mensajes</h1>} />
+</Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }

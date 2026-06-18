@@ -1,4 +1,5 @@
-import AppRouter from "./router/AppRouter"; // <-- Sin llaves {}
+import { AppRouter } from "./router/AppRouter"
+
 export const App = () => {
   return (
     <AppRouter />

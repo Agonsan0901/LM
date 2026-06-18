@@ -1,16 +1,25 @@
-import type { IServicio } from "../../../model/interfaces/IServicio";
-import ServicioCard from "./ServicioCard";
+import { ServicioCard } from "@/components/main/servicios/ServicioCard";
+import type { IServicio } from "@/model/interfaces/IServicio";
+import { NavLink } from "react-router-dom";
 
 interface Props {
   servicios: IServicio[];
 }
 
-export default function ServiciosCard({ servicios }: Props) {
+export const ServiciosCard = ({ servicios }: Props) => {
   return (
-    <div className="projects">
-      {servicios.map((s) => (
-        <ServicioCard key={s.id} servicio={s} />
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {servicios.map((servicio) => (
+        <NavLink
+          key={servicio.id}
+          to={`/servicios/${servicio.id}`}
+          className="cursor-pointer hover:scale-105 transition"
+        >
+          <ServicioCard
+            servicio={servicio}
+          />
+        </NavLink>
       ))}
     </div>
   );
-}
+};

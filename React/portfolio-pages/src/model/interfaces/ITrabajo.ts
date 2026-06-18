@@ -1,10 +1,8 @@
 export interface ITrabajo {
   id: number;
   titulo: string;
+  categoria: string;
   descripcion: string;
   imagen: string;
-  tags: string;
-  link: string;
-  estado: string;
-  created_at: string;
+  tecnologias: string[];
 }

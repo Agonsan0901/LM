@@ -1,143 +1,99 @@
-import "../styles/contacto.css";
-import { useEffect, useState } from "react";
-import titulos from "../model/data/titulos.json";
-import type { ITitulo } from "../model/interfaces/ITitulo";
-const titulo = (titulos as ITitulo[]).find((t) => t.seccion === "contacto")!;
+import { useState } from "react";
 
-export default function Contacto() {
-  const [form, setForm] = useState({ nombre: "", email: "", asunto: "", mensaje: "" });
-  const [enviado, setEnviado] = useState(false);
+export const Contacto = () => {
+  const [form, setForm] = useState({
+    nombre: "",
+    email: "",
+    mensaje: "",
+  });
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("visible")),
-      { threshold: 0.15 }
-    );
-    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
-  const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-    setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  const onSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setEnviado(true);
-    setTimeout(() => setEnviado(false), 3000);
-    setForm({ nombre: "", email: "", asunto: "", mensaje: "" });
+
+    setLoading(true);
+    setSuccess(false);
+
+    try {
+      console.log("Mensaje enviado:", form);
+
+      await new Promise((res) => setTimeout(res, 1000));
+
+      setSuccess(true);
+      setForm({ nombre: "", email: "", mensaje: "" });
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <section className="section contact-page" style={{ paddingTop: "120px" }}>
-      <div className="container">
+    <section className="max-w-3xl mx-auto py-20 px-6">
+      
+      <h1 className="text-5xl font-bold text-center mb-10">
+        Contacto
+      </h1>
 
-        {/* Cabecera */}
-        <div className="contact-page__head reveal">
-          <span className="contact-page__badge">✉️ Disponible para colaborar</span>
-          <h2 className="section__title">{titulo.titulo}</h2>
-          <p className="section__sub">{titulo.subtitulo}</p>
-        </div>
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-6 bg-slate-800 p-6 rounded-xl shadow-lg"
+      >
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Nombre"
+          value={form.nombre}
+          onChange={handleChange}
+          className="w-full p-3 rounded bg-slate-900 text-white"
+          required
+        />
 
-        <div className="contact reveal">
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={form.email}
+          onChange={handleChange}
+          className="w-full p-3 rounded bg-slate-900 text-white"
+          required
+        />
 
-          {/* INFO */}
-          <div className="contact__info">
-            <h3>¡Hablemos!</h3>
-            <p>
-              Estoy abierto a oportunidades de prácticas, proyectos colaborativos
-              y cualquier propuesta relacionada con el sector IT. No dudes en escribirme.
-            </p>
+        <textarea
+          name="mensaje"
+          placeholder="Mensaje"
+          value={form.mensaje}
+          onChange={handleChange}
+          rows={5}
+          className="w-full p-3 rounded bg-slate-900 text-white"
+          required
+        />
 
-            {/* Cards de contacto */}
-            <div className="contact-cards">
-              <a href="mailto:juancarlossucuzunaygualoto87@gmail.com" className="contact-card">
-                <div className="contact-card__icon">✉️</div>
-                <div>
-                  <span className="contact-card__label">Email</span>
-                  <span className="contact-card__value">juancarlossucuzunaygualoto87@gmail.com</span>
-                </div>
-              </a>
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-blue-600 hover:bg-blue-700 transition py-3 rounded font-medium"
+        >
+          {loading ? "Enviando..." : "Enviar"}
+        </button>
 
-              <a href="https://github.com/juancarlossucuzunaygualoto97-bot" target="_blank" rel="noreferrer" className="contact-card">
-                <div className="contact-card__icon">🐙</div>
-                <div>
-                  <span className="contact-card__label">GitHub</span>
-                  <span className="contact-card__value">juancarlossucuzunaygualoto97-bot</span>
-                </div>
-              </a>
-
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="contact-card">
-                <div className="contact-card__icon">💼</div>
-                <div>
-                  <span className="contact-card__label">LinkedIn</span>
-                  <span className="contact-card__value">Conectar en LinkedIn</span>
-                </div>
-              </a>
-
-              <div className="contact-card contact-card--location">
-                <div className="contact-card__icon">📍</div>
-                <div>
-                  <span className="contact-card__label">Ubicación</span>
-                  <span className="contact-card__value">España · Disponible en remoto</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Disponibilidad */}
-            <div className="contact__availability">
-              <span className="contact__dot" />
-              Disponible para prácticas y proyectos
-            </div>
-          </div>
-
-          {/* FORMULARIO */}
-          <form className="contact__form contact__form--enhanced" onSubmit={onSubmit}>
-            <div className="contact__form-row">
-              <div className="form-group">
-                <label>Nombre</label>
-                <input
-                  type="text" name="nombre" value={form.nombre}
-                  onChange={onChange} placeholder="Tu nombre completo" required
-                />
-              </div>
-              <div className="form-group">
-                <label>Email</label>
-                <input
-                  type="email" name="email" value={form.email}
-                  onChange={onChange} placeholder="tu@email.com" required
-                />
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label>Asunto</label>
-              <input
-                type="text" name="asunto" value={form.asunto}
-                onChange={onChange} placeholder="¿De qué quieres hablar?" required
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Mensaje</label>
-              <textarea
-                name="mensaje" value={form.mensaje} rows={5}
-                onChange={onChange} placeholder="Cuéntame tu propuesta o pregunta..." required
-              />
-            </div>
-
-            {enviado && (
-              <div className="contact__success">
-                ✓ Mensaje enviado correctamente. ¡Te responderé pronto!
-              </div>
-            )}
-
-            <button type="submit" className="btn btn--primary btn--full">
-              Enviar mensaje →
-            </button>
-          </form>
-
-        </div>
-      </div>
+        {success && (
+          <p className="text-green-400 text-center">
+            Mensaje enviado correctamente ✔
+          </p>
+        )}
+      </form>
     </section>
   );
-}
+};
