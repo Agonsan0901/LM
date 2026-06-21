@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { supabase } from "../lib/supabase";
 
 export const Contacto = () => {
   const [form, setForm] = useState({
@@ -9,6 +10,7 @@ export const Contacto = () => {
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -24,16 +26,26 @@ export const Contacto = () => {
 
     setLoading(true);
     setSuccess(false);
+    setErrorMsg(null);
 
     try {
-      console.log("Mensaje enviado:", form);
+      const { error: supabaseError } = await supabase
+        .from("mensajes")
+        .insert([
+          {
+            nombre: form.nombre,
+            email: form.email,
+            mensaje: form.mensaje,
+          },
+        ]);
 
-      await new Promise((res) => setTimeout(res, 1000));
+      if (supabaseError) throw supabaseError;
 
       setSuccess(true);
       setForm({ nombre: "", email: "", mensaje: "" });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error:", error);
+      setErrorMsg(error?.message || "Error al enviar el mensaje");
     } finally {
       setLoading(false);
     }
@@ -41,10 +53,7 @@ export const Contacto = () => {
 
   return (
     <section className="max-w-3xl mx-auto py-20 px-6">
-      
-      <h1 className="text-5xl font-bold text-center mb-10">
-        Contacto
-      </h1>
+      <h1 className="text-5xl font-bold text-center mb-10">Contacto</h1>
 
       <form
         onSubmit={handleSubmit}
@@ -87,6 +96,10 @@ export const Contacto = () => {
         >
           {loading ? "Enviando..." : "Enviar"}
         </button>
+
+        {errorMsg && (
+          <p className="text-red-400 text-center">✗ {errorMsg}</p>
+        )}
 
         {success && (
           <p className="text-green-400 text-center">

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
-import { TrabajosCard } from "@/components/main/trabajos/TrabajosCard";
+import { supabase } from "../../lib/supabase";
+import { TrabajosCard } from "../../components/main/trabajos/TrabajosCard";
 
 const Trabajos = () => {
   const [trabajos, setTrabajos] = useState<any[]>([]);

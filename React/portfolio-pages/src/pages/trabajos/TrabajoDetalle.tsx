@@ -1,19 +1,26 @@
 import { useParams, Link } from "react-router-dom";
-import dataTrabajos from '@/model/data/trabajos.json';
-import type { ITrabajo } from "@/model/interfaces/ITrabajo";
+import { useTrabajo } from "../../components/hooks/UseTrabajos/UseTrabajos";
 
 export const TrabajoDetalle = () => {
   const { id } = useParams<{ id: string }>(); 
   
-  // Buscamos el trabajo de forma segura
-  const trabajo = dataTrabajos.find((trab) => trab.id === Number(id)) as ITrabajo | undefined;
+  const { trabajo, loading, error } = useTrabajo(id) as any;
 
-  // Control de estado de error: Si no existe el trabajo, mostramos una interfaz limpia
-  if (!trabajo) {
+  if (loading) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[50vh] text-center p-6 text-slate-400">
+        <p className="animate-pulse text-lg">Cargando detalles del proyecto...</p>
+      </div>
+    );
+  }
+
+  if (error || !trabajo) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh] text-center p-6">
         <h2 className="text-2xl font-bold text-red-400 mb-2">Trabajo no encontrado</h2>
-        <p className="text-gray-400 mb-4">El trabajo con ID {id} no existe o fue eliminado.</p>
+        <p className="text-gray-400 mb-4">
+          {error ? "Hubo un problema al conectar con la base de datos." : `El trabajo con ID ${id} no existe o fue eliminado.`}
+        </p>
         <Link to="/trabajos" className="text-blue-400 hover:underline">
           ← Volver a Trabajos
         </Link>
@@ -21,13 +28,11 @@ export const TrabajoDetalle = () => {
     );
   }
 
-  // Interfaz principal estructurada y con diseño (Ejemplo usando clases semánticas o Tailwind)
   return (
     <main className="max-w-4xl mx-auto my-8 p-6 bg-slate-900 rounded-lg shadow-lg border border-slate-800 text-slate-100">
-      {/* Encabezado */}
       <header className="border-b border-slate-700 pb-4 mb-6">
         <span className="text-xs font-semibold tracking-wider text-blue-400 uppercase">
-          {trabajo.categoria}
+          {trabajo.categoria || "Proyecto"}
         </span>
         <h1 className="text-3xl font-bold mt-1 text-white">
           {trabajo.titulo}
@@ -37,17 +42,43 @@ export const TrabajoDetalle = () => {
         </p>
       </header>
 
-      {/* Contenido Principal */}
       <section className="space-y-6">
+        {trabajo.imagen && (
+          <div className="w-full overflow-hidden rounded-md mb-4">
+            <img 
+              src={trabajo.imagen} 
+              alt={trabajo.titulo} 
+              className="w-full h-auto object-cover max-h-96"
+            />
+          </div>
+        )}
+        
         <div>
           <h2 className="text-lg font-medium text-slate-300 mb-2">Descripción del Trabajo</h2>
           <p className="text-slate-400 leading-relaxed text-justify">
             {trabajo.descripcion}
           </p>
         </div>
+
+        {trabajo.tecnologias && (
+          <div>
+            <h2 className="text-lg font-medium text-slate-300 mb-2">Tecnologías / Herramientas</h2>
+            <div className="flex flex-wrap gap-2">
+              {(typeof trabajo.tecnologias === 'string' 
+                ? trabajo.tecnologias.split(',') 
+                : Array.isArray(trabajo.tecnologias)
+                ? trabajo.tecnologias
+                : []
+              ).map((tech: string, index: number) => (
+                <span key={index} className="px-3 py-1 bg-slate-800 text-xs font-medium rounded-full text-blue-300 border border-slate-700">
+                  {tech.trim()}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
-      {/* Footer del contenedor / Botón de retorno */}
       <footer className="mt-8 pt-4 border-t border-slate-700 flex justify-end">
         <Link 
           to="/trabajos" 

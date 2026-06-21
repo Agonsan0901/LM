@@ -1,12 +1,47 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Trash2 } from "lucide-react";
-import { useStore } from "../../Context/StoreContext";
+import { supabase } from "../../lib/supabase";
 import type { IMensaje } from "../../model/interfaces/IMensaje";
 
 export default function AdminContactos() {
-  // Consumimos 'mensajes' y 'deleteMensaje' del StoreContext conectado a la tabla real
-  const { mensajes, deleteMensaje, loading } = useStore();
+  const [mensajes, setMensajes] = useState<IMensaje[]>([]);
+  const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+
+  // Función para obtener los mensajes de la tabla "mensajes"
+  const fetchMensajes = async () => {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from("mensajes")
+      .select("*")
+      .order("created_at", { ascending: false });
+    
+    if (data) setMensajes(data);
+    if (error) console.error("Error al cargar mensajes:", error);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchMensajes();
+  }, []);
+
+  const handleEliminar = async (id: number) => {
+    if (!confirm("¿Seguro que quieres eliminar este mensaje?")) return;
+    
+    try {
+      setSaving(true);
+      const { error } = await supabase.from("mensajes").delete().eq("id", id);
+      
+      if (error) throw error;
+      
+      // Actualizamos la lista después de eliminar
+      fetchMensajes();
+    } catch (err) {
+      alert("Error al eliminar el mensaje");
+    } finally {
+      setSaving(false);
+    }
+  };
 
   if (loading)
     return (
@@ -14,18 +49,6 @@ export default function AdminContactos() {
         <p className="aempty">Cargando mensajes desde Supabase...</p>
       </div>
     );
-
-  const handleEliminar = async (id: number) => {
-    if (!confirm("¿Seguro que quieres eliminar este mensaje?")) return;
-    try {
-      setSaving(true);
-      await deleteMensaje(id);
-    } catch (err) {
-      alert("Error al eliminar el mensaje");
-    } finally {
-      setSaving(false);
-    }
-  };
 
   return (
     <div className="apage">

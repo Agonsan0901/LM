@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Trash2, Plus, List } from "lucide-react";
-import { useStore } from "../../Context/StoreContext";
-import type { ITrabajo } from "../../model/interfaces/ITrabajo";
+import { supabase } from "../../lib/supabase";
 
 const EMPTY = {
   titulo: "",
@@ -11,21 +10,43 @@ const EMPTY = {
   imagen: ""
 };
 
-export default function AdminTrabajos() {
-  const { trabajos, addTrabajo, deleteTrabajo, loading } = useStore();
-
+export default function AdminProductos() {
+  const [productos, setProductos] = useState<any[]>([]);
   const [vista, setVista] = useState<"lista" | "nuevo">("lista");
   const [form, setForm] = useState(EMPTY);
+  
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
   const [ok, setOk] = useState(false);
   const [errMsg, setErrMsg] = useState("");
-  const [saving, setSaving] = useState(false);
 
-  if (loading)
+  const getProductos = async () => {
+    try {
+      setLoading(true);
+      const { data, error } = await supabase
+        .from("productos")
+        .select("*");
+      
+      if (error) throw error;
+      setProductos(data || []);
+    } catch (err: any) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    getProductos();
+  }, []);
+
+  if (loading) {
     return (
       <div className="apage">
         <p className="aempty">Cargando datos desde Supabase...</p>
       </div>
     );
+  }
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm((p) => ({
@@ -41,17 +62,23 @@ export default function AdminTrabajos() {
       setSaving(true);
       setErrMsg("");
 
-      await addTrabajo({
-        titulo: form.titulo,
-        descripcion: form.descripcion,
-        categoria: form.categoria,
-        // CORRECCIÓN: Convierte el string del input en string[] (Array) para Supabase
-        tecnologias: form.tecnologias.split(",").map((t) => t.trim()).filter(Boolean),
-        imagen: form.imagen,
-      });
+      const { error } = await supabase
+        .from("productos")
+        .insert([
+          {
+            titulo: form.titulo,
+            descripcion: form.descripcion,
+            categoria: form.categoria,
+            tecnologias: form.tecnologias,
+            imagen: form.imagen,
+          }
+        ]);
+
+      if (error) throw error;
 
       setForm(EMPTY);
       setOk(true);
+      await getProductos();
 
       setTimeout(() => {
         setOk(false);
@@ -59,7 +86,26 @@ export default function AdminTrabajos() {
       }, 1400);
 
     } catch (err: any) {
-      setErrMsg(err?.message || "Error al guardar el trabajo");
+      setErrMsg(err?.message || "Error al guardar el producto");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const deleteProducto = async (id: number) => {
+    if (!window.confirm("¿Estás seguro de eliminar este producto?")) return;
+    
+    try {
+      setSaving(true);
+      const { error } = await supabase
+        .from("productos")
+        .delete()
+        .eq("id", id);
+
+      if (error) throw error;
+      await getProductos();
+    } catch (err: any) {
+      alert(err?.message || "Error al eliminar el producto");
     } finally {
       setSaving(false);
     }
@@ -69,9 +115,9 @@ export default function AdminTrabajos() {
     <div className="apage">
       <div className="apage__header">
         <div>
-          <h1 className="apage__titulo">Trabajos</h1>
+          <h1 className="apage__titulo">Productos</h1>
           <p className="apage__sub">
-            {trabajos.length} trabajos en Supabase
+            {productos.length} productos en Supabase
           </p>
         </div>
 
@@ -94,8 +140,8 @@ export default function AdminTrabajos() {
 
       {vista === "lista" && (
         <div className="atable-wrap">
-          {trabajos.length === 0 ? (
-            <p className="aempty">No hay trabajos. Pulsa "Nuevo" para añadir uno.</p>
+          {productos.length === 0 ? (
+            <p className="aempty">No hay productos. Pulsa "Nuevo" para añadir uno.</p>
           ) : (
             <table className="atable">
               <thead>
@@ -108,17 +154,22 @@ export default function AdminTrabajos() {
               </thead>
 
               <tbody>
-                {trabajos.map((t: ITrabajo) => (
-                  <tr key={t.id}>
-                    <td className="atable__main">{t.titulo}</td>
+                {productos.map((p: any) => (
+                  <tr key={p.id}>
+                    <td className="atable__main">{p.titulo || p.nombre}</td>
                     <td>
-                      <span className="abadge">{t.categoria}</span>
+                      <span className="abadge">{p.categoria || p.tipo || "General"}</span>
                     </td>
-                    <td>{t.tecnologias.join(", ")}</td>
+                    <td>
+                      {Array.isArray(p.tecnologias) 
+                        ? p.tecnologias.join(", ") 
+                        : String(p.tecnologias || "")}
+                    </td>
                     <td>
                       <button
                         className="adel"
-                        onClick={() => deleteTrabajo(t.id)}
+                        onClick={() => deleteProducto(p.id)}
+                        disabled={saving}
                       >
                         <Trash2 size={13} />
                       </button>
@@ -134,7 +185,7 @@ export default function AdminTrabajos() {
       {vista === "nuevo" && (
         <div className="aform-wrap">
           <div className="aform">
-            <h2 className="aform__titulo">Insertar Nuevo Trabajo</h2>
+            <h2 className="aform__titulo">Insertar Nuevo Producto</h2>
 
             <div className="aform__grid">
               <div className="aform__field">
@@ -164,10 +215,10 @@ export default function AdminTrabajos() {
             </div>
 
             {errMsg && <div className="aform__err">✗ {errMsg}</div>}
-            {ok && <div className="aform__ok">✓ Trabajo guardado correctamente</div>}
+            {ok && <div className="aform__ok">✓ Producto guardado correctamente</div>}
 
             <button className="aform__submit" onClick={onSubmit} disabled={saving}>
-              {saving ? "Guardando..." : "Insertar Trabajo"}
+              {saving ? "Guardando..." : "Insertar Producto"}
             </button>
           </div>
         </div>

@@ -3,13 +3,29 @@ import {
   useContext,
   useEffect,
   useState,
+  useCallback,
   type ReactNode,
 } from "react";
 
 import { supabase } from "../lib/supabase";
 
-import type { IProducto } from "../model/interfaces/IProducto";
-import type { ITrabajo } from "../model/interfaces/ITrabajo";
+export interface IProducto {
+  id: number;
+  titulo: string;
+  descripcion: string;
+  categoria: string;
+  tecnologias: string | string[];
+  imagen: string;
+}
+
+export interface ITrabajo {
+  id: number;
+  titulo: string;
+  descripcion: string;
+  categoria: string;
+  tecnologias: string | string[];
+  imagen: string;
+}
 
 export interface IServicio {
   id: number;
@@ -72,93 +88,121 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    cargarTodo();
-
-    const channel = supabase
-      ?.channel("portfolio-realtime")
-      .on("postgres_changes", { event: "*", schema: "public", table: "productos" }, cargarProductos)
-      .on("postgres_changes", { event: "*", schema: "public", table: "trabajos" }, cargarTrabajos)
-      .on("postgres_changes", { event: "*", schema: "public", table: "servicios" }, cargarServicios)
-      .on("postgres_changes", { event: "*", schema: "public", table: "mensajes" }, cargarMensajes) 
-      .subscribe();
-
-    return () => {
-      if (channel) supabase?.removeChannel(channel);
-    };
+  // 1. Memorizar funciones de carga para evitar bucles de referencia en memoria
+  const cargarProductos = useCallback(async () => {
+    try {
+      if (!supabase) {
+        setProductos(dataProductosLocal as IProducto[]);
+        return;
+      }
+      const { data, error } = await supabase.from("productos").select("*").order("id", { ascending: false });
+      if (error || !data || data.length === 0) {
+        setProductos(dataProductosLocal as IProducto[]);
+        return;
+      }
+      const productosMapeados: IProducto[] = data.map((prod: any) => ({
+        id: prod.id,
+        titulo: prod.Titulo || prod.titulo || "Sin título",
+        descripcion: prod.descripcion || "",
+        categoria: prod.Categoria || prod.categoria || "General",
+        tecnologias: prod.Tecnologias || prod.tecnologias || [],
+        imagen: prod.imagen || ""
+      }));
+      setProductos(productosMapeados);
+    } catch (e) {
+      console.error("Fallo crítico mapeando productos", e);
+      setProductos(dataProductosLocal as IProducto[]);
+    }
   }, []);
 
-  async function cargarTodo() {
+  const cargarTrabajos = useCallback(async () => {
+    try {
+      if (!supabase) return;
+      const { data, error } = await supabase.from("trabajos").select("*").order("id", { ascending: false });
+      if (error) { console.error("Error cargando trabajos", error); setError(error.message); return; }
+      setTrabajos(data || []);
+    } catch (e) {
+      console.error("Fallo crítico cargando trabajos", e);
+    }
+  }, []);
+
+  const cargarServicios = useCallback(async () => {
+    try {
+      if (!supabase) return;
+      const { data, error } = await supabase.from("servicios").select("*").order("id", { ascending: false });
+      if (error) { console.error("Error cargando servicios", error); setError(error.message); return; }
+      
+      const serviciosMapeados: IServicio[] = (data || []).map((s: any) => {
+        let stringCaracteristicas = "";
+        if (s.tecnologias) {
+          stringCaracteristicas = Array.isArray(s.tecnologias) 
+            ? s.tecnologias.join(", ") 
+            : String(s.tecnologias);
+        }
+
+        return {
+          id: s.id,
+          nombre: s.titulo || "", 
+          descripcion: s.descripcion || "",
+          tipo: s.categoria || "", 
+          precio: s.precio || 0,
+          icono: s.icono || "",
+          imagen: s.imagen || "",
+          caracteristicas: stringCaracteristicas
+        };
+      });
+
+      setServicios(serviciosMapeados);
+    } catch (e) {
+      console.error("Fallo crítico mapeando servicios", e);
+    }
+  }, []);
+
+  const cargarMensajes = useCallback(async () => {
+    try {
+      if (!supabase) return;
+      const { data, error } = await supabase.from("mensajes").select("*").order("id", { ascending: false });
+      if (error) { console.error("Error cargando mensajes", error); setError(error.message); return; }
+      setMensajes(data || []);
+    } catch (e) {
+      console.error("Fallo crítico cargando mensajes", e);
+    }
+  }, []);
+
+  const cargarTodo = useCallback(async () => {
     setLoading(true);
     try {
-      // Usamos Promise.allSettled para asegurar que si una petición falla, las demás continúen
-      await Promise.allSettled([
-        cargarProductos(), 
-        cargarTrabajos(), 
-        cargarServicios(),
-        cargarMensajes() 
+      await Promise.all([
+        cargarProductos().catch(e => console.error(e)),
+        cargarTrabajos().catch(e => console.error(e)),
+        cargarServicios().catch(e => console.error(e)),
+        cargarMensajes().catch(e => console.error(e))
       ]);
     } catch (err) {
       console.error("Error en la carga inicial de datos:", err);
     } finally {
-      // Pase lo que pase, garantizamos apagar el estado 'loading'
       setLoading(false);
     }
-  }
+  }, [cargarProductos, cargarTrabajos, cargarServicios, cargarMensajes]);
 
-  async function cargarProductos() {
-    if (!supabase) {
-      setProductos(dataProductosLocal as IProducto[]);
-      return;
-    }
-    const { data, error } = await supabase.from("productos").select("*").order("id", { ascending: false });
-    if (error || !data || data.length === 0) {
-      setProductos(dataProductosLocal as IProducto[]);
-      return;
-    }
-    const productosMapeados: IProducto[] = data.map((prod: any) => ({
-      id: prod.id,
-      titulo: prod.Titulo || prod.titulo,
-      descripcion: prod.descripcion,
-      categoria: prod.Categoria || prod.categoria,
-      tecnologias: prod.Tecnologias || prod.tecnologias,
-      imagen: prod.imagen
-    }));
-    setProductos(productosMapeados);
-  }
+  // 2. Controlar de forma limpia los efectos de inicialización y realtime
+  useEffect(() => {
+    cargarTodo();
 
-  async function cargarTrabajos() {
     if (!supabase) return;
-    const { data, error } = await supabase.from("trabajos").select("*").order("id", { ascending: false });
-    if (error) { console.error("Error cargando trabajos", error); setError(error.message); return; }
-    setTrabajos(data || []);
-  }
 
-  async function cargarServicios() {
-    if (!supabase) return;
-    const { data, error } = await supabase.from("servicios").select("*").order("id", { ascending: false });
-    if (error) { console.error("Error cargando servicios", error); setError(error.message); return; }
-    
-    const serviciosMapeados: IServicio[] = (data || []).map((s: any) => ({
-      id: s.id,
-      nombre: s.titulo, 
-      descripcion: s.descripcion,
-      tipo: s.categoria, 
-      precio: 0,
-      icono: "",
-      imagen: s.imagen,
-      caracteristicas: s.tecnologias ? s.tecnologias.join(", ") : "" 
-    }));
+    const channel = supabase
+      .channel("portfolio-realtime")
+      .on("postgres_changes", { event: "*", schema: "public", table: "productos" }, () => { cargarProductos(); })
+      .on("postgres_changes", { event: "*", schema: "public", table: "trabajos" }, () => { cargarTrabajos(); })
+      .on("postgres_changes", { event: "*", schema: "public", table: "servicios" }, () => { cargarServicios(); })
+      .on("postgres_changes", { event: "*", schema: "public", table: "mensajes" }, () => { cargarMensajes(); }) 
+      .subscribe();
 
-    setServicios(serviciosMapeados);
-  }
-
-  async function cargarMensajes() {
-    if (!supabase) return;
-    const { data, error } = await supabase.from("mensajes").select("*").order("id", { ascending: false });
-    if (error) { console.error("Error cargando mensajes", error); setError(error.message); return; }
-    setMensajes(data || []);
-  }
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [cargarTodo, cargarProductos, cargarTrabajos, cargarServicios, cargarMensajes]);
 
   async function addProducto(producto: Omit<IProducto, "id">) {
     if (!supabase) throw new Error("Supabase no está configurado");
@@ -168,18 +212,22 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       Categoria: producto.categoria,
       Tecnologias: producto.tecnologias,
       imagen: producto.imagen || null,
-    }).select().single();
+    }).select();
+    
     if (error) throw error;
-    if (data) {
+    if (data && data.length > 0) {
+      const registro = data[0];
       const nuevoProducto: IProducto = {
-        id: data.id,
-        titulo: data.Titulo,
-        descripcion: data.descripcion,
-        categoria: data.Categoria,
-        tecnologias: data.Tecnologias,
-        imagen: data.imagen
+        id: registro.id,
+        titulo: registro.Titulo,
+        descripcion: registro.descripcion,
+        categoria: registro.Categoria,
+        tecnologias: registro.Tecnologias,
+        imagen: registro.imagen
       };
       setProductos((prev) => [nuevoProducto, ...prev]);
+    } else {
+      await cargarProductos();
     }
   }
 
@@ -191,9 +239,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       imagen: trabajo.imagen || null,
       Categoria: trabajo.categoria,
       Tecnologias: trabajo.tecnologias,
-    }).select().single();
+    }).select();
+    
     if (error) throw error;
-    if (data) setTrabajos((prev) => [data, ...prev]);
+    if (data && data.length > 0) {
+      setTrabajos((prev) => [data[0], ...prev]);
+    } else {
+      await cargarTrabajos();
+    }
   }
 
   async function addServicio(servicio: Omit<IServicio, "id">) {
@@ -204,24 +257,25 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       descripcion: servicio.descripcion,
       categoria: servicio.tipo, 
       imagen: servicio.imagen || null,
-      tecnologias: servicio.caracteristicas
-        ? servicio.caracteristicas.split(",").map((t) => t.trim()).filter(Boolean)
-        : [], 
-    }).select().single();
+      tecnologias: servicio.caracteristicas || ""
+    }).select();
     
     if (error) throw error;
-    if (data) {
+    if (data && data.length > 0) {
+      const registro = data[0];
       const nuevoServicio: IServicio = {
-        id: data.id,
-        nombre: data.titulo,
-        descripcion: data.descripcion,
-        tipo: data.categoria,
-        precio: 0,
-        icono: "",
-        imagen: data.imagen,
-        caracteristicas: data.tecnologias ? data.tecnologias.join(", ") : ""
+        id: registro.id,
+        nombre: registro.titulo,
+        descripcion: registro.descripcion,
+        tipo: registro.categoria,
+        precio: registro.precio || 0,
+        icono: registro.icono || "",
+        imagen: registro.imagen,
+        caracteristicas: registro.tecnologias ? String(registro.tecnologias) : ""
       };
       setServicios((prev) => [nuevoServicio, ...prev]);
+    } else {
+      await cargarServicios();
     }
   }
 
