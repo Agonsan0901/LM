@@ -1,18 +1,19 @@
-import type { IServicio } from "@/model/interfaces/IServicio";
-
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import type { IServicio } from "../../../model/interfaces/IServicio";
+import { Badge } from "../../../components/ui/badge";
+import { Button } from "../../../components/ui/button";
 import {
   Card,
   CardAction,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
- interface Props {
-    servicio: IServicio;
-  }
+} from "../../../components/ui/card";
+
+interface Props {
+  servicio: IServicio;
+}
+
+// 1. Exportación nombrada
 export const ServicioCard = ({ servicio }: Props) => {
   return (
     <Card className="relative mx-auto w-full max-w-sm pt-0">
@@ -20,7 +21,7 @@ export const ServicioCard = ({ servicio }: Props) => {
       <img
         src={servicio.imagen}
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover "
+        className="relative z-20 aspect-video w-full object-cover"
       />
       <CardHeader>
         <CardAction>
@@ -32,5 +33,7 @@ export const ServicioCard = ({ servicio }: Props) => {
         <Button className="w-full">View Event</Button>
       </CardFooter>
     </Card>
-  )
-}
+  );
+};
+
+export default ServicioCard;

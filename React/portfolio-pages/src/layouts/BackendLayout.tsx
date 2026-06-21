@@ -54,6 +54,18 @@ export const BackendLayout = () => {
           >
             Mensajes
           </NavLink>
+          
+          <NavLink
+            to="/admin/servicios"
+            className={({ isActive }) =>
+              isActive
+                ? "text-white bg-blue-600 px-3 py-2 rounded"
+                : "text-gray-300 hover:text-white px-3 py-2"
+            }
+            
+          >
+            Servicios 
+          </NavLink>
 
         </nav>
       </aside>

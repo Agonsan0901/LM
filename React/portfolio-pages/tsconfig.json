@@ -5,7 +5,7 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "https://supabase.com/dashboard/project/qvfduupmrrjuscebfzti",
     "paths": {
       "@/*": ["./src/*"]
     }

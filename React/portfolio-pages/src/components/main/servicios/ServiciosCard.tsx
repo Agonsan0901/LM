@@ -1,5 +1,5 @@
-import { ServicioCard } from "@/components/main/servicios/ServicioCard";
-import type { IServicio } from "@/model/interfaces/IServicio";
+import { ServicioCard } from "../servicios/ServicioCard";
+import type { IServicio } from "../../../model/interfaces/IServicio";
 import { NavLink } from "react-router-dom";
 
 interface Props {

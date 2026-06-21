@@ -1,4 +1,4 @@
-export interface IServicio {
+export interface IProducto {
     id:          number;
     titulo:      string;
     categoria:   string;

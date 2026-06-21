@@ -29,13 +29,11 @@ export default function AdminSidebar() {
         <span className="asb__logo-text">Panel</span>
       </div>
 
-      {/* Quick Create */}
       <button className="asb__quick" onClick={() => nav("/admin")}>
         <Plus size={13}/><span>Creación rápida</span>
         <Mail size={13} className="asb__mail"/>
       </button>
 
-      {/* Nav principal */}
       <nav className="asb__nav">
         {NAV.map(({ label, to, icon: Icon }) => (
           <Link key={to} to={to}
@@ -45,7 +43,6 @@ export default function AdminSidebar() {
         ))}
       </nav>
 
-      {/* Documentos */}
       <p className="asb__section-label">Documentos</p>
       <nav className="asb__nav">
         {DOCS.map(({ label, icon: Icon }) => (
@@ -58,7 +55,6 @@ export default function AdminSidebar() {
         </button>
       </nav>
 
-      {/* Bottom */}
       <div className="asb__bottom">
         {[
           { label: "Ajustes", icon: Settings  },
