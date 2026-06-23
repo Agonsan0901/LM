@@ -1,15 +1,14 @@
-import type { ITrabajo } from "@/model/interfaces/ITrabajo";
+import type { ITrabajo } from "../../../model/interfaces/ITrabajo";
 
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Badge } from "../../ui/badge"
+import { Button } from "../../ui/button"
 import {
   Card,
   CardAction,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "../../ui/card"
 
 interface Props {
   trabajo: ITrabajo;

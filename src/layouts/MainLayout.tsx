@@ -1,4 +1,4 @@
-import { NavBar } from '@/components/main/NavBar'
+import { NavBar } from '../components/main/NavBar'
 import { Outlet } from 'react-router-dom'
 
 export const MainLayout = () => {

@@ -1,5 +1,5 @@
-import { TrabajoCard } from "@/components/main/trabajos/TrabajoCard";
-import type { ITrabajo } from "@/model/interfaces/ITrabajo";
+import { TrabajoCard } from "../../../components/main/trabajos/TrabajoCard";
+import type { ITrabajo } from "../../../model/interfaces/ITrabajo";
 // Añadimos NavLink aquí en el import:
 import { NavLink } from "react-router-dom"; 
 
