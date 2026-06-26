@@ -18,7 +18,6 @@
   background: var(--adm-bg);
   font-family: 'DM Sans', system-ui, sans-serif;
 }
-
 .adm-main {
   flex: 1;
   overflow-x: hidden;
