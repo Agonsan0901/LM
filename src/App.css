@@ -11,7 +11,6 @@
   --adm-asb-bg: var(--c-sidebar);
   --adm-border: var(--c-borde);
 }
-
 .adm-layout {
   display: flex;
   min-height: 100vh;
