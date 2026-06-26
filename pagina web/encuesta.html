@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta & Juegos · LaLiga 25/26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-brand">
+                <span class="header-badge">⚽</span>
+                <div>
+                    <h1 id="header-titulo">LaLiga 25/26</h1>
+                    <p class="header-sub" id="header-sub">Primera División · España</p>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Equipos</a>
+                <a href="encuesta.html" class="nav-link active">Encuesta & Juegos</a>
+            </nav>
+        </div>
+        <div class="ligas-bar">
+            <button class="liga-btn active" data-json="js/equipos.json" data-titulo="LaLiga 25/26" data-sub="Primera División · España" data-liga="LaLiga">🇪🇸 LaLiga</button>
+            <button class="liga-btn" data-json="js/premier.json" data-titulo="Premier League 25/26" data-sub="Primera División · Inglaterra" data-liga="Premier League">🏴 Premier League</button>
+            <button class="liga-btn" data-json="js/bundesliga.json" data-titulo="Bundesliga 25/26" data-sub="Primera División · Alemania" data-liga="Bundesliga">🇩🇪 Bundesliga</button>
+            <button class="liga-btn" data-json="js/seriea.json" data-titulo="Serie A 25/26" data-sub="Primera División · Italia" data-liga="Serie A">🇮🇹 Serie A</button>
+            <button class="liga-btn" data-json="js/ligue1.json" data-titulo="Ligue 1 25/26" data-sub="Primera División · Francia" data-liga="Ligue 1">🇫🇷 Ligue 1</button>
+        </div>
+    </header>
+
+    <!-- TABS -->
+    <div class="tabs-bar">
+        <button class="tab-btn active" data-tab="encuesta">🗳️ Encuesta</button>
+        <button class="tab-btn" data-tab="juego-escudo">🛡️ Adivina el Escudo</button>
+        <button class="tab-btn" data-tab="juego-estadio">🏟️ Adivina el Estadio</button>
+        <button class="tab-btn" data-tab="juego-memoria">🧠 Juego de Memoria</button>
+    </div>
+
+    <main class="encuesta-main">
+
+        <!-- ── PESTAÑA ENCUESTA ── -->
+        <section class="tab-panel active" id="tab-encuesta">
+            <div class="enc-section">
+                <h2 class="enc-title">🗳️ Encuesta Futbolera</h2>
+                <form id="encuesta-form" class="enc-form">
+
+                    <div class="enc-field">
+                        <label>⚽ ¿De qué equipo eres?</label>
+                        <select id="eq-favorito" required>
+                            <option value="" disabled selected>Selecciona tu equipo</option>
+                        </select>
+                    </div>
+
+                    <div class="enc-field">
+                        <label>😤 ¿Cuál es el equipo que más odias?</label>
+                        <select id="eq-odiado" required>
+                            <option value="" disabled selected>Selecciona un equipo</option>
+                        </select>
+                    </div>
+
+                    <div class="enc-field">
+                        <label>💙 ¿Cuál es tu segundo equipo favorito?</label>
+                        <select id="eq-segundo" required>
+                            <option value="" disabled selected>Selecciona un equipo</option>
+                        </select>
+                    </div>
+
+                    <div class="enc-field">
+                        <label id="label-campeon">🏆 ¿Quién crees que ganará LaLiga esta temporada?</label>
+                        <select id="eq-campeon" required>
+                            <option value="" disabled selected>Selecciona un equipo</option>
+                        </select>
+                    </div>
+
+                    <div class="enc-field">
+                        <label id="label-descenso">📉 ¿Qué equipo crees que descenderá?</label>
+                        <select id="eq-descenso" required>
+                            <option value="" disabled selected>Selecciona un equipo</option>
+                        </select>
+                    </div>
+
+                    <div class="enc-field">
+                        <label id="label-jugador">⭐ ¿Cuál es tu jugador favorito de LaLiga?</label>
+                        <input type="text" id="jugador-fav" placeholder="Nombre del jugador...">
+                    </div>
+
+                    <div class="enc-field">
+                        <label id="label-goleador">🥅 ¿Quién será el máximo goleador?</label>
+                        <input type="text" id="pichichi" placeholder="Nombre del jugador...">
+                    </div>
+
+                    <div class="enc-field">
+                        <label id="label-estadio">🏟️ ¿Cuál es tu estadio favorito de LaLiga?</label>
+                        <select id="estadio-fav" required>
+                            <option value="" disabled selected>Selecciona un estadio</option>
+                        </select>
+                    </div>
+
+                    <div class="enc-field">
+                        <label id="label-partidos">🎮 ¿Cuántos partidos ves de LaLiga a la semana?</label>
+                        <select id="partidos-semana">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option>Ninguno</option>
+                            <option>1 partido</option>
+                            <option>2-3 partidos</option>
+                            <option>Todos los que puedo</option>
+                        </select>
+                    </div>
+
+                    <div class="enc-field">
+                        <label>📝 Explica tus elecciones y lo que piensas de esta temporada</label>
+                        <textarea id="explicacion" rows="5" placeholder="Cuéntanos por qué eres de ese equipo, por qué odias al otro, qué tiene de especial tu segundo favorito, tus predicciones..."></textarea>
+                    </div>
+
+                    <button type="submit" class="enc-btn">Enviar respuestas ✅</button>
+                </form>
+                <div id="enc-resultado" class="enc-resultado" hidden></div>
+            </div>
+        </section>
+
+        <!-- ── PESTAÑA JUEGO ESCUDO ── -->
+        <section class="tab-panel" id="tab-juego-escudo">
+            <div class="enc-section">
+                <h2 class="enc-title">🛡️ ¿De qué equipo es este escudo?</h2>
+                <div class="juego-box">
+                    <div class="juego-imagen-wrap">
+                        <img id="escudo-img" src="" alt="Escudo misterioso" class="juego-img escudo-juego">
+                    </div>
+                    <div id="escudo-opciones" class="juego-opciones"></div>
+                    <div id="escudo-feedback" class="juego-feedback"></div>
+                    <button id="escudo-siguiente" class="enc-btn" hidden>Siguiente ➡️</button>
+                    <div id="escudo-puntos" class="juego-puntos">Puntos: <span>0</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── PESTAÑA JUEGO ESTADIO ── -->
+        <section class="tab-panel" id="tab-juego-estadio">
+            <div class="enc-section">
+                <h2 class="enc-title">🏟️ ¿De qué equipo es este estadio?</h2>
+                <div class="juego-box">
+                    <div class="juego-imagen-wrap">
+                        <img id="estadio-img" src="" alt="Estadio misterioso" class="juego-img">
+                    </div>
+                    <div id="estadio-opciones" class="juego-opciones"></div>
+                    <div id="estadio-feedback" class="juego-feedback"></div>
+                    <button id="estadio-siguiente" class="enc-btn" hidden>Siguiente ➡️</button>
+                    <div id="estadio-puntos" class="juego-puntos">Puntos: <span>0</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── PESTAÑA JUEGO MEMORIA ── -->
+        <section class="tab-panel" id="tab-juego-memoria">
+            <div class="enc-section">
+                <h2 class="enc-title">🧠 Juego de Memoria — Empareja escudo con estadio</h2>
+                <div class="memoria-info">
+                    <span id="memoria-intentos">Intentos: 0</span>
+                    <span id="memoria-parejas">Parejas: 0 / 6</span>
+                    <button id="memoria-reiniciar" class="enc-btn">🔄 Nueva partida</button>
+                </div>
+                <div id="memoria-tablero" class="memoria-tablero"></div>
+                <div id="memoria-fin" class="memoria-fin" hidden></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Fútbol Europeo · Datos con fines educativos</p>
+    </footer>
+
+    <script src="js/encuesta.js"></script>
+</body>
+</html>

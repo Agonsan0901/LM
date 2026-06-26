@@ -1,0 +1,308 @@
+[
+  {
+    "nombre": "Paris Saint-Germain",
+    "escudo": "",
+    "ciudad": "París",
+    "fundacion": 1970,
+    "apodo": "PSG / Les Parisiens",
+    "colores": "Azul, rojo y blanco",
+    "ligas": "12 Ligas",
+    "estadio": { "nombre": "Parc des Princes", "imagen": "" },
+    "historia": "El Paris Saint-Germain fue fundado en 1970 y tras ser adquirido por Qatar Sports Investments en 2011 se convirtió en uno de los clubes más ricos del mundo. Ficharon a Neymar por 222 millones y a Mbappé, formando uno de los ataques más caros de la historia. Han dominado la Ligue 1 pero la Champions League se les resiste.",
+    "curiosidades": [
+      "Ficharon a Neymar por 222 millones de euros en 2017, el traspaso más caro de la historia.",
+      "Kylian Mbappé es su máximo goleador histórico con más de 250 goles.",
+      "El Parc des Princes tiene capacidad para 47.929 espectadores.",
+      "Han ganado 12 Ligue 1 desde 2013, dominando el fútbol francés de forma absoluta."
+    ]
+  },
+  {
+    "nombre": "Olympique de Marseille",
+    "escudo": "",
+    "ciudad": "Marsella",
+    "fundacion": 1899,
+    "apodo": "L'OM / Les Phocéens",
+    "colores": "Blanco y azul",
+    "ligas": "9 Ligas",
+    "estadio": { "nombre": "Orange Vélodrome", "imagen": "" },
+    "historia": "El Olympique de Marseille fue fundado en 1899 y es el único club francés en ganar la Champions League, en 1993 bajo Raymond Goethals. El Vélodrome es el estadio con más ambiente de Francia. Es el eterno rival del PSG y el club más popular del sur de Francia.",
+    "curiosidades": [
+      "Son el único club francés en ganar la Champions League (1993).",
+      "El Orange Vélodrome tiene capacidad para 67.394 espectadores, el más grande de Francia.",
+      "Zinedine Zidane comenzó su carrera profesional en el Marseille.",
+      "El derbi contra el PSG es el más seguido del fútbol francés."
+    ]
+  },
+  {
+    "nombre": "Olympique Lyonnais",
+    "escudo": "",
+    "ciudad": "Lyon",
+    "fundacion": 1950,
+    "apodo": "OL / Les Gones",
+    "colores": "Blanco y rojo",
+    "ligas": "7 Ligas",
+    "estadio": { "nombre": "Groupama Stadium", "imagen": "" },
+    "historia": "El Olympique Lyonnais fue fundado en 1950 y dominó el fútbol francés ganando 7 Ligas consecutivas entre 2002 y 2008. Bajo Jean-Michel Aulas construyó uno de los proyectos más sólidos de Europa. Su equipo femenino es el más exitoso del mundo con múltiples Champions League.",
+    "curiosidades": [
+      "Ganaron 7 Ligue 1 consecutivas entre 2002 y 2008, un récord histórico.",
+      "Su equipo femenino ha ganado 8 Champions League, siendo el más exitoso del mundo.",
+      "El Groupama Stadium fue inaugurado en 2016 con capacidad para 59.186 espectadores.",
+      "Karim Benzema comenzó su carrera profesional en el Lyon."
+    ]
+  },
+  {
+    "nombre": "AS Monaco",
+    "escudo": "",
+    "ciudad": "Mónaco",
+    "fundacion": 1924,
+    "apodo": "Les Rouges et Blancs / ASM",
+    "colores": "Rojo y blanco",
+    "ligas": "8 Ligas",
+    "estadio": { "nombre": "Stade Louis II", "imagen": "" },
+    "historia": "El AS Monaco fue fundado en 1924 en el principado de Mónaco. Ganó 8 títulos de Ligue 1 y llegó a la final de la Champions League en 2004. En 2017 protagonizó una de las temporadas más brillantes de Europa, ganando la Ligue 1 y llegando a semifinales de Champions con Mbappé, Lemar y Bernardo Silva.",
+    "curiosidades": [
+      "El Stade Louis II está parcialmente construido sobre el mar Mediterráneo.",
+      "En 2017 tenían a Mbappé, Bernardo Silva, Lemar y Fabinho al mismo tiempo.",
+      "Mónaco es el estado más pequeño con un equipo en una liga de primer nivel europeo.",
+      "Los jugadores del Monaco no pagan impuestos por vivir en el principado."
+    ]
+  },
+  {
+    "nombre": "LOSC Lille",
+    "escudo": "",
+    "ciudad": "Lille",
+    "fundacion": 1944,
+    "apodo": "Les Dogues / LOSC",
+    "colores": "Rojo y blanco",
+    "ligas": "4 Ligas",
+    "estadio": { "nombre": "Stade Pierre-Mauroy", "imagen": "" },
+    "historia": "El LOSC Lille fue fundado en 1944 y es el club más importante del norte de Francia. Ganó la Ligue 1 en 2021 de forma sorprendente bajo Christophe Galtier, superando al PSG en la última jornada. Con Eden Hazard en sus filas ganó el doblete en 2011.",
+    "curiosidades": [
+      "Ganaron la Ligue 1 en 2021 superando al PSG en la última jornada, una sorpresa histórica.",
+      "Eden Hazard jugó aquí antes de ir al Chelsea, siendo su trampolín al estrellato.",
+      "El Stade Pierre-Mauroy tiene capacidad para 50.186 espectadores.",
+      "Son el club más exitoso del norte de Francia."
+    ]
+  },
+  {
+    "nombre": "Stade Rennais",
+    "escudo": "",
+    "ciudad": "Rennes",
+    "fundacion": 1901,
+    "apodo": "Les Rouge et Noir / SRFC",
+    "colores": "Rojo y negro",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Roazhon Park", "imagen": "" },
+    "historia": "El Stade Rennais fue fundado en 1901 y es el club más importante de Bretaña. Ganó la Copa de Francia en 2019 bajo Julien Stéphan, su primer título en 48 años. En los últimos años se ha clasificado regularmente para Europa, siendo uno de los clubes más en forma del fútbol francés.",
+    "curiosidades": [
+      "Ganaron la Copa de Francia en 2019, su primer título en 48 años.",
+      "El Roazhon Park lleva el nombre bretón de Rennes.",
+      "Son el club más importante de Bretaña, región con fuerte identidad cultural.",
+      "Se han clasificado para la Champions League en los últimos años."
+    ]
+  },
+  {
+    "nombre": "RC Lens",
+    "escudo": "",
+    "ciudad": "Lens",
+    "fundacion": 1906,
+    "apodo": "Les Sang et Or / RCL",
+    "colores": "Amarillo y rojo",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Stade Bollaert-Delelis", "imagen": "" },
+    "historia": "El RC Lens fue fundado en 1906 en una ciudad minera del norte de Francia. Ganó su única Ligue 1 en 1998. El Stade Bollaert es conocido por su ambiente extraordinario, siendo uno de los estadios más intimidantes de Francia. Regresaron a la Ligue 1 en 2020 y se clasificaron para la Champions en 2023.",
+    "curiosidades": [
+      "El Stade Bollaert es considerado el estadio con mejor ambiente de Francia.",
+      "Ganaron su única Ligue 1 en 1998, el año del Mundial en Francia.",
+      "La ciudad de Lens tiene una fuerte tradición minera que se refleja en la identidad del club.",
+      "Se clasificaron para la Champions League en 2023 por primera vez en 20 años."
+    ]
+  },
+  {
+    "nombre": "OGC Nice",
+    "escudo": "",
+    "ciudad": "Niza",
+    "fundacion": 1904,
+    "apodo": "Les Aiglons / Le Gym",
+    "colores": "Rojo y negro",
+    "ligas": "4 Ligas",
+    "estadio": { "nombre": "Allianz Riviera", "imagen": "" },
+    "historia": "El OGC Nice fue fundado en 1904 en la Costa Azul. Ganó 4 títulos de Ligue 1 y es conocido por su cantera que ha producido jugadores como Thierry Henry y Patrick Vieira. Bajo la propiedad del grupo INEOS de Jim Ratcliffe, ha vivido un renacimiento con ambiciones europeas.",
+    "curiosidades": [
+      "Thierry Henry y Patrick Vieira comenzaron sus carreras en la cantera del Nice.",
+      "El Allianz Riviera tiene vistas a las montañas de los Alpes y al mar Mediterráneo.",
+      "Jim Ratcliffe, dueño del INEOS, también compró una parte del Manchester United.",
+      "Niza es una de las ciudades más turísticas de Europa, en la Costa Azul."
+    ]
+  },
+  {
+    "nombre": "Stade de Reims",
+    "escudo": "",
+    "ciudad": "Reims",
+    "fundacion": 1931,
+    "apodo": "Les Rouges et Blancs / SDR",
+    "colores": "Rojo y blanco",
+    "ligas": "6 Ligas",
+    "estadio": { "nombre": "Stade Auguste-Delaune", "imagen": "" },
+    "historia": "El Stade de Reims fue fundado en 1931 y dominó el fútbol francés en los años 50 y 60, ganando 6 títulos de liga y llegando a 2 finales de Copa de Europa (1956 y 1959), ambas perdidas ante el Real Madrid. Tras décadas en divisiones inferiores, regresaron a la Ligue 1 en 2018.",
+    "curiosidades": [
+      "Llegaron a dos finales de Copa de Europa (1956 y 1959), perdiendo ambas ante el Real Madrid.",
+      "Just Fontaine, que marcó 13 goles en el Mundial 1958, jugó aquí.",
+      "Regresaron a la Ligue 1 en 2018 tras décadas en divisiones inferiores.",
+      "Reims es famosa por su catedral gótica donde se coronaban los reyes de Francia."
+    ]
+  },
+  {
+    "nombre": "Montpellier HSC",
+    "escudo": "",
+    "ciudad": "Montpellier",
+    "fundacion": 1974,
+    "apodo": "La Paillade / MHSC",
+    "colores": "Azul y naranja",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Stade de la Mosson", "imagen": "" },
+    "historia": "El Montpellier HSC fue fundado en 1974 y protagonizó el mayor milagro del fútbol francés al ganar la Ligue 1 en 2012 bajo René Girard, superando al PSG en la última jornada. Con Olivier Giroud como estrella, fue una temporada mágica para un club modesto del sur de Francia.",
+    "curiosidades": [
+      "Ganaron la Ligue 1 en 2012 superando al PSG en la última jornada, siendo una sorpresa histórica.",
+      "Olivier Giroud fue su estrella en la temporada del título antes de ir al Arsenal.",
+      "El Stade de la Mosson tiene capacidad para 32.900 espectadores.",
+      "Montpellier tiene una de las universidades más antiguas de Europa, fundada en 1289."
+    ]
+  },
+  {
+    "nombre": "Toulouse FC",
+    "escudo": "",
+    "ciudad": "Toulouse",
+    "fundacion": 1937,
+    "apodo": "Les Violets / TFC",
+    "colores": "Violeta y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stadium de Toulouse", "imagen": "" },
+    "historia": "El Toulouse FC fue fundado en 1937 y es el club más importante del suroeste de Francia. Ganó la Copa de Francia en 1957. Regresó a la Ligue 1 en 2022 bajo la propiedad del RedBird Capital Partners, el mismo grupo que posee el AC Milan, con ambiciones de crecimiento.",
+    "curiosidades": [
+      "Su color violeta es único en el fútbol francés.",
+      "El Stadium de Toulouse fue sede de la Eurocopa 2016 y el Mundial 1998.",
+      "RedBird Capital, dueño del AC Milan, también posee el Toulouse.",
+      "Toulouse es conocida como 'La Ciudad Rosa' por el color de sus edificios."
+    ]
+  },
+  {
+    "nombre": "RC Strasbourg",
+    "escudo": "",
+    "ciudad": "Estrasburgo",
+    "fundacion": 1906,
+    "apodo": "La Meinau / RCSA",
+    "colores": "Azul y blanco",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Stade de la Meinau", "imagen": "" },
+    "historia": "El RC Strasbourg fue fundado en 1906 en Estrasburgo, ciudad fronteriza entre Francia y Alemania. Ganó su única Ligue 1 en 1979. Es conocido por su cantera y por ser un club con fuerte identidad regional alsaciana. Chelsea adquirió el club en 2023 como parte de su expansión europea.",
+    "curiosidades": [
+      "Chelsea FC adquirió el club en 2023 como parte de su red de clubes europeos.",
+      "Estrasburgo es la sede del Parlamento Europeo.",
+      "Ganaron su única Ligue 1 en 1979.",
+      "La región de Alsacia tiene una cultura única, mezcla de tradiciones francesas y alemanas."
+    ]
+  },
+  {
+    "nombre": "Nantes FC",
+    "escudo": "",
+    "ciudad": "Nantes",
+    "fundacion": 1943,
+    "apodo": "Les Canaris / FCN",
+    "colores": "Amarillo y verde",
+    "ligas": "8 Ligas",
+    "estadio": { "nombre": "Stade de la Beaujoire", "imagen": "" },
+    "historia": "El FC Nantes fue fundado en 1943 y es uno de los clubes más laureados de Francia con 8 títulos de Ligue 1. Conocido por su estilo de juego técnico y colectivo, el 'juego a la nantesa', ha formado a grandes jugadores. La tragedia de Emiliano Sala en 2019 marcó profundamente al club.",
+    "curiosidades": [
+      "El 'juego a la nantesa' es un estilo de fútbol técnico y colectivo que influyó en el fútbol francés.",
+      "Emiliano Sala murió en un accidente de avión en 2019 cuando iba a fichar por el Cardiff.",
+      "Marcel Desailly y Didier Deschamps comenzaron sus carreras en el Nantes.",
+      "Son el cuarto club más laureado de la historia de la Ligue 1."
+    ]
+  },
+  {
+    "nombre": "Girondins de Bordeaux",
+    "escudo": "",
+    "ciudad": "Burdeos",
+    "fundacion": 1881,
+    "apodo": "Les Girondins / Marine et Blanc",
+    "colores": "Azul marino y blanco",
+    "ligas": "6 Ligas",
+    "estadio": { "nombre": "Matmut Atlantique", "imagen": "" },
+    "historia": "Los Girondins de Bordeaux fueron fundados en 1881 y son uno de los clubes más históricos de Francia. Ganaron 6 títulos de Ligue 1 y llegaron a la final de la UEFA Cup en 1996. Tras una grave crisis económica, descendieron a la tercera división en 2022 pero están en proceso de recuperación.",
+    "curiosidades": [
+      "Zinedine Zidane jugó aquí antes de ir a la Juventus y el Real Madrid.",
+      "Descendieron a la tercera división en 2022 por problemas económicos graves.",
+      "El Matmut Atlantique fue inaugurado en 2015 para la Eurocopa 2016.",
+      "Burdeos es la capital mundial del vino, siendo una de las ciudades más elegantes de Francia."
+    ]
+  },
+  {
+    "nombre": "Saint-Étienne",
+    "escudo": "",
+    "ciudad": "Saint-Étienne",
+    "fundacion": 1919,
+    "apodo": "Les Verts / ASSE",
+    "colores": "Verde y blanco",
+    "ligas": "10 Ligas",
+    "estadio": { "nombre": "Stade Geoffroy-Guichard", "imagen": "" },
+    "historia": "El Saint-Étienne fue fundado en 1919 y es el club más laureado de Francia con 10 títulos de Ligue 1. Dominó el fútbol francés en los años 60 y 70. El Stade Geoffroy-Guichard, conocido como 'El Caldero', es uno de los estadios con más ambiente de Europa. Regresaron a la Ligue 1 en 2024.",
+    "curiosidades": [
+      "Son el club más laureado de Francia con 10 títulos de Ligue 1.",
+      "El Stade Geoffroy-Guichard es conocido como 'El Caldero' por su ambiente infernal.",
+      "Llegaron a la final de la Copa de Europa en 1976, perdiendo ante el Bayern.",
+      "Regresaron a la Ligue 1 en 2024 tras varios años en la segunda división."
+    ]
+  },
+  {
+    "nombre": "Brest",
+    "escudo": "",
+    "ciudad": "Brest",
+    "fundacion": 1950,
+    "apodo": "Les Pirates / SB29",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stade Francis-Le Blé", "imagen": "" },
+    "historia": "El Stade Brestois fue fundado en 1950 y protagonizó la mayor sorpresa de la Ligue 1 2023-24, clasificándose para la Champions League por primera vez en su historia. Con un presupuesto modesto y un fútbol colectivo bajo Eric Roy, demostraron que los milagros son posibles en el fútbol.",
+    "curiosidades": [
+      "Se clasificaron para la Champions League en 2024 por primera vez en su historia.",
+      "Son el club con menor presupuesto en clasificarse para la Champions en la era moderna.",
+      "El Stade Francis-Le Blé tiene capacidad para solo 15.097 espectadores.",
+      "Brest es una ciudad portuaria en el extremo oeste de Francia, en Bretaña."
+    ]
+  },
+  {
+    "nombre": "Le Havre AC",
+    "escudo": "",
+    "ciudad": "El Havre",
+    "fundacion": 1872,
+    "apodo": "Les Ciel et Marine / HAC",
+    "colores": "Azul celeste y marino",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Stade Océane", "imagen": "" },
+    "historia": "El Le Havre AC fue fundado en 1872 y es el club de fútbol más antiguo de Francia. Conocido por su excelente cantera, ha formado a jugadores como Riyad Mahrez, Paul Pogba y Didier Drogba. Regresaron a la Ligue 1 en 2023 tras muchos años en divisiones inferiores.",
+    "curiosidades": [
+      "Es el club de fútbol más antiguo de Francia, fundado en 1872.",
+      "Su cantera ha formado a Riyad Mahrez, Paul Pogba y Didier Drogba.",
+      "El Stade Océane fue inaugurado en 2012 con capacidad para 25.178 espectadores.",
+      "El Havre es el segundo puerto más importante de Francia."
+    ]
+  },
+  {
+    "nombre": "Auxerre",
+    "escudo": "",
+    "ciudad": "Auxerre",
+    "fundacion": 1905,
+    "apodo": "L'AJA / Les Bourguignons",
+    "colores": "Blanco y azul",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Stade de l'Abbé-Deschamps", "imagen": "" },
+    "historia": "El AJ Auxerre fue fundado en 1905 y es conocido por ser uno de los mejores formadores de jugadores de Francia. Bajo Guy Roux, que dirigió el club durante 44 años, ganó la Ligue 1 en 1996 y la Copa de Francia. Ha formado a jugadores como Eric Cantona, Laurent Blanc y Djibril Cissé.",
+    "curiosidades": [
+      "Guy Roux dirigió el club durante 44 años consecutivos, siendo el entrenador más longevo de la historia.",
+      "Han formado a Eric Cantona, Laurent Blanc, Djibril Cissé y muchos más.",
+      "Ganaron la Ligue 1 en 1996 siendo un club de ciudad pequeña.",
+      "Auxerre tiene solo 35.000 habitantes, siendo el club más pequeño en ganar la Ligue 1."
+    ]
+  }
+]

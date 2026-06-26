@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": "https://supabase.com/dashboard/project/qvfduupmrrjuscebfzti",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

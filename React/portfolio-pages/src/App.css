@@ -1,0 +1,260 @@
+:root{
+  --text-primary: #7c3aed;
+  --text-secondary: #a78bfa;
+  --text-dark: #5b21b6;
+}
+
+.adm-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #0080ff;
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.adm-main {
+  flex: 1;
+  overflow-x: hidden;
+  background: #0080ff;
+}
+
+
+.asb {
+  width: 220px;
+  min-height: 100vh;
+  background: #062f58;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.asb__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+
+.asb__logo-icon {
+  width: 26px;
+  height: 26px;
+  background: var(--text-dark);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+
+.asb__quick {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0.75rem 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--text-dark);
+  border: none;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.asb__quick:hover {
+  background: #1e293b;
+}
+
+
+.asb__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 0 0.5rem;
+}
+
+.asb__link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.48rem 0.75rem;
+  border-radius: 7px;
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  font-family: inherit;
+}
+
+.asb__link:hover {
+  background: #f1f5f9;
+  color: var(--text-primary);
+}
+
+.asb__link--active {
+  background: #f1f5f9;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.asb__link--muted {
+  color: var(--text-secondary);
+}
+
+
+.asb__section-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding: 1rem 1.25rem 0.35rem;
+}
+
+
+.asb__user {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.75rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.asb__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--text-dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+
+.asb__user-info span:first-child {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.asb__user-info span:last-child {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+
+.apage__titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.apage__sub {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+}
+
+.apage__tab {
+  color: var(--text-secondary);
+}
+
+.apage__tab:hover {
+  color: var(--text-primary);
+}
+
+.atable th {
+  color: var(--text-secondary);
+}
+
+.atable td {
+  color: var(--text-primary);
+}
+
+.atable__main {
+  color: var(--text-dark);
+}
+
+.atable__desc {
+  color: var(--text-secondary);
+}
+
+
+.abadge {
+  color: var(--text-primary);
+}
+
+
+.astatus {
+  color: var(--text-secondary);
+}
+
+
+.alink {
+  color: var(--text-primary);
+}
+
+
+
+.aempty {
+  color: var(--text-secondary);
+}
+
+
+.aform__titulo {
+  color: var(--text-primary);
+}
+
+.aform__sub {
+  color: var(--text-secondary);
+}
+
+.aform__field label {
+  color: var(--text-secondary);
+}
+
+.aform__field input,
+.aform__select {
+  color: var(--text-dark);
+}
+
+
+.ahome-card__label {
+  color: var(--text-secondary);
+}
+
+.ahome-card__count {
+  color: var(--text-primary);
+}
+
+.ahome-chart__titulo {
+  color: var(--text-primary);
+}
+
+.ahome-chart__sub {
+  color: var(--text-secondary);
+}
+
+
+.aform__submit {
+  background: #0f172a;
+  color: var(--text-secondary);
+}

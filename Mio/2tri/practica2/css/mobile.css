@@ -1,0 +1,21 @@
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 60px 60px 80px 200px 1fr;
+    grid-template-areas:
+        "titulo"
+        "logo"
+        "oferta"
+        "menu-ppal"
+        "header-main"
+        "nav-categorias"
+        "seccion-categorias"
+        "aside-inf";
+}
+
+.titulo {
+    font-size: 18px;
+}
+
+.logo, .oferta, .menu-ppal, .nav-categorias, .aside-inf {
+    padding: 15px;
+}

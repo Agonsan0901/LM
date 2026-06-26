@@ -1,0 +1,117 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* DESKTOP LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 100px 1fr;
+    grid-template-areas:
+        "logo titulo oferta"
+        "menu-ppal header-main aside-inf"
+        "nav-categorias seccion-categorias aside-inf";
+    height: 100vh;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: #D2B48C;
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #8B4513;
+}
+
+.titulo {
+    grid-area: titulo;
+    background-color: #87CEEB;
+    color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #4682B4;
+}
+
+.oferta {
+    grid-area: oferta;
+    background-color: #CD5C5C;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #8B0000;
+}
+
+.menu-ppal {
+    grid-area: menu-ppal;
+    background-color: #98FB98;
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #32CD32;
+}
+
+.header-main {
+    grid-area: header-main;
+    background-color: #DDA0DD;
+    color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #9370DB;
+}
+
+.nav-categorias {
+    grid-area: nav-categorias;
+    background-color: #90EE90;
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #228B22;
+}
+
+.seccion-categorias {
+    grid-area: seccion-categorias;
+    background-color: #FFFF99;
+    color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFD700;
+}
+
+.aside-inf {
+    grid-area: aside-inf;
+    background-color: #E6E6FA;
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #9370DB;
+}

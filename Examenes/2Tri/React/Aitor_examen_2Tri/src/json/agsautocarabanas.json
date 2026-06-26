@@ -1,0 +1,348 @@
+[
+    {
+      "cod": 1,
+      "marca": "Rapido",
+      "modelo": "850F",
+      "tipo": "integrales",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 95650,
+      "medidas": {
+        "longitud": 6.99,
+        "anchura": 2.35,
+        "altura": 2.91
+      },
+      "imagenes": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTz_gCMv294MLSHm2we7QFlCs5JxwmkK0Dw&s",
+        "https://www.rapido-autocaravana.es/dist/images/fiche-produit/implantations/1000-450-center/850f-jour.png",
+        "https://www.rapido-autocaravana.es/dist/images/fiche-produit/photos/1600-896-bd/850f-1-camping-car.jpg"  
+      ]
+    },
+    {
+      "cod": 2,
+      "marca": "Hymer",
+      "modelo": "B-Class MasterLine I 780",
+      "tipo": "integrales",
+      "personas": 4,
+      "potencia_cv": 170,
+      "precio_eur": 145000,
+      "medidas": {
+        "longitud": 7.89,
+        "anchura": 2.35,
+        "altura": 2.96
+      },
+      "imagenes": [
+        "https://www.hymer.com/hymer/produktbilder/konfiguratorbilder/aussenaufnahmen_grundrisse_360grad/motorhomes/freisteller_2_1/image-thumb__30807__configurator-stage/hymer_bmli_780_freisteller_2_1.jpg",
+        "https://www.hymer.com/hymer/website-assets/1.produktseiten/b-ml-i/image-thumb__8649__wls-original/hy20_bmli_880_graoak_ledgri_i_sitzgruppe.webp",
+        "https://www.hymer.com/hymer/website-assets/1.produktseiten/b-ml-i/wohnraum/image-thumb__10819__wls-original/hy20_bmli_890_gra_velash_i_sitzgruppe.webp",
+        "https://www.hymer.com/hymer/website-assets/1.produktseiten/b-ml-i/image-thumb__34509__wls-original/hymer_bml-i-880_frankreich_fotografie_lisa-and-sven_fl2a0869_bildschirm-96-dpi-.webp"
+      ]
+    },
+    {
+      "cod": 3,
+      "marca": "Carthago",
+      "modelo": "C2 Tourer I 145 RB",
+      "tipo": "integrales",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 130000,
+      "medidas": {
+        "longitud": 7.19,
+        "anchura": 2.27,
+        "altura": 2.89
+      },
+      "imagenes": [
+        "https://www.practicalmotorhome.com/wp-content/uploads/2023/11/PMH277.review_carthago.2023_carthago_c_tourer_i145rble_superior_mb_landschaft.jpg",
+        "https://cdn.yakartautocaravanas.com/s/c/vehiculos/images/1647/zoom/36734.jpg",
+        "https://www.truck1.es/img/xxl/19729/Carthago-Carthago-C2-Tourer-I-Mercedes-145-RB-LE-Italy_19729_5134455525121.jpg",
+        "https://southdownsmotorhomes.co.uk/wp-content/uploads/2025/09/Carthago-C2-Tourer-I-145-RB-LE-Motorhome-FO900040-Lounge-to-Kitchen.webp",
+        "https://www.caravansforsale.co.uk/img/adphotos/import/636/1438636_-_photo_0_1741657076_img.jpg",
+        "https://www.truck1.es/img/xxl/19729/Carthago-Carthago-C2-Tourer-I-Mercedes-145-RB-LE-Italy_19729_4660327307219.jpg"
+      ]
+    },
+    {
+      "cod": 4,
+      "marca": "Dethleffs",
+      "modelo": "Globebus I6",
+      "tipo": "integrales",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 98000,
+      "medidas": {
+        "longitud": 6.95,
+        "anchura": 2.20,
+        "altura": 2.81
+      },
+      "imagenes": [
+        "https://www.dethleffs.es/fileadmin/i6_1.jpg",
+        "https://www.dethleffs.es/fileadmin/i6_2.jpg",
+        "https://www.dethleffs.es/fileadmin/i6_3.jpg"
+      ]
+    },
+    {
+      "cod": 5,
+      "marca": "Pilote",
+      "modelo": "G740FGJ",
+      "tipo": "integrales",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 110000,
+      "medidas": {
+        "longitud": 7.49,
+        "anchura": 2.35,
+        "altura": 2.88
+      },
+      "imagenes": [
+        "https://www.pilote.es/img/g740_1.jpg",
+        "https://www.pilote.es/img/g740_2.jpg",
+        "https://www.pilote.es/img/g740_3.jpg"
+      ]
+    },
+    {
+      "cod": 6,
+      "marca": "Benimar",
+      "modelo": "Amphitryon 998",
+      "tipo": "integrales",
+      "personas": 4,
+      "potencia_cv": 170,
+      "precio_eur": 115000,
+      "medidas": {
+        "longitud": 7.40,
+        "anchura": 2.30,
+        "altura": 2.97
+      },
+      "imagenes": [
+        "https://www.benimar.es/img/amphi1.jpg",
+        "https://www.benimar.es/img/amphi2.jpg",
+        "https://www.benimar.es/img/amphi3.jpg"
+      ]
+    },
+    {
+      "cod": 7,
+      "marca": "Benimar",
+      "modelo": "Tessoro T463",
+      "tipo": "perfiladas",
+      "personas": 5,
+      "potencia_cv": 130,
+      "precio_eur": 72000,
+      "medidas": {
+        "longitud": 7.43,
+        "anchura": 2.30,
+        "altura": 2.89
+      },
+      "imagenes": [
+        "https://autocaravanasalba.com/wp-content/uploads/Benimar-T463-12.jpg",
+        "https://www.benimar.es/img/t463_2.jpg",
+        "https://www.benimar.es/img/t463_3.jpg"
+      ]
+    },
+    {
+      "cod": 8,
+      "marca": "Benimar",
+      "modelo": "Mileo 263",
+      "tipo": "perfiladas",
+      "personas": 5,
+      "potencia_cv": 140,
+      "precio_eur": 78000,
+      "medidas": {
+        "longitud": 7.39,
+        "anchura": 2.30,
+        "altura": 2.89
+      },
+      "imagenes": [
+        "https://www.rutalibreautocaravanas.es/wp-content/uploads/2025/03/20231012_112928-scaled-e1741519870165-1024x576.jpg",
+        "https://www.benimar.es/img/m263_2.jpg",
+        "https://www.benimar.es/img/m263_3.jpg"
+      ]
+    },
+    {
+      "cod": 9,
+      "marca": "Roller Team",
+      "modelo": "Kronos 298 TL",
+      "tipo": "perfiladas",
+      "personas": 5,
+      "potencia_cv": 130,
+      "precio_eur": 69500,
+      "medidas": {
+        "longitud": 7.43,
+        "anchura": 2.35,
+        "altura": 2.95
+      },
+      "imagenes": [
+        "https://www.caravanasvendrell.com/archivos/productos/250923162509_image00017.jpeg",
+        "https://autocaravanaselglobo.com/img/kronos2.jpg",
+        "https://autocaravanaselglobo.com/img/kronos3.jpg"
+      ]
+    },
+    {
+      "cod": 10,
+      "marca": "Carado",
+      "modelo": "T338 Edition26",
+      "tipo": "perfiladas",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 68000,
+      "medidas": {
+        "longitud": 6.99,
+        "anchura": 2.32,
+        "altura": 2.90
+      },
+      "imagenes": [
+        "https://carado.com/img/t338_1.jpg",
+        "https://carado.com/img/t338_2.jpg",
+        "https://carado.com/img/t338_3.jpg"
+      ]
+    },
+    {
+      "cod": 11,
+      "marca": "Pilote",
+      "modelo": "Atlas A690GJ",
+      "tipo": "perfiladas",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 82000,
+      "medidas": {
+        "longitud": 6.99,
+        "anchura": 2.20,
+        "altura": 2.85
+      },
+      "imagenes": [
+        "https://www.pilote.es/img/a690_1.jpg",
+        "https://www.pilote.es/img/a690_2.jpg",
+        "https://www.pilote.es/img/a690_3.jpg"
+      ]
+    },
+    {
+      "cod": 12,
+      "marca": "Dethleffs",
+      "modelo": "Trend T7057",
+      "tipo": "perfiladas",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 75000,
+      "medidas": {
+        "longitud": 7.41,
+        "anchura": 2.33,
+        "altura": 2.94
+      },
+      "imagenes": [
+        "https://www.dethleffs.es/img/trend1.jpg",
+        "https://www.dethleffs.es/img/trend2.jpg",
+        "https://www.dethleffs.es/img/trend3.jpg"
+      ]
+    },
+    {
+      "cod": 13,
+      "marca": "Pilote",
+      "modelo": "V630S",
+      "tipo": "campers",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 65000,
+      "medidas": {
+        "longitud": 6.36,
+        "anchura": 2.05,
+        "altura": 2.65
+      },
+      "imagenes": [
+        "https://a.ccdn.es/cnet/vehicles/19505126/99a0da01-268f-4cfb-89e3-3987f352cc5a.jpg",
+        "https://www.pilote.es/img/v630_2.jpg",
+        "https://www.pilote.es/img/v630_3.jpg"
+      ]
+    },
+    {
+      "cod": 14,
+      "marca": "Volkswagen",
+      "modelo": "California Ocean 2026",
+      "tipo": "campers",
+      "personas": 4,
+      "potencia_cv": 150,
+      "precio_eur": 78000,
+      "medidas": {
+        "longitud": 4.90,
+        "anchura": 1.90,
+        "altura": 1.99
+      },
+      "imagenes": [
+        "https://static.motor.es/fotos-jato/volkswagen/uploads/volkswagen-california-68ae25236164b.jpg",
+        "https://www.volkswagen.com/img/california2.jpg",
+        "https://www.volkswagen.com/img/california3.jpg"
+      ]
+    },
+    {
+      "cod": 15,
+      "marca": "Mercedes",
+      "modelo": "Marco Polo",
+      "tipo": "campers",
+      "personas": 4,
+      "potencia_cv": 163,
+      "precio_eur": 82000,
+      "medidas": {
+        "longitud": 5.14,
+        "anchura": 1.93,
+        "altura": 1.98
+      },
+      "imagenes": [
+        "https://cdn.motor1.com/images/mgl/mMgGw4/s1/1x1/mercedes-marco-polo-2026.webp",
+        "https://www.mercedes-benz.es/img/marcopolo2.jpg",
+        "https://www.mercedes-benz.es/img/marcopolo3.jpg"
+      ]
+    },
+    {
+      "cod": 16,
+      "marca": "Hymer",
+      "modelo": "Free 600",
+      "tipo": "campers",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 68000,
+      "medidas": {
+        "longitud": 5.99,
+        "anchura": 2.08,
+        "altura": 2.60
+      },
+      "imagenes": [
+        "https://www.hymer.com/img/free1.jpg",
+        "https://www.hymer.com/img/free2.jpg",
+        "https://www.hymer.com/img/free3.jpg"
+      ]
+    },
+    {
+      "cod":17,
+      "marca": "Adria",
+      "modelo": "Twin Supreme 640",
+      "tipo": "campers",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 70000,
+      "medidas": {
+        "longitud": 6.36,
+        "anchura": 2.05,
+        "altura": 2.58
+      },
+      "imagenes": [
+        "https://www.adria-mobil.com/img/twin1.jpg",
+        "https://www.adria-mobil.com/img/twin2.jpg",
+        "https://www.adria-mobil.com/img/twin3.jpg"
+      ]
+    },
+    {
+      "cod": 18,
+      "marca": "Benimar",
+      "modelo": "Benivan 160",
+      "tipo": "campers",
+      "personas": 4,
+      "potencia_cv": 140,
+      "precio_eur": 63000,
+      "medidas": {
+        "longitud": 5.99,
+        "anchura": 2.05,
+        "altura": 2.65
+      },
+      "imagenes": [
+        "https://www.benimar.es/img/benivan1.jpg",
+        "https://www.benimar.es/img/benivan2.jpg",
+        "https://www.benimar.es/img/benivan3.jpg"
+      ]
+    }
+]

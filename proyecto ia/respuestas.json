@@ -1,0 +1,82 @@
+[
+  {
+    "keys": ["hola", "buenas", "hey", "saludos"],
+    "reply": "¡Hola! Me alegra verte por aquí 😊",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["cómo estás", "qué tal", "cómo te va"],
+    "reply": "Estoy genial, ¡listo para ayudarte!",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["nombre", "llamas", "eres", "quién eres"],
+    "reply": "Soy tu IA con cara. Puedes llamarme como quieras 🤖",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["chiste", "broma", "gracioso"],
+    "reply": "¿Por qué los programadores prefieren el frío? ¡Porque odian los bugs y el calor los crea! 😄",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["triste", "mal", "deprimido"],
+    "reply": "Vaya, lo siento mucho. Aquí estoy para escucharte 💙",
+    "emotion": "sad"
+  },
+  {
+    "keys": ["llora", "llorar", "llanto"],
+    "reply": "*sniff* 😢 A veces hay que soltar las lágrimas...",
+    "emotion": "cry"
+  },
+  {
+    "keys": ["sonríe", "sonrie", "sonrisa", "alégrate", "alegrate", "ríe", "rie"],
+    "reply": "¡Claro que sí! 😄 ¡Así me gusta!",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["enfádate", "enfadate", "enójate", "enojate", "rabia", "enfadado", "enojado"],
+    "reply": "¡GRRR! 😠 ¡Eso me saca de quicio!",
+    "emotion": "angry"
+  },
+  {
+    "keys": ["asústame", "asustame", "susto", "miedo", "asusta"],
+    "reply": "¡¡AAAAAH!! 😱 ¡Qué susto!",
+    "emotion": "scared"
+  },
+  {
+    "keys": ["sorpréndeme", "sorprendeme", "sorpresa", "wow"],
+    "reply": "¡¡WOW!! 😲 ¡No me lo esperaba!",
+    "emotion": "surprised"
+  },
+  {
+    "keys": ["gracias", "genial", "perfecto", "bien", "increíble"],
+    "reply": "¡De nada! Me alegra haberte ayudado 😊",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["adios", "bye", "hasta luego", "chao"],
+    "reply": "¡Hasta pronto! Vuelve cuando quieras 👋",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["hora", "tiempo", "fecha"],
+    "reply": "__DATETIME__",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["ayuda", "puedes hacer", "funciones", "qué sabes"],
+    "reply": "Puedo charlar contigo, contarte chistes, decirte la hora y reaccionar a lo que me dices 😄",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["amor", "te quiero", "enamorado"],
+    "reply": "Aww, eso es muy bonito 💜 ¡Yo también te aprecio!",
+    "emotion": "happy"
+  },
+  {
+    "keys": ["odio"],
+    "reply": "Tranquilo, respira hondo. Todo pasa 😌",
+    "emotion": "sad"
+  }
+]

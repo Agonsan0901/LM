@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nombre": "Integrales",
+        "ruta": "/integrales"
+    },
+    {
+        "id": 2,    
+        "nombre": "Perfiladas",
+        "ruta": "/perfiladas"
+    },
+    {   "id": 3,
+        "nombre": "Campers",
+        "ruta": "/campers"
+    },
+    {
+        "id": 4,            
+        "nombre": "Capuchinas",
+        "ruta": "/capuchinas"
+    }
+    
+    
+]

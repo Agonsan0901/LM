@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llama al Gato</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #222;
+            font-family: Arial, sans-serif;
+        }
+        #boton {
+            padding: 20px 40px;
+            font-size: 24px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        #boton:hover {
+            transform: scale(1.1);
+        }
+        #pantalla {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: black;
+        }
+        .ojos {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 60px;
+        }
+        .ojo {
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 40px rgba(255,255,255,0.6), 0 0 80px rgba(255,255,255,0.3);
+        }
+        #screamer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.1);
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+        @keyframes zoom {
+            to { transform: translate(-50%, -50%) scale(1.5); }
+        }
+        @keyframes shake {
+            0%, 100% { transform: translate(-50%, -50%) scale(1.5) rotate(0deg); }
+            25% { transform: translate(-50%, -50%) scale(1.5) rotate(-5deg); }
+            75% { transform: translate(-50%, -50%) scale(1.5) rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <button id="boton">Llama al Gato</button>
+    <div id="pantalla">
+        <div class="ojos">
+            <div class="ojo"></div>
+            <div class="ojo"></div>
+        </div>
+    </div>
+    <img id="screamer" src="img/a476bfd3955877066d513a7127285854.jpg" alt="screamer">
+    <audio id="audio" src="sonidos/freesound_community-jump-scare-52517.mp3"></audio>
+
+    <script>
+        document.getElementById('boton').addEventListener('click', () => {
+            document.getElementById('boton').style.display = 'none';
+            const pantalla = document.getElementById('pantalla');
+            const screamer = document.getElementById('screamer');
+            
+            pantalla.style.display = 'block';
+            document.querySelector('.ojos').style.display = 'none';
+            
+            setTimeout(() => {
+                document.querySelector('.ojos').style.display = 'flex';
+            }, 5000);
+            
+            setTimeout(() => {
+                const audio = document.getElementById('audio');
+                audio.volume = 1;
+                audio.play();
+                screamer.style.display = 'block';
+                screamer.style.animation = 'zoom 0.3s forwards';
+                setTimeout(() => {
+                    screamer.style.animation = 'shake 0.1s infinite';
+                }, 300);
+            }, 8000);
+        });
+    </script>
+</body>
+</html>

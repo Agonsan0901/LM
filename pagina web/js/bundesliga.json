@@ -1,0 +1,308 @@
+[
+  {
+    "nombre": "Bayern München",
+    "escudo": "escudos/bayer.png",
+    "ciudad": "Múnich",
+    "fundacion": 1900,
+    "apodo": "Die Roten / FC Hollywood",
+    "colores": "Rojo y blanco",
+    "ligas": "33 Ligas",
+    "estadio": { "nombre": "Allianz Arena", "imagen": "estadios/bayer.png" },
+    "historia": "El Bayern München fue fundado en 1900 y es el club más exitoso de Alemania con 33 títulos de Bundesliga. Ha ganado 6 Champions League y es uno de los clubes más ricos del mundo. Su dominio en la Bundesliga es casi absoluto, ganando 11 títulos consecutivos entre 2013 y 2023.",
+    "curiosidades": [
+      "Ganaron 11 Bundesligas consecutivas entre 2013 y 2023, un récord europeo.",
+      "La Allianz Arena puede iluminarse de rojo, blanco o azul según el equipo que juegue.",
+      "Gerd Müller marcó 365 goles en la Bundesliga, un récord histórico.",
+      "Son el único club alemán en ganar la Champions, Bundesliga y Copa en la misma temporada (2020)."
+    ]
+  },
+  {
+    "nombre": "Borussia Dortmund",
+    "escudo": "escudos/Borussia_Dortmund.png",
+    "ciudad": "Dortmund",
+    "fundacion": 1909,
+    "apodo": "BVB / Die Schwarzgelben",
+    "colores": "Amarillo y negro",
+    "ligas": "8 Ligas",
+    "estadio": { "nombre": "Signal Iduna Park", "imagen": "estadios/borussian.png" },
+    "historia": "El Borussia Dortmund fue fundado en 1909 y es el eterno rival del Bayern. El Signal Iduna Park alberga el Muro Amarillo, la tribuna de pie más grande de Europa con 25.000 aficionados. Ganaron la Champions League en 1997 y llegaron a la final en 2024, siendo el principal rival del dominio bávaro.",
+    "curiosidades": [
+      "El Muro Amarillo (Südtribüne) es la tribuna de pie más grande de Europa con 25.000 personas.",
+      "Ganaron la Champions League en 1997 derrotando al Juventus.",
+      "Robert Lewandowski comenzó su carrera europea en el Dortmund antes de ir al Bayern.",
+      "El Signal Iduna Park tiene capacidad para 81.365 espectadores, el más grande de Alemania."
+    ]
+  },
+  {
+    "nombre": "Bayer Leverkusen",
+    "escudo": "escudos/bayer_leverkusen.png",
+    "ciudad": "Leverkusen",
+    "fundacion": 1904,
+    "apodo": "Die Werkself / Neverkusen",
+    "colores": "Rojo y negro",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "BayArena", "imagen": "estadios/bayer_leverkusen.png" },
+    "historia": "El Bayer Leverkusen fue fundado en 1904 como equipo de los trabajadores de la empresa farmacéutica Bayer. Durante décadas fue conocido como 'Neverkusen' por perder finales importantes. Todo cambió con Xabi Alonso, quien los llevó a ganar la Bundesliga 2023-24 de forma invicta, uno de los logros más increíbles del fútbol europeo.",
+    "curiosidades": [
+      "Ganaron la Bundesliga 2023-24 de forma invicta bajo Xabi Alonso, un hito histórico.",
+      "Su apodo 'Neverkusen' viene de perder 3 finales en 2002 (Bundesliga, Champions y Copa).",
+      "El club fue fundado por trabajadores de la empresa farmacéutica Bayer AG.",
+      "Xabi Alonso rechazó al Liverpool y Bayern para continuar su proyecto en Leverkusen."
+    ]
+  },
+  {
+    "nombre": "RB Leipzig",
+    "escudo": "",
+    "ciudad": "Leipzig",
+    "fundacion": 2009,
+    "apodo": "Die Roten Bullen",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Red Bull Arena", "imagen": "" },
+    "historia": "El RB Leipzig fue fundado en 2009 por Red Bull y en solo 7 años ascendió desde la quinta división hasta la Bundesliga. Es el proyecto más polémico del fútbol alemán por su modelo de propiedad, pero también uno de los más exitosos, llegando a semifinales de Champions en 2020.",
+    "curiosidades": [
+      "Pasaron de la quinta división a la Bundesliga en solo 7 años.",
+      "Son el club más odiado de Alemania por su modelo de propiedad corporativa.",
+      "Llegaron a semifinales de la Champions League en 2020.",
+      "Comparten filosofía de juego y cantera con el Red Bull Salzburg austriaco."
+    ]
+  },
+  {
+    "nombre": "Borussia Mönchengladbach",
+    "escudo": "",
+    "ciudad": "Mönchengladbach",
+    "fundacion": 1900,
+    "apodo": "Die Fohlen / Gladbach",
+    "colores": "Blanco y negro",
+    "ligas": "5 Ligas",
+    "estadio": { "nombre": "Borussia-Park", "imagen": "" },
+    "historia": "El Borussia Mönchengladbach fue fundado en 1900 y dominó el fútbol alemán en los años 70 bajo Hennes Weisweiler, ganando 5 Bundesligas y llegando a 2 finales de Copa de Europa. Es conocido como 'Die Fohlen' (Los Potros) por su estilo de juego dinámico y juvenil.",
+    "curiosidades": [
+      "Dominaron la Bundesliga en los años 70 junto al Bayern, siendo su gran rival de la época.",
+      "Llegaron a dos finales de Copa de Europa (1977 y 1978).",
+      "Günter Netzer, uno de los mejores centrocampistas alemanes, jugó aquí.",
+      "El Borussia-Park fue inaugurado en 2004 con capacidad para 54.000 espectadores."
+    ]
+  },
+  {
+    "nombre": "Eintracht Frankfurt",
+    "escudo": "",
+    "ciudad": "Fráncfort",
+    "fundacion": 1899,
+    "apodo": "Die Adler / SGE",
+    "colores": "Rojo, negro y blanco",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Deutsche Bank Park", "imagen": "" },
+    "historia": "El Eintracht Frankfurt fue fundado en 1899 y es uno de los clubes más históricos de Alemania. Ganó la UEFA Europa League en 2022 de forma épica, derrotando al Barcelona en el Camp Nou y al Rangers en la final. Su afición es considerada una de las más apasionadas de Europa.",
+    "curiosidades": [
+      "Ganaron la Europa League 2022 derrotando al Barcelona en el Camp Nou con 30.000 aficionados propios.",
+      "Su afición viajó en masa a Sevilla para la final, siendo una de las más épicas de la historia.",
+      "Jugaron la primera final de Copa de Europa en 1960, perdiendo ante el Real Madrid.",
+      "El Deutsche Bank Park tiene capacidad para 58.000 espectadores."
+    ]
+  },
+  {
+    "nombre": "VfB Stuttgart",
+    "escudo": "",
+    "ciudad": "Stuttgart",
+    "fundacion": 1893,
+    "apodo": "Die Schwaben / VfB",
+    "colores": "Blanco y rojo",
+    "ligas": "5 Ligas",
+    "estadio": { "nombre": "MHPArena", "imagen": "" },
+    "historia": "El VfB Stuttgart fue fundado en 1893 y es uno de los clubes más históricos del sur de Alemania. Ganó 5 Bundesligas y fue subcampeón de la Champions League en 2004. En los últimos años ha vivido un renacimiento, clasificándose para la Champions League en 2024 con una generación de jóvenes talentos.",
+    "curiosidades": [
+      "Fueron subcampeones de la Champions League en 2004, perdiendo ante el Porto de Mourinho.",
+      "La MHPArena fue sede de la Eurocopa 2024.",
+      "Timo Werner y Sami Khedira son algunos de sus jugadores más famosos.",
+      "Se clasificaron para la Champions League en 2024 tras años de dificultades."
+    ]
+  },
+  {
+    "nombre": "SC Freiburg",
+    "escudo": "",
+    "ciudad": "Friburgo",
+    "fundacion": 1904,
+    "apodo": "Breisgau-Brasilianer / SCF",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Europa-Park Stadion", "imagen": "" },
+    "historia": "El SC Freiburg fue fundado en 1904 y es el modelo de gestión sostenible del fútbol alemán. Bajo Christian Streich durante más de 10 años, se consolidó en la Bundesliga y llegó a la final de la Copa de Alemania en 2022. Su nuevo estadio, inaugurado en 2021, es uno de los más modernos de Europa.",
+    "curiosidades": [
+      "Christian Streich fue entrenador durante más de 12 años, siendo el más longevo de la Bundesliga.",
+      "Son el modelo de sostenibilidad económica del fútbol alemán.",
+      "El Europa-Park Stadion fue inaugurado en 2021 con capacidad para 34.700 espectadores.",
+      "Llegaron a la final de la Copa de Alemania en 2022, perdiendo ante el Leipzig."
+    ]
+  },
+  {
+    "nombre": "TSG Hoffenheim",
+    "escudo": "",
+    "ciudad": "Sinsheim",
+    "fundacion": 1899,
+    "apodo": "Die Kraichgauer / TSG",
+    "colores": "Azul y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "PreZero Arena", "imagen": "" },
+    "historia": "El TSG Hoffenheim fue fundado en 1899 en un pueblo de 3.000 habitantes. Gracias a la inversión del multimillonario Dietmar Hopp, ascendió desde la quinta división hasta la Bundesliga en pocos años. Es conocido por su uso pionero de la tecnología y el análisis de datos en el fútbol.",
+    "curiosidades": [
+      "Viene de un pueblo de solo 3.000 habitantes, siendo el club más pequeño de la Bundesliga.",
+      "Dietmar Hopp, cofundador de SAP, invirtió más de 350 millones en el club.",
+      "Son pioneros en el uso de tecnología y análisis de datos en el fútbol alemán.",
+      "Julian Nagelsmann comenzó su carrera como entrenador aquí con solo 28 años."
+    ]
+  },
+  {
+    "nombre": "Werder Bremen",
+    "escudo": "",
+    "ciudad": "Bremen",
+    "fundacion": 1899,
+    "apodo": "Die Grün-Weißen / SVW",
+    "colores": "Verde y blanco",
+    "ligas": "4 Ligas",
+    "estadio": { "nombre": "Weserstadion", "imagen": "" },
+    "historia": "El Werder Bremen fue fundado en 1899 y es uno de los clubes más históricos de Alemania. Ganó 4 Bundesligas y la Copa de la UEFA en 1992. El Weserstadion, junto al río Weser, es uno de los estadios más emblemáticos del fútbol alemán. Tras descender en 2021, regresaron a la Bundesliga en 2022.",
+    "curiosidades": [
+      "Ganaron la Copa de la UEFA en 1992, siendo uno de los mayores logros del fútbol alemán.",
+      "El Weserstadion está situado junto al río Weser, siendo uno de los más pintorescos de Alemania.",
+      "Miroslav Klose comenzó su carrera profesional en el Werder Bremen.",
+      "Descendieron en 2021 pero regresaron a la Bundesliga en 2022."
+    ]
+  },
+  {
+    "nombre": "FC Augsburg",
+    "escudo": "",
+    "ciudad": "Augsburgo",
+    "fundacion": 1907,
+    "apodo": "Die Fuggerstädter / FCA",
+    "colores": "Rojo, verde y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "WWK Arena", "imagen": "" },
+    "historia": "El FC Augsburg fue fundado en 1907 y ascendió a la Bundesliga en 2011 por primera vez en su historia. Es uno de los clubes con menor presupuesto de la Bundesliga pero ha logrado mantenerse en la élite durante más de una década gracias a una gestión eficiente y un trabajo de cantera sólido.",
+    "curiosidades": [
+      "Ascendieron a la Bundesliga en 2011 por primera vez en su historia.",
+      "Son uno de los clubes con menor presupuesto que se ha mantenido en la Bundesliga.",
+      "La WWK Arena fue inaugurada en 2009 con capacidad para 30.660 espectadores.",
+      "Augsburgo es la ciudad más antigua de Alemania, fundada por los romanos."
+    ]
+  },
+  {
+    "nombre": "VfL Wolfsburg",
+    "escudo": "",
+    "ciudad": "Wolfsburgo",
+    "fundacion": 1945,
+    "apodo": "Die Wölfe / VfL",
+    "colores": "Verde y blanco",
+    "ligas": "1 Liga",
+    "estadio": { "nombre": "Volkswagen Arena", "imagen": "" },
+    "historia": "El VfL Wolfsburg fue fundado en 1945 por la empresa Volkswagen y es propiedad de la multinacional automovilística. Ganó su única Bundesliga en 2009 con Grafite y Dzeko como dupla goleadora. Su equipo femenino es el más exitoso de Europa, con múltiples Champions League.",
+    "curiosidades": [
+      "Es propiedad de Volkswagen, siendo uno de los pocos clubes de empresa en la Bundesliga.",
+      "Grafite y Dzeko marcaron 54 goles entre los dos en la temporada del título 2009.",
+      "Su equipo femenino ha ganado 2 Champions League y múltiples Bundesligas.",
+      "La Volkswagen Arena está a pocos metros de la fábrica de Volkswagen."
+    ]
+  },
+  {
+    "nombre": "1. FC Union Berlin",
+    "escudo": "",
+    "ciudad": "Berlín",
+    "fundacion": 1906,
+    "apodo": "Die Eisernen / Union",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "An der Alten Försterei", "imagen": "" },
+    "historia": "El 1. FC Union Berlin fue fundado en 1906 y es el club más querido del este de Berlín. Conocido por su espíritu comunitario, los aficionados construyeron su propio estadio con sus manos en 2009. Ascendieron a la Bundesliga en 2019 y llegaron a la Champions League en 2023, siendo uno de los mayores milagros del fútbol alemán.",
+    "curiosidades": [
+      "Los aficionados construyeron el estadio con sus propias manos en 2009.",
+      "Celebran la Navidad cantando villancicos en el estadio, una tradición única.",
+      "Ascendieron a la Bundesliga en 2019 y llegaron a la Champions en 2023.",
+      "Durante la división de Alemania, era el club favorito de los que se oponían al régimen."
+    ]
+  },
+  {
+    "nombre": "FC St. Pauli",
+    "escudo": "",
+    "ciudad": "Hamburgo",
+    "fundacion": 1910,
+    "apodo": "Der Kiezklub / Die Braun-Weißen",
+    "colores": "Marrón y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Millerntor-Stadion", "imagen": "" },
+    "historia": "El FC St. Pauli fue fundado en 1910 en el barrio más bohemio de Hamburgo. Es conocido mundialmente por su identidad política de izquierdas, antifascista y antisexista. Su calavera con tibias cruzadas es uno de los símbolos más reconocibles del fútbol mundial. Ascendieron a la Bundesliga en 2024.",
+    "curiosidades": [
+      "Su calavera con tibias cruzadas es uno de los logos más reconocibles del fútbol mundial.",
+      "Son conocidos por su postura antifascista, antisexista y antirracista.",
+      "El Millerntor-Stadion está en el barrio de Reeperbahn, el más famoso de Hamburgo.",
+      "Tienen aficionados en todo el mundo gracias a su identidad única y contracultural."
+    ]
+  },
+  {
+    "nombre": "Hamburger SV",
+    "escudo": "",
+    "ciudad": "Hamburgo",
+    "fundacion": 1887,
+    "apodo": "Der HSV / Die Rothosen",
+    "colores": "Rojo, blanco y azul",
+    "ligas": "6 Ligas",
+    "estadio": { "nombre": "Volksparkstadion", "imagen": "" },
+    "historia": "El Hamburger SV fue fundado en 1887 y fue el único club en haber jugado todas las temporadas de la Bundesliga desde su fundación en 1963 hasta 2018, cuando descendió por primera vez. Ganó la Copa de Europa en 1983 y 6 Bundesligas. Regresaron a la Bundesliga en 2024.",
+    "curiosidades": [
+      "Fueron el único club en jugar todas las temporadas de la Bundesliga desde 1963 hasta 2018.",
+      "Ganaron la Copa de Europa en 1983 con un gol de Horst Hrubesch.",
+      "El reloj del Volksparkstadion contaba los años, meses y días sin descender.",
+      "Regresaron a la Bundesliga en 2024 tras 6 años en la segunda división."
+    ]
+  },
+  {
+    "nombre": "1. FC Heidenheim",
+    "escudo": "",
+    "ciudad": "Heidenheim",
+    "fundacion": 1846,
+    "apodo": "FCH / Die Rot-Schwarzen",
+    "colores": "Rojo y negro",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "Voith-Arena", "imagen": "" },
+    "historia": "El 1. FC Heidenheim fue fundado en 1846 y ascendió a la Bundesliga por primera vez en su historia en 2023. Con una ciudad de solo 50.000 habitantes y el estadio más pequeño de la Bundesliga, es uno de los mayores milagros del fútbol alemán moderno bajo la dirección de Frank Schmidt.",
+    "curiosidades": [
+      "Ascendieron a la Bundesliga por primera vez en 2023, siendo un club de ciudad pequeña.",
+      "La Voith-Arena tiene capacidad para solo 15.000 espectadores, la más pequeña de la Bundesliga.",
+      "Frank Schmidt lleva más de 15 años como entrenador del club.",
+      "La ciudad de Heidenheim tiene solo 50.000 habitantes."
+    ]
+  },
+  {
+    "nombre": "FC Köln",
+    "escudo": "",
+    "ciudad": "Colonia",
+    "fundacion": 1948,
+    "apodo": "Die Geißböcke / Effzeh",
+    "colores": "Rojo y blanco",
+    "ligas": "3 Ligas",
+    "estadio": { "nombre": "RheinEnergieStadion", "imagen": "" },
+    "historia": "El FC Köln fue fundado en 1948 y es el club más popular de la ciudad de Colonia. Ganó 3 Bundesligas y fue el primer campeón de la Bundesliga en 1964. Su mascota, el macho cabrío Hennes, es una de las más famosas del fútbol alemán. Descendieron en 2024 tras varios años en la élite.",
+    "curiosidades": [
+      "Fueron los primeros campeones de la Bundesliga en la temporada inaugural 1963-64.",
+      "Su mascota es un macho cabrío llamado Hennes, que vive en el estadio.",
+      "El RheinEnergieStadion tiene capacidad para 50.000 espectadores.",
+      "Lukas Podolski es su jugador más famoso y querido por la afición."
+    ]
+  },
+  {
+    "nombre": "Mainz 05",
+    "escudo": "",
+    "ciudad": "Maguncia",
+    "fundacion": 1905,
+    "apodo": "Die Nullfünfer / Karnevalsverein",
+    "colores": "Rojo y blanco",
+    "ligas": "0 Ligas",
+    "estadio": { "nombre": "MEWA Arena", "imagen": "" },
+    "historia": "El Mainz 05 fue fundado en 1905 y es conocido por ser el club donde Jürgen Klopp comenzó su carrera como entrenador, llevándolos a la Bundesliga por primera vez. También fue el primer club de Thomas Tuchel como técnico. Es un modelo de desarrollo de entrenadores en el fútbol alemán.",
+    "curiosidades": [
+      "Jürgen Klopp comenzó su carrera como entrenador aquí, llevándolos a la Bundesliga.",
+      "Thomas Tuchel también comenzó su carrera como entrenador en el Mainz.",
+      "Son conocidos como el 'club del carnaval' por la tradición carnavalesca de Maguncia.",
+      "La MEWA Arena fue inaugurada en 2011 con capacidad para 33.305 espectadores."
+    ]
+  }
+]

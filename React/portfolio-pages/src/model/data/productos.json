@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "titulo": "E-Commerce Pro Platform",
+        "categoria": "Plataformas Web",
+        "descripcion": "Solución integral para tiendas en línea de alto rendimiento. Incluye pasarela de pagos avanzada, gestión de inventario en tiempo real, panel de administración intuitivo y optimización SEO de fábrica para maximizar las ventas.",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-SUEwM5rQVUUL7Zps0iOLnpBl2sN5hPggeA&s",
+        "tecnologias": ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"]
+    },
+    {
+        "id": 2,
+        "titulo": "SaaS Boilerplate Starter",
+        "categoria": "Herramientas de Desarrollo",
+        "descripcion": "Acelera el lanzamiento de tu próxima startup con nuestra plantilla base. Viene con autenticación preconfigurada, suscripciones mediante Stripe integradas, envío de correos electrónicos y diseño responsivo premium.",
+        "imagen": "https://repository-images.githubusercontent.com/726082384/cb0cc916-1ca4-4264-b497-3d2f7fb81ca8",
+        "tecnologias": ["React", "Express", "MongoDB", "Stripe API", "Tailwind CSS"]
+    },
+    {
+        "id": 3,
+        "titulo": "CRM Nexo Corporativo",
+        "categoria": "Sistemas de Gestión",
+        "descripcion": "Optimiza la relación con tus clientes y potencia las ventas de tu equipo. Este CRM permite el seguimiento de leads, automatización de embudos de conversión, analíticas avanzadas y reportes descargables en un clic.",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7LYBO9tGYq-iw84KuMcb0Yrg7mifK9d75cQ&s",
+        "tecnologias": ["Vue.js", "Python", "Django", "MySQL", "Chart.js"]
+    },
+    {
+        "id": 4,
+        "titulo": "TaskFlow - Gestor de Proyectos",
+        "categoria": "Productividad",
+        "descripcion": "La herramienta definitiva para la colaboración de equipos remotos. Tableros Kanban interactivos, diagramas de Gantt dinámicos, control de tiempos integrados y chat interno para centralizar la comunicación.",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4VOVMJElFaTjBoGxCAWZCJ9T-pE2AmQPEWw&s",
+        "tecnologias": ["React", "Redux", "Firebase", "WebSockets", "Tailwind CSS"]
+    },
+    {
+        "id": 5,
+        "titulo": "API Gateway Seguridad Total",
+        "categoria": "Infraestructura",
+        "descripcion": "Protege y gestiona tus microservicios con un gateway de alto rendimiento. Ofrece limitación de peticiones (rate limiting), autenticación JWT robusta, almacenamiento en caché y monitoreo de tráfico en tiempo real.",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTTEeNzPtVVqa0OiGFcQMhfkb2Ubgg1KfJw&s",
+        "tecnologias": ["Go", "Redis", "Docker", "Prometheus", "Grafana"]
+    },
+    {
+        "id": 6,
+        "titulo": "Chatbot AI Customer Support",
+        "categoria": "Inteligencia Artificial",
+        "descripcion": "Automatiza la atención al cliente las 24 horas del día. Este bot de inteligencia artificial se entrena con la documentación de tu empresa para responder con precisión consultas de usuarios, agendar citas y transferir casos complejos a humanos.",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXltBNwonZjvSRJUjlHuHDmDgv0Wyn16X2jA&s",
+        "tecnologias": ["Python", "OpenAI API", "FastAPI", "LangChain", "Pinecone"]
+    },
+    {
+        "id": 7,
+        "titulo": "Métricas Pro - Dashboard Financiero",
+        "categoria": "Sistemas de Gestión",
+        "descripcion": "Conecta tus cuentas y visualiza la salud financiera de tu empresa al instante. Genera reportes automatizados de pérdidas y ganancias, proyecciones de flujo de caja y detecta anomalías en tus gastos mensuales.",
+        "imagen": "https://getplika.com/wp-content/uploads/2022/05/dashboard-financiero-10-1024x663.jpg",
+        "tecnologias": ["Next.js", "Python", "GraphQL", "PostgreSQL", "D3.js"]
+    },
+    {
+        "id": 8,
+        "titulo": "DevOps Starter Kit",
+        "categoria": "Infraestructura",
+        "descripcion": "Automatiza el despliegue de tus aplicaciones con total confianza. Un conjunto de pipelines de CI/CD listos para producción que compilan, prueban y despliegan tu código en la nube de forma segura y sin interrupciones.",
+        "imagen": "https://static.wixstatic.com/media/e7182f_c518b937154b4fc2b111403bf05fba2c~mv2.png/v1/fill/w_274,h_260,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/devops%20learning%20schedule.png",
+        "tecnologias": ["GitHub Actions", "Docker", "Kubernetes", "AWS", "Terraform"]
+    },
+    {
+        "id": 9,
+        "titulo": "EduLearn - Plataforma Académica",
+        "categoria": "Plataformas Web",
+        "descripcion": "Crea y vende tus propios cursos online sin complicaciones. El sistema soporta contenido multimedia en video, exámenes interactivos, emisión automática de certificados personalizados y foros de discusión integrados.",
+        "imagen": "https://png.pngtree.com/design-canvas/es/image-6822d2af365f6a771c398783f85b391f_9.webp",
+        "tecnologias": ["Nuxt.js", "Ruby on Rails", "PostgreSQL", "AWS S3", "Tailwind CSS"]
+    },
+    {
+        "id": 10,
+        "titulo": "Analítica Web Privacy-First",
+        "categoria": "Herramientas de Desarrollo",
+        "descripcion": "Una alternativa ligera y orientada a la privacidad frente a Google Analytics. Mide visitas, fuentes de tráfico y conversiones en tiempo real sin recolectar datos personales ni necesitar molestos banners de cookies.",
+        "imagen": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/rM4plSsukeY8lFxcnyE5e/e593ac84f5d051e6d9506052ef295025/free-privacy-first-analytics-for-a-better-web.png",
+        "tecnologias": ["Elixir", "Phoenix", "ClickHouse", "React", "Chart.js"]
+    }
+]
