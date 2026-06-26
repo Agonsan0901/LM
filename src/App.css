@@ -1,28 +1,35 @@
-:root{
+:root {
+  --c-bg-general: #0080ff;
+  --c-sidebar: #fbfbfb;
+  --c-borde: #e2e8f0;
+  
   --text-primary: #7c3aed;
-  --text-secondary: #a78bfa;
-  --text-dark: #5b21b6;
+  --text-secondary: #25028f;
+  --text-dark: #5e4389;
+
+  --adm-bg: var(--c-bg-general);
+  --adm-asb-bg: var(--c-sidebar);
+  --adm-border: var(--c-borde);
 }
 
 .adm-layout {
   display: flex;
   min-height: 100vh;
-  background: #0080ff;
+  background: var(--adm-bg);
   font-family: 'DM Sans', system-ui, sans-serif;
 }
 
 .adm-main {
   flex: 1;
   overflow-x: hidden;
-  background: #0080ff;
+  background: var(--adm-bg);
 }
-
 
 .asb {
   width: 220px;
   min-height: 100vh;
-  background: #062f58;
-  border-right: 1px solid #e2e8f0;
+  background: var(--adm-asb-bg);
+  border-right: 1px solid var(--adm-border);
   display: flex;
   flex-direction: column;
   padding: 0.75rem 0;
@@ -54,7 +61,6 @@
   color: #fff;
 }
 
-
 .asb__quick {
   display: flex;
   align-items: center;
@@ -74,7 +80,6 @@
 .asb__quick:hover {
   background: #1e293b;
 }
-
 
 .asb__nav {
   display: flex;
@@ -116,7 +121,6 @@
   color: var(--text-secondary);
 }
 
-
 .asb__section-label {
   font-size: 0.7rem;
   font-weight: 600;
@@ -126,14 +130,13 @@
   padding: 1rem 1.25rem 0.35rem;
 }
 
-
 .asb__user {
   display: flex;
   align-items: center;
   gap: 0.6rem;
   padding: 0.6rem 0.75rem;
   margin-top: 0.25rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--adm-border);
 }
 
 .asb__avatar {
@@ -149,7 +152,6 @@
   font-weight: 700;
 }
 
-
 .asb__user-info span:first-child {
   font-size: 0.8rem;
   font-weight: 600;
@@ -160,7 +162,6 @@
   font-size: 0.7rem;
   color: var(--text-secondary);
 }
-
 
 .apage__titulo {
   font-size: 1.5rem;
@@ -197,27 +198,21 @@
   color: var(--text-secondary);
 }
 
-
 .abadge {
   color: var(--text-primary);
 }
-
 
 .astatus {
   color: var(--text-secondary);
 }
 
-
 .alink {
   color: var(--text-primary);
 }
 
-
-
 .aempty {
   color: var(--text-secondary);
 }
-
 
 .aform__titulo {
   color: var(--text-primary);
@@ -236,7 +231,6 @@
   color: var(--text-dark);
 }
 
-
 .ahome-card__label {
   color: var(--text-secondary);
 }
@@ -252,7 +246,6 @@
 .ahome-chart__sub {
   color: var(--text-secondary);
 }
-
 
 .aform__submit {
   background: #0f172a;
